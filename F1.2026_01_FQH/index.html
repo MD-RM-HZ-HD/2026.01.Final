@@ -1,0 +1,1120 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="min-h-screen" x-data="pageSettings" :class="{ 'dark': darkMode }"> 
+
+<div class="main-width-container pt-10"> 
+<div id="navbar-placeholder"></div>
+      
+    <div class="top-row">
+        <article class="content" 
+                 :style="{ 'fontSize': fontSize + 'px' }">
+<div x-data="accordionItem(true)" class="content-container" id="h1-امتحان-الفقه-النهائي">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">امتحان الفقه النهائي</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/source-text.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الصيد">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الصيد</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/01.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-أحكام-الصيد-بالسلاح" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">أحكام الصيد بالسلاح</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-مسألة-1199" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1199):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-يشترط-في-تذكية-الوحش-المحلل-أك" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									يشترط في تذكية الوحش المحلّل أكله إذا اصطيد بالسلاح أمور:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<div class="qa" id="h5-الأول" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										الأوّل:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">أن تكون الآلة كالسيف والسكّين والخنجر وغيرها من الأسلحة القاطعة، أو كالرمح والسهم والعصا ممّا يشاك بحدّه ويخرق جسد الحيوان، سواء كان فيه نصل - من حديد أو فلزّ غيره - كالسهم أو صُنِع خارقاً وشائكاً بنفسه كالمعراض.</p>
+									<p :style="{ 'fontSize': fontSize + 'px' }">ولكن يعتبر فيما لا نصل فيه أن يخرق بدن الحيوان، ولا يحلّ فيما لو قتله بالوقوع عليه. وأمّا ما فيه نصل فلا يعتبر فيه ذلك، فيحلّ الحيوان لو قتله وإن لم يجرحه ويخرق بدنه.</p>
+									<p :style="{ 'fontSize': fontSize + 'px' }">ولو اصطيد الحيوان بالحجارة أو العمود أو الشبكة أو الحبالة أو غيرها من الآلات التي ليست بقاطعة ولا شائكة حرم أكله وحكم بنجاسته.</p>
+									<p :style="{ 'fontSize': fontSize + 'px' }">وإذا اصطاد بالبندقيّة فإن كانت الطلقة تنفذ في بدن الحيوان وتخرقه حلّ أكله، وهو طاهر. وأمّا إذا لم تكن كذلك - بأن قتلته بسبب ضغطها أو بسبب ما فيها من الحرارة المحرقة - لم يحلّ أكله ولم يكن طاهراً على الأحوط لزوماً.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-الثاني" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										الثاني:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">أن يكون الصائد مسلماً أو بحكمه كالصبيّ المميّز الملحق به، ولا يحلّ صيد الكافر، وكذا المنتحل للإسلام المحكوم بالكفر كالناصب المعلن بعداوة أهل البيت (عليهم السلام)، على ما مرّ في الذبح.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-الثالث" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										الثالث:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">قصد اصطياد الحيوان المحلّل بالصيد، فلو رمى هدفاً أو عدوّاً أو خنزيراً أو شاة فأصاب غزالاً - مثلاً - فقتله لم يحلّ.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-الرابع" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										الرابع:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">التسمية عند استعمال السلاح في الاصطياد، ويجتزئ بها قبل إصابة الهدف أيضاً. ولو أخلّ بها متعمّداً لم يحلّ صيده، ولا بأس بالإخلال بها نسياناً.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-الخامس" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										الخامس:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">أن يدركه ميّتاً، أو يدركه وهو حيّ ولكن لم يكن الوقت متّسعاً لتذكيته، فلو أدركه حيّاً وكان الوقت متّسعاً لذبحه ولم يذبحه حتّى خرجت روحه لم يحلّ أكله.</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-مسألة-1200" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1200):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لو اصطاد اثنان صيداً واحداً ولم تتوفّر الشروط المتقدّمة إلّا في أحدهما فقط - كأن سمّى أحدهما ولم يسمّ الآخر متعمّداً - لم يحلّ أكله.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1201" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1201):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يعتبر في حلّيّة الصيد أن تكون الآلة مستقلّة في قتله، فلو شاركها شيء آخر - كما إذا رماه فسقط الصيد في الماء ومات وعلم استناد الموت إلى كلا الأمرين - لم يحلّ، وكذا الحال فيما إذا شكّ في استناد الموت إلى الرمي بخصوصه.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1202" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1202):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لا يعتبر في حلّيّة الصيد إباحة الآلة، فلو اصطاد حيواناً بالكلب أو السهم المغصوبين حلّ الصيد وملكه الصائد دون صاحب الآلة أو الكلب، ولكنّ الصائد ارتكب معصية، ويجب عليه دفع أجرة الكلب أو الآلة إلى صاحبه.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1203" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1203):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لو أبانت آلة الصيد - كالسيف ونحوه - عضواً من الحيوان مثل اليد والرجل كان العضو المبان ميتة يحرم أكله، ويحلّ أكل الباقي مع اجتماع شروط التذكية المتقدّمة في المسألة (1188).</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ولو قطعت الآلةُ الحيوانَ نصفين فإن لم يدركه حيّاً، أو أدركه حيّاً إلّا أن الوقت لم يتّسع لذبحه، تحلّ كلتا القطعتين مع توفّر الشروط المذكورة. وأمّا إذا أدركه حيّاً وكان الوقت متّسعاً لذبحه فالقطعة الفاقدة للرأس والرقبة محرّمة، والقطعة التي فيها الرأس والرقبة طاهرة وحلال فيما إذا ذبح على النهج المقرّر شرعاً.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1204" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1204):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لو قسم الحيوان قطعتين بالحبالة أو الحجارة ونحوهما ممّا لا يحلّ به الصيد حرمت القطعة الفاقدة للرأس والرقبة، وأمّا القطعة التي فيها الرأس والرقبة فهي طاهرة وحلال فيما إذا أدركه حيّاً واتّسع الوقت لتذكيته وذبحه مع الشروط المعتبرة، وإلّا حرمت هي أيضاً.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1205" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1205):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> الجنين الخارج من بطن الصيد أو الذبيحة حيّاً إذا وقعت عليه التذكية الشرعيّة حلّ أكله وإلّا حرم، سواء اتّسع الوقت لتذكيته أم لا.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1206" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1206):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> الجنين الخارج من بطن الصيد أو الذبيحة ميّتاً طاهر وحلال بشرط عدم سبق موته على تذكية أمّه، وعدم استناد موته إلى التواني في إخراجه على النحو المتعارف، وكونه تامّ الخلقة وقد أشعر أو أوبر.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-حكم-الصيد-بالكلب" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">حكم الصيد بالكلب</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-مسألة-1207" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1207):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-إذا-اصطاد-كلب-الصيد-حيوانا-وحش" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									إذا اصطاد كلب الصيد حيواناً وحشيّاً محلّل اللحم فقتله فالحكم بطهارته وحلّيته بذلك يتوقّف على شروط ستّة:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<div class="qa" id="h5-1--أن-يكون-الكلب-معلما" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										1- أن يكون الكلب معلَّماً،
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">بحيث يسترسل ويهيج إلى الصيد متى أغراه صاحبه به، وينزجر عن الهياج والذهاب إذا زُجر. نعم، لا يضرّ عدم انزجاره بزجره إذا قرب من الصيد ووقع بصره عليه كما هو الغالب في الكلاب المعلَّمة.</p>
+									<p :style="{ 'fontSize': fontSize + 'px' }">ولا يعتبر أن تكون من عادته أن لا يأكل من الصيد شيئاً حتّى يصل إليه صاحبه، كما لا بأس بأن يكون معتاداً بتناول دم الصيد. نعم، الأحوط لزوماً أن يكون بحيث إذا أراد صاحبه أخذ الصيد منه لا يمتنع ولا يحول دونه.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-2--أن-يكون-صيده-بإرساله-للاصطي" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										2- أن يكون صيده بإرساله للاصطياد،
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">فلا يكفي استرساله بنفسه من دون إرسال، كما لا يكفي إذا استرسل بنفسه وأغراه صاحبه بعد الاسترسال، حتّى فيما إذا أثّر فيه الإغراء - كما إذا زاد في عَدْوه بسببه - على الأحوط لزوماً في هذه الصورة.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-3--أن-يكون-المرسل-مسلما-على-ما" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										3- أن يكون المُرسِل مسلماً، على ما مرّ في شروط الصيد بالسلاح.
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									</div>
+								</div>
+								<div class="qa" id="h5-4--تسمية-المرسل-عند-إرساله-أو-" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										4- تسمية المُرسِل عند إرساله أو قبل الاصابة.
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">ولو تركها متعمّداً حرم الصيد وإن سمّى غيره، ولا يضرّ تركها نسياناً.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-5--أن-يستند-موت-الحيوان-إلى-جر" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										5- أن يستند موت الحيوان إلى جرح الكلب وعقره،
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">فلو مات بسبب آخر كخنقه وإتعابه في العَدْو أو نحو ذلك لم يحلّ.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-6--أن-لا-يدرك-صاحب-الكلب-الصيد" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										6- أن لا يدرك صاحب الكلب الصيد إلّا بعد موته،
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">أو إذا أدركه حيّاً لا يتّسع الوقت لذبحه بشرط أن لا يستند ذلك إلى توانيه في الوصول إليه، فلو تمكّن من إدراكه حيّاً وذبحه، أو أدركه كذلك واتّسع الوقت لتذكيته فلم يفعل حتّى مات لم يحلّ.</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-مسألة-1208" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1208):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إذا أدرك مُرسِل الكلب الصيد حيّاً والوقت متّسع لذبحه ولكنّه اشتغل عن التذكية بمقدّماتها - من سلّ السكّين ونحوه - على النهج المتعارف فمات قبل تذكيته حلّ.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وأمّا إذا استند تركه التذكيّة إلى فقد الآلة كما إذا لم يكن عنده السكّين - مثلاً - حتّى ضاق الوقت ومات الصيد قبل تذكيته لم يحلّ على الأحوط لزوماً. نعم، لو تركه على حاله إلى أن قتله الكلب وأزهق روحه بعقره حلّ أكله.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1209" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1209):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لو أرسل كلاباً متعدّدة للاصطياد فقتلت صيداً واحداً فإن كانت الكلاب المسترسلة كلّها واجدة للشروط المتقدّمة في المسألة (1207) حلّ الصيد، وإن لم يكن بعضها واجداً لتلك الشروط لم يحلّ. نعم، إذا استند القتل إلى الكلب الواجد للشروط حلّ، كما إذا سبق أحد الكلاب فأثخن بالجراح وأشرف على الموت ثُمَّ جاء الآخر فأصابه يسيراً.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1210" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1210):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إذا أرسل الكلب إلى صيد حيوان محلّل بالصيد كالغزال وصاد الكلب حيواناً آخر كذلك فهو طاهر وحلال، وكذا الحال فيما إذا أرسله إلى صيد حيوان فصاده مع حيوان آخر.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1211" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1211):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لو كان المرسل متعدّداً بأن أرسل جماعةٌ كلباً واحداً ولم يسمّ أحدهم متعمّداً حرم صيده. وكذا الحال فيما إذا تعدّدت الكلاب ولم يكن بعضها معلَّماً على النحو المتقدّم في المسألة (1207) فإنّ الصيد حينئذٍ نجس وحرام.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1212" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1212):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لا يحلّ الصيد إذا اصطاده غير الكلب من أنواع الحيوانات، كالعقاب والصقر والباشق والنمر وغيرها. نعم، إذا أدرك الصائد الصيد وهو حيّ ثُمَّ ذكّاه على النهج المقرّر في الشرع حلّ أكله.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-صيد-السمك-والجراد">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">صيد السمك والجراد</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/02.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div id="h3-مسألة-1213" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1213):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لو أُخذ من الماء أو من خارجه حيّاً السمكُ الذي له فَلْس عرفاً في الأصل - وإن زال بالعارض - حلّ أكله، وهو طاهر. ولو مات داخل الماء فهو طاهر ولكن يحرم أكله. وأمّا ما لا فَلْس له عرفاً من الأسماك فيحرم أكله مطلقاً.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1214" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1214):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لو وثبت السمكة خارج الماء أو نبذتها الأمواج إلى الساحل أو غار الماء وبقيت السمكة وماتت قبل أخذها حرمت. نعم، إذا نصب الصائد شبكة أو صنع حظيرة فدخلتها السمكة فماتت فيها قبل أن يستخرجها الصائد حلّ أكلها، وهكذا الحال لو أخذها من الماء بآلة أخرى فماتت قبل أن يخرجها منه.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1215" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1215):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا أخرج السمكة من الماء ثُمَّ أعادها إليه - كأن وضعها في صحن من الماء فماتت فيه - حرم لحمها.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1216" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1216):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا طفا السمك على وجه الماء بسبب ابتلاعه ما يسمّى بـ «الزهر» مثلاً، فإن أخذه حيّاً حلّ أكله، وإن مات قبل ذلك حرم.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1217" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1217):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لو شوى سمكة حيّة أو قطّعها خارج الماء قبل أن تموت حلّ أكلها، وإن كان الاجتناب عنه أولى.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1218" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1218):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا قطعت من السمكة الحيّة بعد أخذها قطعة وأعيد الباقي إلى الماء حيّاً حلّت القطعة المبانة عنها، سواء أمات الباقي في الماء أم لم يمت، ولكنّ الاجتناب أحوط استحباباً.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1219" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1219):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لا يعتبر في صائد السمك الإسلام، ولا يشترط في تذكيته التسمية، فلو أخذه الكافر حلّ لحمه.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1220" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1220):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> السمكة الميّتة إذا كانت في يد المسلم يحكم بحلّيّتها وإن لم يعلم أنّها ماتت في خارج الماء بعد أخذها، أو في آلة الصيد قبل إخراجها، أو أنّها ماتت على وجه آخر. وهكذا يحكم بحلّيّتها وإن لم يعلم كونها من ذوات الفَلْس إذا كان ذو اليد المسلم قد عرضها للأكل ولم يكن ممّن يستحل غير ذوات الفَلْس من الأسماك.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وإذا كانت السمكة الميّتة في يد الكافر لم يحكم بحلّيّتها وإن أخبر باصطيادها على الوجه الموجب للحلّيّة، إلّا أن يحرز ذلك ولو من جهة الاطمئنان باصطيادها بسفن الصيد التي تعتمد إخراج الأسماك من الماء قبل موتها ويندر أن يختلط بها شيء من الميتة.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وهكذا لا يحكم بحلّيّة ما في يد الكافر من السمك إذا شُكّ في كونه من ذوات الفَلْس وإن أخبر بكونه منها، إلّا أن يطمئنّ بذلك.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1221" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1221):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> الجراد إذا استقلّ بالطيران وأُخذ حيّاً باليد أو بغيرها من الآلات حلّ أكله، ولا يعتبر في تذكيته إسلام الآخذ ولا التسمية حال أخذه. نعم، لو وجده في يد كافر ميّتاً ولم يطمئنّ أنّه أخذه حيّاً لم يحلّ، وإن أخبر بتذكيته كما مرّ في السمك.</p>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الأطعمة-والأشربة">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الأطعمة والأشربة</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/03.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-أحكام-الاطعمة-والاشربة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">أحكام الاطعمة والاشربة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-مسألة-1222" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1222):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يحلّ من الطيور كلّ ما كان ذا ريش إلّا السباع، فيحلّ الحمام والدجاج والعصفور بجميع أصنافها، كما يحلّ الدُّرَّاج والقَبَج والكَرَوان والحُبَارَى والكُرْكِيّ، ويحلّ الهدهُد والخُطّاف والشَّقِرَّاق والصُّرَد والصُّوّام وإن كان يكره قتلها، وتحلّ النَّعامة والطاووس أيضاً.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وأمّا السباع - وهي</strong>: كلّ ذي مخلب سواء أكان قويّاً يتمكّن به على افتراس الطير كالبازيّ والصقر، أو ضعيفاً لا يقوى به على ذلك كالنَّسر والبُغاث - فهي محرّمة الأكل. ويلحق بها الغراب بجميع أنواعه حتّى الزاغ على الأحوط لزوماً.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ويحرم أيضاً كلّ ما يطير وليس له ريش كالخفّاش وكذلك الزُّنبور والفراشة وغيرهما من الحشرات الطائرة - عدا الجراد - على الأحوط لزوماً.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1223" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1223):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"> الظاهر أن كلّ طائر يكون <strong>صفيفه أكثر من دفيفه</strong> - أي يكون بسط جناحيه عند الطيران أكثر من تحريكهما - يكون ذا مخلب، فيحرم لحمه. بخلاف ما يكون دفيفه أكثر من صفيفه، فإنّه محلّل اللحم.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وعلى هذا يتميّز المحرّم من الطيور عن غيره بالنظر إلى كيفيّة طيرانها، كما يتميّز ما لا يعرف طيرانه بوجود الحَوْصَلة أو القانِصَة أو الصِّيصِية في بدنه، فما يكون له إحدى الثلاث يحلّ أكله دون غيره.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والحَوصَلَة:</strong> ما يجتمع فيه الحبّ وغيره من المأكول عند الحلق.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والقَانِصَة</strong><strong>:</strong> ما يجتمع فيه الحصى الدقاق التي يأكلها الطير.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والصِّيصِية:</strong> شَوْكَة في رجل الطير خارجة عن الكفّ.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1224" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1224):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يحلّ من حيوان البحر السمك الذي له فَلْس عرفاً في الأصل وإن زال بالعارض - كما تقدّم -.ويحرم غيره من أنواع الحيوانات البحريّة كالبقر البحري والضِّفْدَع والسَّرَطان والسُّلَحْفاة، وكذلك ما ليس له فَلْس عرفاً من السمك كالجِرِّيّ والزِّمّير. نعم، الطيور المسمّاة بطيور البحر - من السابحة والغائصة وغيرهما - يحلّ منها ما يحلّ مثلها من طيور البرّ.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1225" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1225):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-يحل-من-البهائم-البرية" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									يحلّ من البهائم البريّة
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">الغنم والبقر والإبل والخيل والبغال والحمير - بجميع أقسامها سواء الوحشيّة والأهليّة - وكذلك الغزال. نعم، يكره أكل لحم الخيل والبغال والحمير الأهليّة.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-ويحرم-من-البهائم-السباع-وهي" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									ويحرم من البهائم السباع، وهي:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">ما كان مفترساً وله ظفر أو ناب قويّاً كان كالأسد والنمر والفهد، أو ضعيفاً كالثعلب والضبع. وكذلك يحرم الكلب والهرّ والأرنب والخنزير والقرد والفيل والدبّ.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ويحرم الدوابّ الصغار</strong> التي تسكن باطن الأرض كالضَّبّ والفَأر واليَربُوع والقُنْفُذ والحيّة ونحوها.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">وتحرم الديدان، حتّى ديدان الفاكهة على الأحوط لزوماً، إلّا ما لا يتسّير إزالته فيجوز أكل الفاكهة معها.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-مسألة-1226" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1226):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> ما وطئه الإنسان من البهائم إن كان ممّا يؤكل لحمه - كالبقر والغنم والإبل - حرم لحمه، وكذا لبنه ونسله المتجدّد بعد الوطء على الأحوط لزوماً، ووجب أن يذبح ويحرق، فإن كان لغير الواطئ وجب عليه أن يغرم قيمته لمالكه.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وأمّا إذا كان ممّا يركب ظهره - كالخيل والبغال والحمير - وجب نفيه من البلد وبيعه في بلد آخر، ويغرم الواطئ - إذا كان غير المالك - قيمته ويكون الثمن له.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1227" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1227):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> كلّ حيوان محلّل الأكل - حتّى الطير والسمك - إذا صار جلّالاً حرم لحمه ولبنه وبيضه، فإذا استبرئ حلّ. وقد تقدّم معنى الجلل وكيفيّة الاستبراء في (المطهّرات).</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1228" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1228):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يحرم الجَدْي - وهو ولد المَعْز - إذا رضع من لبن الخنزيرة حتّى اشتدّ لحمه وعظمه، ويحرم بذلك نسله ولبنه أيضاً.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ولو لم يشتدّ فالأحوط لزوماً أن يُستبرئ سبعة أيّام بلبنٍ طاهر إن لم يكن مستغنياً عن الرضاع، وإلّا استُبرئ بالعلف والشعير ونحوهما ثُمَّ يحلّ بعد ذلك.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ويلحق بالجَدْي العِجْل وأولاد سائر الحيوانات المحلّل لحمها على الأحوط لزوماً. ولا يلحق بالرضاع من الخنزيرة الرضاع من سائر الحيوانات المحرّم لحمها.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">كما لا يحرم الحيوان المحلّل لحمه بشربه شيئاً من المائع النجس كالبول والدم. نعم، إذا شرب من الخمر حتّى سكر فذُبح في تلك الحال فالأحوط لزوماً أن لا يؤكل ما في جوفه من الأمعاء والكرش والقلب والكبد وغيرها وإن غسل، وأمّا لحمه فيجوز أكله، ولكن لا بُدَّ من غسل ما لاقته النجاسة مع بقاء عينها.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1229" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1229):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-يحرم-من-الحيوان-المحلل-لحمه" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									يحرم من الحيوان المحلّل لحمه:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">الدم، والرَّوْث، والقضيب، والفرج، والمشيمة، والغدد وهي كلّ عقدة في الجسم مدورة تشبه البُنْدُق، والبيضتان، وخَرَزَة الدِّماغ وهي حبّةٌ بقدر الحُمَّصَة في وسط الدِّماغ، والنُّخاع وهو خيط أبيض كالمخّ في وسط فقار الظهر، والعِلْباوان - على الأحوط لزوماً - وهما عصبتان ممتدّتان على الظهر من الرقبة إلى الذَّنَب، والمَرارَة، والطِّحال، والمثانة، وحدقة العين وهي الحبّة الناظرة منها لا جسم العين كلّه.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>هذا في غير الطيور والسمك والجراد</strong>، </p>
+								</div>
+							</div>
+							<div class="qa" id="h4-أما-الطيور-فيحرم-ما-يوجد-فيها-" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									أما الطيور فيحرم ما يوجد فيها من المذكورات:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }"> الدم، والرجيع، والأحوط لزوماً الاجتناب عن غيرهما أيضاً. كما أنّ الأحوط وجوباً الاجتناب عن رجيع السمك ودمه، ورجيع الجراد. نعم، لا بأس بما في جوفهما من ذلك إذا أكل معهما.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-مسألة-1230" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1230):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> يحرم أكل الطين والمَدَر، وكذلك التراب والرمل على الأحوط لزوماً</strong>. ويستثنى من ذلك مقدار حمّصة متوسّطة الحجم من تربة سيد الشهداء (عليه السلام) للاستشفاء لا لغيره، والأحوط وجوباً الاقتصار فيها على ما يؤخذ من القبر الشريف أو ممّا يقرب منه الملحق به عرفاً، وفيما زاد على ذلك يمزج بماء ونحوه بحيث يستهلك فيه ويستشفى به رجاءً.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1231" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1231):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"> <strong>لا يحر</strong><strong>م بلع النخامة والأخلاط الصدريّة</strong> إلى فضاء الفم، وكذا بلع ما يخرج بتخليل الأسنان من بقايا الطعام.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1232" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1232):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> يحرم تناول كلّ ما يضرّ الإنسان ضرراً بليغاً،</strong> سواء أكان موجباً للهلاك أم موجباً لتعطيل بعض الأعضاء أو فقدان بعض الحواس.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ويحرم أيضاً تناول ما </strong><strong>يحتمل فيه ذلك إذا كان الاحتمال معتدّاً به</strong> عند العقلاء ولو من جهة الاهتمام بالمحتمل بحيث يصدق معه الخوف عندهم، حتّى لو كان الضرر المترتّب عليه غير عاجل.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1233" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1233):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"> <strong>يحرم استعمال الترياق ومشتقّاته وسائر أنواع الموادّ المخدّرة</strong> إذا كان مستتبعاً للضرر البليغ بالشخص، سواء أكان من جهة زيادة المقدار المستعمل منها أو من جهة إدمانه، بل الأحوط لزوماً الاجتناب عنها مطلقاً إلّا في حال الضرورة، فتستعمل بمقدار ما تدعو الضرورة إليه.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1234" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1234):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"> <strong>يحرم شرب الخمر وغيره من المسكرات،</strong> وفي بعض الروايات أنّه من أعظم المعاصي، وروي عن الصادق (عليه السلام) أنّه قال: «إِنَّ الخَمْرَ أُمُّ الخَبَائِثِ وَرَأْسُ كُلِّ شَرٍّ، يَأْتِيْ عَلَىٰ شَارِبِهَا سَاعَةٌ يُسْلَبُ لُبُّهُ فَلَا يَعْرِفُ رَبَّهُ، وَلَا يَتْرُكُ مَعْصِيَةً إِلَّا رَكِبَهَا، وَلَا يَتْرُكُ حُرْمَةً إِلَّا انْتَهَكَهَا، وَلَا رَحِمَاً مَاسَّةً إِلَّا قَطَعَهَا، وَلَا فَاحِشَةً إِلَّا أَتَاهَا، وَإِنْ شَرِبَ مِنْهَا جُرْعَةً لَعَنَهُ اللهُ وَمَلَائِكَتُهُ وَرُسُلُهُ وَالمُؤْمِنُوْنَ، وَإِنْ شَرِبَهَا حَتَّىٰ سَكِرَ مِنْهَا نُزِعَ رُوْحُ الإِيْمَانِ مِنْ جَسَدِهِ، وَرَكِبَتْ فِيْهِ رُوْحٌ سَخِيْفَةٌ خَبِيْثَةٌ، وَلَمْ تُقْبَلْ صَلَاتُهُ أَرْبَعِيْنَ يَوْمَاً»(1).</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1235" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1235):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"> <strong>يحرم عصير العنب إذا غلى</strong> بنفسه أو بالنار أو بالشمس، فإن لم يصر بذلك مسكراً تزول حرمته بذهاب ثلثيه، وأمّا إذا صار مسكراً فلا تزول حرمته إلّا بالتخليل.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وإذا طبخ العنب نفسه</strong> فإن حصل العلم بغليان ما في جوفه من الماء حرم على الأحوط، وإلّا لم يحرم.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">كما لا يحرم ما يسمّى بالعصير الزبيبي وإن غلى، إلّا أن يصير مسكراً، فيحرم عندئذٍ ولا تزول حرمته إلّا بالتخليل.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1236" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1236):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> يحرم الفُقَّاع،</strong> وهو: شراب معروف يوجب النشوة عادةً لا السُّكْر، ويسمّى اليوم بـ «البيرة». وليس منه ماء الشعير الذي يستعمله الأطبّاء في معالجاتهم.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1237" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1237):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يحرم الدم من الحيوان ذي النفس السائلة، حتّى الدم في البيضة وما يتخلّف في الأجزاء المأكولة من الذبيحة. نعم، لا إشكال مع استهلاكه في المرق ونحوه.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1238" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1238):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يحرم لبن الحيوان المحرّم أكله - ولو لعارض - وكذلك بيضه، وأمّا لبن الإنسان فالأحوط ترك شربه.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1239" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1239):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يحرم الأكل من مائدة يُشرب عليها شيء من الخمر أو المُسكِر، بل يحرم الجلوس عليها أيضاً على الأحوط لزوماً.</p>
+							</div>
+						</div>
+						<div id="h3-مسألة-1240" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1240):</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إذا أشرفت نفس محترمة على الهلاك أو ما يدانيه لشدّة الجوع أو العطش وجب على كلّ مسلم إنقاذها، بأن يبذل لها من الطعام أو الشراب ما يسدّ به رمقها.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-آداب-الأكل-والشرب">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">آداب الأكل والشرب</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/04.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div id="h3-مسألة-1241" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1241):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div class="qa" id="h4-قد-عد-من-آداب-أكل-الطعام-أمور" x-data="accordionItem(true)">
+							<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+								قد عُدّ من آداب أكل الطعام أمور:
+								<span class="icon-toggle" x-text="iconText"></span>
+							</h4>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">أن يغسل يديه معاً قبل الطعام وبعده وينشّفهما بالمنديل بعده، وأن يبدأ صاحب الطعام قبل الجميع ويمتنع بعد الجميع، وأن يُبدأ في الغَسل قبل الطعام بصاحب الطعام ثُمَّ بمن على يمينه إلى أن يتمّ الدور على من في يساره، وأن يُبدأ في الغسل بعد الطعام بمن على يسار صاحب الطعام إلى أن يتمّ الدور على صاحب الطعام، وأن يسمّي عند الشروع في الطعام، ولو كانت على المائدة ألوان من الطعام استحبّت التسمية على كلّ لون بانفراده، وأن يأكل باليمين، وبثلاث أصابع أو أكثر ولا يأكل بإصبعين، وأن يأكل ممّا يليه إذا كانت على المائدة جماعة، ولا يتناول من قدّام الآخرين، وأن يصغّر اللقم، ويطيل الأكل والجلوس على المائدة، ويجيد المضغ، وأن يحمد الله بعد الطعام، وأن يلعق الأصابع ويمصّها، ويخلّل بعد الطعام، ولا يكون التخلّل بعودة الريحان وقضيب الرمان والخوص والقصب، وأن يلتقط ما يتساقط خارج السفرة ويأكله إلّا في البراري والصحاري فإنّه يستحبّ فيها أن يدع المتساقط عن السفرة للحيوانات والطيور، وأن يكون أكله غداة وعشيّاً ويترك الأكل بينهما، وأن يستلقي بعد الأكل على القفا ويجعل الرجل اليمنى على اليسرى، وأن يفتتح ويختتم بالملح، وأن يغسل الثمار بالماء قبل أكلها، ولا يأكل على الشبع، ولا يمتلئ من الطعام، ولا ينظر في وجوه الناس لدى الأكل، ولا يأكل الطعام الحار، ولا ينفخ في الطعام والشراب، ولا ينتظر بعد وضع الخبز في السفرة غيره، ولا يقطع الخبز بالسكّين، ولا يضع الخبز تحت الإناء، ولا ينظّف العظم من اللحم الملصق به على نحو لا يبقى عليه شيء من اللحم، ولا يقشّر الثمار التي تؤكل بقشورها، ولا يرمي الثمرة قبل أن يستقصي أكلها.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div id="h3-مسألة-1242" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1242):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div class="qa" id="h4-قد-عد-من-آداب-شرب-الماء-أمور" x-data="accordionItem(true)">
+							<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+								قد عُدّ من آداب شرب الماء أمور:
+								<span class="icon-toggle" x-text="iconText"></span>
+							</h4>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">أن يشرب الماء مصّاً لا عبّاً، ويشربه قائماً بالنهار ولا يشربه قائماً بالليل، وأن يسمّي قبل شربه ويحمّد بعده، ويشربه بثلاثة أنفاس، وعن رغبة وتلذّذ، وأن يذكر الحسين وأهل بيته (عليهم السلام) ويلعن قتلته بعد الشرب، وأن لا يكثر من شرب الماء، ولا يشربه على الأغذية الدسمة، ولا يشرب من محلّ كسر الكوز ومن محلّ عُروته، ولا يشرب بيساره.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-أحكام-النذر">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">أحكام النذر</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/05.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div id="h3-مسألة-1243" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1243):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> النذر هو: أن يجعل الشخص لله على ذ</strong><strong>مّته فعل شيء أو تركه.</strong></p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1244" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1244):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> لا ينعقد النذر بمجرّد النيّة، بل لا بُدَّ فيه من الصيغة.</strong></p>
+						<div class="qa" id="h4-ويعتبر-في-صيغة-النذر" x-data="accordionItem(true)">
+							<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+								ويعتبر في صيغة النذر
+								<span class="icon-toggle" x-text="iconText"></span>
+							</h4>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">اشتمالها على لفظ (لله) أو ما يشابهه من أسمائه المختصّة به، فلو قال الناذر مثلاً: (لله عليَّ أن آتي بنافلة الليل) أو قال: (للرحمن عليّ أن أتصدّق بمائة دينار) صحّ النذر، وله أن يؤدّي هذا المعنى بأيّة لغة أخرى غير العربيّة. ولو اقتصر على قوله: (عليَّ كذا) لم ينعقد النذر وإن نوى في نفسه معنى (لله)، ولو قال: (نذرت لله أن أصوم) أو (لله عليَّ نذر صوم) ففي انعقاده إشكال، فلا يترك مراعاة الاحتياط في ذلك.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div id="h3-مسألة-1245" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1245):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div class="qa" id="h4-يعتبر-في-الناذر" x-data="accordionItem(true)">
+							<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+								يعتبر في الناذر:
+								<span class="icon-toggle" x-text="iconText"></span>
+							</h4>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">البلوغ والعقل والاختيار والقصد وعدم الحجر عن التصرّف في متعلّق النذر، فيلغو نذر الصبيّ وإن كان مميّزاً، وكذلك نذر المجنون - ولو كان أدواريّاً - حال جنونه، والمكره، والسكران، ومن اشتدّ به الغضب إلى أن سلبه القصد أو الاختيار، والمفلس إذا تعلّق نذره بما تعلّق به حقّ الغرماء من أمواله، والسفيه سواء تعلّق نذره بمال خارجي أو بمال في ذمّته.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div id="h3-مسألة-1246" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1246):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> يعتبر في متعلّق النذر من الفعل أو الترك</strong> أن يكون مقدوراً للناذر حين العمل، فلا يصحّ نذر الحجّ ماشياً ممّن ليس له قدرة على ذلك، وكذلك يعتبر فيه أن يكون راجحاً شرعاً حين العمل، كأن ينذر فعل واجب أو مستحبّ أو ترك حرام أو مكروه.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وأمّا المباح فإن قصد به معنى راجحاً - كما لو نذر أكل الطعام قاصداً به التقوّي على العبادة مثلاً - انعقد نذره، وإلّا لم ينعقد.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">كما ينحلّ فيما إذا زال رجحانه لبعض الطوارئ، كما لو نذر ترك التدخين لتتحسّن صحّته ويقوى على خدمة الدين ثُمَّ ضرّه تركه.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1247" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1247):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لا يصحّ نذر الزوجة بدون إذن زوجها فيما ينافي حقّه في الاستمتاع منها. وفي صحّة نذرها في مالها من دون إذنه - في غير الحجّ والزكاة والصدقة وبرّ والديها وصلة رحمها - إشكال، فلا يترك مقتضى الاحتياط فيه.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ويصح نذر الولد سواء أذن له الوالد فيه أم لا، ولكن إذا نهاه أحد الأبوين عمّا تعلّق به النذر فلم يعدّ بسببه راجحاً في حقّه انحلّ نذره ولم يلزمه الوفاء به، كما لا ينعقد مع سبق توجيه النهي إليه على هذا النحو.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1248" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1248):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر المكلّف الإتيان بالصلاة في مكان بنحو كان منذوره تعيين هذا المكان لها لا نفس الصلاة، فإن كان في المكان جهة رجحان بصورة أوّليّة - كالمسجد - أو بصورة ثانويّة طارئة مع كونها ملحوظة حين النذر - كما إذا كان المكان أفرغ للعبادة وأبعد عن الرياء بالنسبة إلى الناذر - صحّ النذر، وإلّا لم ينعقد وكان لغواً.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1249" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1249):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر الصلاة أو الصوم أو الصدقة في زمان معيّن وجب عليه التقيّد بذلك الزمان في الوفاء، فلو أتى بالفعل قبله أو بعده لم يعتبر وفاءً، فمن نذر أن يتصدّق على الفقير إذا شفي من مرضه أو أن يصوم أوّل كلّ شهر، ثُمَّ تصدّق قبل شفائه أو صام قبل أوّل الشهر أو بعده لم يتحقّق الوفاء بنذره.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1250" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1250):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر صوماً ولم يحدّده من ناحية الكميّة كفاه صوم يوم واحد، وإذا نذر صلاة من دون تحديد كيفيّتها أو كمّيّتها كفته صلاة واحدة حتّى مفردة الوتر، وإذا نذر صدقة ولم يحدّدها نوعاً وكمّاً أجزأه كلّ ما يطلق عليه اسم الصدقة، وإذا نذر التقرّب إلى الله بشيء على وجه عامّ كان له أن يأتي بأيّ عمل قربي كالصوم أو الصدقة أو الصلاة ولو ركعة الوتر من صلاة الليل ونحو ذلك من طاعات وقربات.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1251" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1251):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر صوم يوم معيّن جاز له أن يسافر في ذلك اليوم ولو من غير ضرورة فيفطر ويقضيه ولا كفّارة عليه، وكذلك إذا جاء عليه اليوم وهو مسافر فإنّه لا يجب عليه قصد الإقامة ليتسنّى له الصيام بل يجوز له الإفطار والقضاء.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وإذا لم يسافر فإن صادف في ذلك اليوم أحد موجبات الإفطار كمرض أو حيض أو نفاس أو اتّفق أحد العيدين فيه أفطر وقضاه، أمّا إذا أفطر فيه دون موجب عمداً فعليه القضاء والكفّارة، وهي كفّارة حنث النذر الآتي بيانها.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1252" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1252):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر المكلّف ترك عمل في زمان محدود لزمه تركه في ذلك الزمان فقط، وإذا نذر تركه مطلقاً - أي قاصداً الالتزام بتركه في جميع الأزمنة - لزمه تركه مدّة حياته، فإن خالف وأتى بما التزم بتركه عامداً أثم ولزمته الكفّارة وقد بطل نذره، ولا إثم ولا كفّارة عليه فيما أتى به خطأً أو غفلةً أو نسياناً أو إكراهاً أو اضطراراً، ولا يبطل بذلك نذره فيجب الترك بعد ارتفاع العذر.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1253" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1253):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر المكلّف التصدّق بمقدار معيّن من ماله ومات قبل الوفاء به لم يخرج ذلك المقدار من أصل التركة، والأحوط استحباباً لكبار الورثة إخراجه من حصصهم والتصدّق به من قبله.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1254" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1254):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر الصدقة على فقير لم يجزه التصدّق بها على غيره، وإذا مات الفقير المعيّن قبل الوفاء بالنذر لم يلزمه شيء.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وكذلك إذا نذر زيارة أحد الأئمة (عليهم السلام) معيّناً فإنّه لا يكفيه أن يزور غيره، وإذا عجز عن الوفاء بنذره فلا شيء عليه.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1255" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1255):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> من نذر زيارة أحد الأئمة (عليهم السلام) لا يجب عليه الغسل لها ولا أداء صلاتها، إلّا إذا كان ذلك مقصوداً له في نذره والتزامه.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1256" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1256):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> المال المنذور لمشهد من المشاهد المشرّفة إذا لم يقصد الناذر له مصرفاً معيّناً يصرف في مصالحه، فينفق منه على عمارته أو إنارته أو لشراء فراش له أو لأداء أجور خدمه والقائمين على حفظه وصيانته وما إلى ذلك من شؤون المشهد، فإن لم يتيسّر صرفه فيما ذكر وأشباهه أو كان المشهد مستغنياً من جميع الوجوه صرف في معونة زوّاره ممّن قصرت نفقتهم أو قطع بهم الطريق أو تعرّضوا لطارئ آخر.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1257" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1257):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> المال المنذور لشخص صاحب المشهد من دون أن يقصد الناذر له مصرفاً معيّناً يصرف على جهة راجعة إلى المنذور له، كأن ينفق على زوّاره الفقراء أو على مشهده الشريف أو على ما فيه إحياء ذكره ونحو ذلك.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1258" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1258):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لو نذر التصدّق بشاة معيّنة - مثلاً - فنمت نموّاً متّصلاً كالسمن كان النماء تابعاً لها في اختصاصها بالجهة المنذورة لها، وإذا نمت نموّاً منفصلاً - كما إذا أولدت شاة أخرى أو حصل فيها لبن - فالنماء للناذر، إلّا إذا كان قاصداً للتعميم حين إنشاء النذر.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1259" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1259):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر المكلّف صوم يوم إذا برئ مريضه أو قدم مسافره فتبيّن برء المريض وقدوم المسافر قبل نذره لم يكن عليه شيء.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1260" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1260):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا نذر الأب أو الأمّ تزويج بنتهما من هاشمي أو من غيره في أوان زواجها لم يكن لذلك النذر أثر بالنسبة إليها وعدّ كأن لم يكن.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وأمّا الناذر فإن انعقد نذره وتمكّن من الوفاء به بإقناع البنت بالزواج ممّن نذر تزويجها منه لزمه ذلك، وإلّا فلا شيء عليه.</p>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-أحكام-اليمين">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">أحكام اليمين</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/06.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div id="h3-مسألة-1261" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1261):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div class="qa" id="h4-اليمين-على-ثلاثة-أنواع" x-data="accordionItem(true)">
+							<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+								اليمين على ثلاثة أنواع:
+								<span class="icon-toggle" x-text="iconText"></span>
+							</h4>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h5-1--ما-يقع-تأكيدا-وتحقيقا-للإخب" x-data="accordionItem(true)">
+								<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									1- ما يقع تأكيداً وتحقيقاً للإخبار عن تحقّق أمرٍ أو عدم تحقّقه في الماضي أو الحال أو الاستقبال.
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h5>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">والأيمان من هذا النوع إمّا صادقة وإمّا كاذبة.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">والأيمان الصادقة ليست محرّمة ولكنّها مكروهة بحدّ ذاتها، فيكره للمكلّف أن يحلف على شيء صدقاً أو أن يحلف على صدق كلامه.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">وأمّا الأيمان الكاذبة فهي محرّمة، بل قد تعتبر من المعاصي الكبيرة كاليمين الغموس وهي: اليمين الكاذبة في مقام فصل الدعوى.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">ويستثنى منها اليمين الكاذبة التي يقصد بها الشخص دفع الظلم عن نفسه أو عن سائر المؤمنين، بل قد تجب فيما إذا كان الظالم يهدّد نفسه أو عرضه أو نفس مؤمن آخر أو عرضه، ولكن إذا التفت إلى إمكان التورية وكان عارفاً بها ومتيسّرة له فالأحوط وجوباً أن يورّي في كلامه، بأن يقصد بالكلام معنى غير معناه الظاهر بدون قرينة موضّحة لقصده، فمثلاً: إذا حاول الظالم الاعتداء على مؤمن فسأله عن مكانه وأين هو؟ يقول: (ما رأيته) فيما إذا كان قد رآه قبل ساعة ويقصد أنّه لم يره منذ دقائق.</p>
+								</div>
+							</div>
+							<div class="qa" id="h5-2--ما-يقرن-به-الطلب-والسؤال-وي" x-data="accordionItem(true)">
+								<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									2- ما يقرن به الطلب والسؤال ويقصد به حثّ المسؤول على إنجاح المقصود،
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h5>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">ويسمّى بـ «يمين المناشدة»، كقول السائل: (أسألك بالله أن تعطيني ديناراً).</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">واليمين من هذا النوع لا يترتّب عليها شيء من إثم ولا كفّارة لا على الحالف في إحلافه ولا على المحلوف عليه في حنثه وعدم إنجاح مسؤوله.</p>
+								</div>
+							</div>
+							<div class="qa" id="h5-3--ما-يقع-تأكيدا-وتحقيقا-لما-ب" x-data="accordionItem(true)">
+								<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									3- ما يقع تأكيداً وتحقيقاً لما بنى عليه والتزم به من إيقاع أمر أو تركه في المستقبل،
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h5>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }"> ويسمّى: «يمين العقد»، كقوله: (والله لأصومنّ غداً) أو (والله لأتركنّ التدخين).</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">وهذه اليمين هي التي تنعقد عند اجتماع الشروط الآتية ويجب الوفاء بها، وتترتّب على حنثها الكفّارة، وهي عتق رقبة أو إطعام عشرة مساكين أو كسوتهم، وفي حال العجز عن هذه الأمور يجب صيام ثلاثة أيّام متواليات. واليمين من هذا النوع هي الموضوع للمسائل الآتية.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div id="h3-مسألة-1262" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1262):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> يعتبر في انعقاد اليمين أن يكون الحالف بالغاً عاقلاً مختاراً قاصداً غير محجور عن التصرّف في متعلّق اليمين نظير ما تقدّم في النذر.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1263" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1263):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لا تنعقد اليمين إلّا باللفظ أو ما هو بمثابته كالإشارة من الأخرس، وتكفي أيضاً الكتابة من العاجز عن التكلّم، بل لا يترك الاحتياط في الكتابة من غيره.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1264" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1264):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لا تنعقد اليمين إلّا إذا كان المحلوف به هو الذات الإلهيّة، سواء بذكر اسمه المختصّ به كلفظ الجلالة (الله) وما يلحقه كلفظ (الرحمن)، أو بذكر وصفه أو فعله المختصّ به الذي لا يشاركه فيه غيره كـ (مقلّب القلوب والأبصار) و(الذي فلق الحبّة وبرأ النسمة)، أو بذكر وصفه أو فعله الذي يغلب إطلاقه عليه بنحو ينصرف إليه تعالى وإن شاركه فيها غيره، بل يكفي ذكر فعله أو وصفه الذي لا ينصرف إليه في حدّ نفسه ولكن ينصرف إليه في مقام الحلف كـ (الحيّ) و(السميع) و(البصير).</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وإذا كان المحلوف به بعض الصفات الإلهيّة أو ما يلحق بها - كما لو قال: (وحقّ الله) أو (بجلال الله) أو (بعظمة الله) - لم تنعقد اليمين إلّا إذا قصد ذاته المقدّسة.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1265" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1265):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لا يحرم الحلف بالنبيّ (صلّى الله عليه وآله) والأئمة (عليهم السلام) وسائر النفوس المقدّسة والقرآن الشريف والكعبة المعظّمة وسائر الأمكنة المحترمة، ولكن لا تنعقد اليمين بالحلف بها، ولا يترتّب على مخالفتها إثم ولا كفّارة.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1266" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1266):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> يعتبر في متعلّق اليمين أن يكون مقدوراً في ظرف الوفاء بها، فلو كان مقدوراً حين اليمين ثُمَّ عجز عنه المكلّف - لا لتعجيز نفسه - فإن كان معذوراً في تأخيره ولو لاعتقاد قدرته عليه لاحقاً انحلّت يمينه، وإلّا أثم ووجبت عليه الكفّارة.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ويلحق بالعجز فيما ذكر الضرر الزائد على ما يقتضيه طبيعة ذلك الفعل أو الترك والحرج الشديد الذي لا يُتحمّل عادة فإنّه تنحلّ اليمين بهما.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1267" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1267):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> تنعقد اليمين فيما إذا كان متعلّقها راجحاً شرعاً كفعل الواجب والمستحبّ وترك الحرام والمكروه، وتنعقد أيضاً إذا كان متعلّقها راجحاً بحسب الأغراض العقلائيّة الدنيويّة أو مشتملاً على مصلحة دنيويّة شخصيّة للحالف بشرط أن لا يكون تركه راجحاً شرعاً.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وكما لا تنعقد اليمين فيما إذا كان متعلّقها مرجوحاً كذلك تنحلّ فيما إذا تعلّقت براجح ثُمَّ صار مرجوحاً، كما لو حلف على ترك التدخين أبداً ثُمَّ ضرّه تركه بعد حين، فإنّه تنحلّ يمينه حينئذٍ، ولو عاد إلى الرجحان لم تعد اليمين بعد انحلالها.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1268" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1268):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لا تنعقد يمين الولد مع منع الوالد، ولا يمين الزوجة مع منع الزوج.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولا يعتبر في انعقاد يمينهما إذن الوالد والزوج، فلو حلف الولد أو الزوجة ولم يطّلعا على حلفهما أو لم يمنعا مع علمهما به صحّ حلفهما ووجب الوفاء به.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1269" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1269):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا ترك المكلّف الوفاء بيمينه نسياناً أو اضطراراً أو إكراهاً أو عن جهل يعذر فيه لم تجب عليه الكفّارة، مثلاً: إذا حلف الوسواسي على عدم الاعتناء بالوسواس، كما إذا حلف أن يشتغل بالصلاة فوراً ثُمَّ منعه وسواسه عن ذلك، فلا شيء عليه إذا كان الوسواس بالغاً إلى درجة يسلبه الاختيار، وإلّا لزمته الكفّارة.</p>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-أحكام-العهد">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">أحكام العهد</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/07.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div id="h3-مسألة-1270" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1270):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لا ينعقد العهد بمجرّد النيّة بل يحتاج إلى الصيغة، فلا يجب العمل بالعهد القلبي وإن كان ذلك أحوط استحباباً. وصيغة العهد أن يقول: (عاهدتُ الله) أو (عليَّ عهدُ الله أن أفعل كذا) أو (...أترك كذا).</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1271" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1271):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> يعتبر في منشئ العهد: أن يكون بالغاً عاقلاً مختاراً قاصداً غير محجور عن التصرّف في متعلّق العهد على حذو ما تقدّم اعتباره في النذر واليمين.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1272" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1272):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> لا يعتبر في متعلّق العهد أن يكون راجحاً شرعاً كما مرّ اعتباره في متعلّق النذر، بل يكفي أن لا يكون مرجوحاً شرعاً مع كونه راجحاً بحسب الأغراض الدنيويّة العقلائيّة أو مشتملاً على مصلحة دنيويّة شخصيّة مثل ما مرّ في متعلّق اليمين.</p>
+						</div>
+					</div>
+					<div id="h3-مسألة-1273" x-data="accordionItem(true)">
+						<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">(مسألة 1273):</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إذا أنشأ العهد مطلقاً - أي غير مُعلّق على تحقّق أمرٍ - وجب الوفاء به على أيّ حال، وإذا أنشاه مُعلّقاً على قضاء حاجته - مثلاً - كما لو قال: (عليَّ عهد الله أن أصوم يوماً إذا برئ مريضي) وجب عليه الوفاء به إذا قضيت حاجته.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ومتى خالف المكلّف عهده بعد انعقاده لزمته الكفّارة، وهي عتق رقبة أو صيام شهرين متتابعين أو إطعام ستّين مسكيناً.</p>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+      </article>
+    </div>
+ </div> 
+
+<script src="js/script_source-text.js"></script>
+<script src="js/nav-loader.js"></script>
+<script src="js/page-init.js"></script> 
+<script>
+    // Initialize the Navbar
+    document.addEventListener('DOMContentLoaded', function() {
+        loadNavbar({ 
+            pageType: 'root', 
+            showTools: true 
+        });
+    });
+</script>
+  </body>
+</html>
