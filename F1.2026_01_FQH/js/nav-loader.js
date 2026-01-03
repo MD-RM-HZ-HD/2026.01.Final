@@ -6,7 +6,7 @@
     // === 1. Configuration ===
     const NAV_CONFIG = {
         subjectLinks: [
-            { href: 'main-index.html', label: 'الرئيسية (القائمة)' },
+            { href: 'index.html', label: 'الرئيسية (القائمة)' },
             { href: 'F1.2026_01_AKD/index.html', label: 'العقيدة' },
             { href: 'F1.2026_01_FQH/index.html', label: 'الفقه' },
             { href: 'F1.2026_01_QRN/index.html', label: 'القرآن' }
@@ -28,7 +28,7 @@
     function detectPageDepth() {
         const path = window.location.pathname;
         const filename = path.split('/').pop();
-        if (filename === 'main-index.html' || path.endsWith('/')) return 'root';
+        if (filename === 'index.html' || path.endsWith('/')) return 'root';
         if (path.includes('/pages/')) return 'deep-page';
         if (path.includes('/F1.') && !path.includes('/pages/')) return 'subject-root';
         return 'root';
@@ -36,10 +36,10 @@
 
     function buildPath(targetHref, depth) {
         let cleanHref = targetHref;
-        if (cleanHref === 'main-index.html') {
-            if (depth === 'root') return './main-index.html';
-            if (depth === 'subject-root') return '../main-index.html';
-            if (depth === 'deep-page') return '../../main-index.html';
+        if (cleanHref === 'index.html') {
+            if (depth === 'root') return './index.html';
+            if (depth === 'subject-root') return '../index.html';
+            if (depth === 'deep-page') return '../../index.html';
         }
         if (cleanHref.startsWith('F1')) {
             if (depth === 'root') return `./${cleanHref}`;
@@ -280,5 +280,6 @@
     }
 
     if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
+
 
 })();
