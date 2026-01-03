@@ -1,0 +1,2140 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="min-h-screen" x-data="pageSettings" :class="{ 'dark': darkMode }"> 
+
+<div class="main-width-container pt-10"> 
+<div id="navbar-placeholder"></div>
+      
+    <div class="top-row">
+        <article class="content" 
+                 :style="{ 'fontSize': fontSize + 'px' }">
+<div x-data="accordionItem(true)" class="content-container" id="h1-امتحان-العقائد-النهائي">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">امتحان العقائد النهائي</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/source-text.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الحادي-والعشرون-نظرة-حول">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الحادي والعشرون: نظرة حول مسائل النبوة</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/21.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-المقدمة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">المقدمة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">علمنا مما سبق وتناولناه في الجزء الأول من الكتاب، أن المسائل الأساس التي يلزم على الانسان العاقل معالجتها، حتى يمكنه الوصول الى حياة انسانية يرتضيها العقل هي:</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> ١ - من الذي أوجد الكون والحياة؟ ومن يتولى تدبيرهما وإدارتهما؟</strong></p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> ٢ - ما هو مصير الحياة، والمقصد النهائي </strong><strong>للانسان</strong><strong>؟</strong></p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> ٣ - ما هي الوسيلة المضمونة لتحصيل هذه المعرفة؟ ومن الذي يحملها؟</strong></p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">والجواب الصحيح عن هذه الأسئلة، يعبر عنه بالأصول الثلاثة (التوحيد، والمعاد، والنبوة)، التي تعتبر الأصول الرئيسة لكل الأديان السماوية.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وقد تطرقنا في الجزء الأول من هذا الكتاب لدراسة مسائل التوحيد، وتوصلنا الى أن كل المخلوقات تستمد وجودها من الخالق الواحد، وجميعها في ظل تدبيره، ولا يمكن لأي أحد الاستغناء عنه في كل شيء، وفي كل عمل، وفي أي زمان ومكان.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وقد أثبتنا هذه المسائل بالأدلة العقلية، وأوضحنا أن هذه المسائل، لا يمكن إثباتها إلا عن طريق العقل، لأن الاستدلال التعبدي، والاستناد الى كلام الله، إنما يكون صحيحاً فيما إذا ثبت - بالدليل العقلي - مسبقاً وجود الله، وكلامه، واعتبار كلامه.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">كما أن الاستناد الى كلام النبي (ص) أو الإمام (ع)، يتوقف على إثبات نبوته أو إمامته، وحجية كلامهما، فلا بد - إذن - من إثبات أصل النبوة بالدليل العقلي. أجل.. بعد إثبات أن القرآن الكريم على حق يمكن لنا أن نستنبط تفصيلات هذه المسائل من هذا المصدر الإلهي، وكذلك يلزم إثبات تفاصيل المعاد من طريق الوحي، وإن كان أصل المعاد نفسه يمكن إثباته بالدليل العقلي، والدليل النقلي أيضاً.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إذن.. فمن أجل التعرف على مسائل هذين الأمرين (النبوة والمعاد) وبيانها يلزمنا أن نثبت - أولاً - أصل المعاد وأصل النبوة بالدليل العقلي، وبعد أن تثبت لدينا نبوة نبي الإسلام، وأنَّ القرآن الكريم على حق؛ يمكن لنا التعرف على تفاصيل مسائل النبوة والمعاد من الكتاب والسنة وبيانها، ولكن بما أن الفرز بين مسائل هذين الأمرين أكثر تأثيراً في التعليم، وأقرب للفهم، لذلك نحن نقتدي بالمنهج التقليدي، ونبدأ - أولاً - بدراسة مسائل النبوة، ثم نبحث في مسائل المعاد، وإذا احتجنا في بعض المجالات والبحوث الى فكرة يلزم البحث عنها وإثباتها، فاننا نعتمدها في استدلالنا كأصل موضوعي ونوكل البحث عنها وعن إثباتها لموضعه.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-الهدف-من-بحوث-هذا-الكتاب-الهدف" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الهدف من بحوث هذا الكتاب الهدف الأول من بحوث هذا الكتاب هو:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إثبات فكرة وجود وسيلة أخرى غير الحس والعقل، يتوصل - من خلالها - لمعرفة حقائق الوجود، والطريق الصحيح للحياة، بحيث لا تتعرض هذه الوسيلة للخطأ، وهذه الوسيلة هي (الوحي)، وهو نوع من التعليم الإلهي يختص به بعض عباد الله المصطفين والمنتجبين، ويجهل حقيقته وكنهه عامة البشر، ذلك لأنهم لا يرون نموذجاً ومثلاً له في أنفسهم، ولكن يمكنهم التوصل لوجوده من خلال آثاره وعلاماته، وبذلك يصدقون دعوى الأنبياء (ع) بتلقيهم للوحي الإلهي. وبطبيعة الحال لو ثبت نزول الوحي على أحد، وأبلغ للآخرين رسالته، وجب على الآخرين قبولها، والعمل بموجبها، ولا يكون أي فرد معذوراً في مخالفته له، إلا إذا كانت الرسالة مختصة بفرد معين، أو جماعة معينة، أو لزمان خاص.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إذن.. فالمسائل الأساس لهذا الجزء هي: البرهنة على ضرورة بعثة الأنبياء، وصيانة الوحي من أي تلاعب وتشويه وتحريف، عمداً أو سهواً، حتى وصول محتوياته للناس، وبتعبير آخر: وجوب عصمة الأنبياء في تلقي الرسالة الإلهية وإبلاغها، وكذلك وجود طريق تثبت به للآخرين نبوة الأنبياء.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وبعد تبيان المسائل الأساس للوحي والنبوة بالدليل العقلي، نصل الى مرحلة البحث في المسائل الأخرى، أمثال تعدد الأنبياء، والكتب، والشرائع السماوية، وتحديد آخر الأنبياء، وآخر الكتب السماوية، وتحديد خلفائه وأوصيائه. ولكن.. لا يتيسر إثبات كل هذه المسائل بالدليل العقلي، بل لا بد من الاعتماد في الكثير من مجالاتها على الأدلة النقلية والتعبدية.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-منهج-البحث-في-علم-الكلام" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">منهج البحث في علم الكلام</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">تتضح مما سبق الفروق الرئيسة بين الفلسفة وعلم الكلام، إذ ان الفلسفة إنما تبحث في المسائل التي يتم إثباتها بالأدلة العقلية، بينما يشمل علم الكلام، المسائل التي لا يمكن إثباتها إلا بالدليل النقلي والتعبدي.</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وبتعبير آخر:</strong> </p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }">إن النسبة بين مسائل الفلسفة ومسائل علم الكلام هي <strong>العموم والخصوص من وجه</strong>، أي أنه بالرغم من اشتمال الفلسفة وعلم الكلام على مسائل مشتركة بينهما، تثبت بالدليل العقلي، فان لكل منهما مسائل خاصة به، إلا ان المسائل المختصة بالفلسفة تطرح بالأسلوب التعقلي، بخلاف المسائل المختصة بالكلام، حيث تثبت بالأسلوب النقلي والتعبدي، وبتعبير آخر؛ إنَّ منهج البحث في علم الكلام تلفيقي (ثنائي). ويمكن الاستفادة في هذا العلم من الأسلوب العقلي، ومن الاسلوب التعبدي أيضاً.</p>
+						<div id="h3-والحاصل-هناك-فرقان-أساسيان-بين" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والحاصل: هناك فرقان أساسيان بين الفلسفة وعلم الكلام:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-الأول-إن-لكل-منهما---بالاضافة-" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الأول: إنَّ لكل منهما - بالاضافة الى المسائل المشتركة - مسائل يختص بها، لا يبحث عنها في العلم الآخر.
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								</div>
+							</div>
+							<div class="qa" id="h4-الثاني-إن-منهج-البحث-في-مسائل-" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الثاني: إن منهج البحث في مسائل الفلسفة جميعها منهج عقلي، بخلاف علم الكلام، ففي بعض مسائله أمثال المسائل المشتركة بين الفلسفة والكلام يستفاد من المنهج العقلي، وفي مسائل أخرى، (أمثال مسائل الإمامة) يستفاد من الأسلوب النقلي، وفي بعض مسائله يستفاد من كلا المنهجين أمثال إثبات أصل المعاد.
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">ومما يلزم التأكيد عليه أن المسائل المختصة بعلم الكلام التي تثبت بالطريق النقلي والتعبدي، ليست كلها في مستوى واحد، بل إن بعضها يتم إثباته مباشرة بالآيات القرآنية الكريمة بعد أن يثبت أن القرآن الكريم على حق بالدليل العقلي، أمثال حُجَّية قول الرسول (ص) وفعله (أي السنة)، وبعد ذلك تثبت مسائل أخرى بالاعتماد على كلام الرسول (ص)، أمثال تعيين خليفة النبي (ص) وحجية أقوال الأئمة المعصومين (ع)، وأخيراً طرح مسائل أخرى استناداً إلى كلام الأئمة الأطهار (سلام الله عليهم أجمعين). ومن البديهي أن النتيجة التي نتوصل إليها من خلال الادلة النقلية إنما تكون يقينية قاطعة، فيما لو كان سندها قطعياً ودلالتها صريحة.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---لماذا-بينا-مسائل-فصل-التوح" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - لماذا بينا مسائل فصل التوحيد بالأسلوب العقلي فقط ؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لأن الاستدلال التعبدي، والاستناد الى كلام الله، إنما يكون صحيحاً فيما إذا ثبت - بالدليل العقلي - مسبقاً وجود الله، وكلامه، واعتبار كلامه، فلا يمكن إثباتها إلا عن طريق العقل.</p>
+							</div>
+						</div>
+						<div id="h3-٢---ما-هي-المسائل-الأساس-لفصل-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - ما هي المسائل الأساس لفصل النبوة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">المسائل الأساس هي: البرهنة على ضرورة بعثة الأنبياء، وصيانة الوحي من أي تلاعب وتشويه وتحريف (وجوب عصمة الأنبياء في تلقي الرسالة وإبلاغها)، وكذلك وجود طريق تثبت به للآخرين نبوة الأنبياء.</p>
+							</div>
+						</div>
+						<div id="h3-٣---هل-يمكن-إثبات-المسائل-الأس" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - هل يمكن إثبات المسائل الأساس للنبوة والمعاد بالأدلة النقلية؟ وهل هناك فرق بين هاتين المجموعتين؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">بالنسبة لأصل النبوة لا بد من إثباتها بالدليل العقلي أولاً لتتوقف حجية النقل عليها. أما أصل المعاد فيمكن إثباته بالدليل العقلي والدليل النقلي أيضاً (بعد إثبات صدق الوحي). الفرق هو أن النبوة شرط لصحة الدليل النقلي فلا تثبت به ابتداءً، بينما المعاد يمكن الاستدلال عليه بالنقل بعد ثبوت النبوة.</p>
+							</div>
+						</div>
+						<div id="h3-٤---أية-مسائل-من-علم-الكلام-يم" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - أية مسائل من علم الكلام يمكن إثباتها بالأدلة النقلية؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">المسائل التي لا يتيسر إثباتها بالدليل العقلي، أمثال تعدد الأنبياء، والكتب، والشرائع السماوية، وتحديد آخر الأنبياء، وآخر الكتب السماوية، وتحديد خلفائه وأوصيائه، وكذلك مسائل الإمامة وتفاصيل المعاد.</p>
+							</div>
+						</div>
+						<div id="h3-٥---ما-هو-السبب-في-تقديم-فصل-ا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٥ - ما هو السبب في تقديم فصل النبوة على فصل المعاد؟ وهل هناك ترتيب منطقي آخر تنظم به مسائل هذين الفصلين؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">السبب هو أن الفرز بين مسائل هذين الأمرين أكثر تأثيراً في التعليم وأقرب للفهم، فاقتدى الكتاب بالمنهج التقليدي. نعم، هناك ترتيب منطقي آخر وهو إثبات أصل المعاد والنبوة معاً بالدليل العقلي، ولكن الكتاب اختار البدء بالنبوة لتسهيل التعليم والفهم.</p>
+							</div>
+						</div>
+						<div id="h3-٦---ما-هي-الفروق-بين-الفلسفة-و" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٦ - ما هي الفروق بين الفلسفة والكلام؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">هناك فرقان أساسيان: </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>١. الاختصاص:</strong> لكل منهما مسائل يختص بها لا يبحث عنها في العلم الآخر، بالإضافة للمسائل المشتركة.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"> <strong>٢. المنهج:</strong> منهج الفلسفة عقلي بحت، بينما منهج علم الكلام تلفيقي (ثنائي) يجمع بين العقلي والنقلي حسب نوع المسألة.</p>
+							<div class="qa" id="h4-٧---كم-قسما-يمكن-تقسيم-علم-الك" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									٧ - كم قسماً يمكن تقسيم علم الكلام؟ اذكرها بالترتيب.
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">يمكن تقسيم مسائل علم الكلام من حيث المنهج إلى ثلاثة أقسام:</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">١. مسائل يستفاد فيها من المنهج العقلي (المسائل المشتركة مع الفلسفة).</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">٢. مسائل يستفاد فيها من الأسلوب النقلي (مثل الإمامة).</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">٣. مسائل يستفاد فيها من كلا المنهجين (مثل إثبات أصل المعاد).</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">(ويمكن تقسيم المسائل النقلية بداخلها إلى مراتب: ما يثبت بالقرآن، ثم ما يثبت بالسنة النبوية، ثم ما يثبت بكلام الأئمة).</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الثاني-والعشرون-حاجة-الب">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الثاني والعشرون: حاجة البشر الى الوحي والنبوة</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/22.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-ضرورة-بعثة-الأنبياء" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">ضرورة بعثة الأنبياء</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> وهذه المسألة التي هي من أهم المسائل الأساس لفصل النبوة، يمكن إثباتها ببرهان مؤلف من ثلاث مقدمات:</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> ١ -</strong> <strong>إنَّ الهدف من خلق الإنسان هو السير في طريق تكامله من خلال ممارسة الأفعال الاختيارية</strong> من أجل التوصل الى كماله النهائي، هذا الكمال الذي لا يتوصل إليه إلا باختياره وانتخابه. </p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وبتعبير آخر؛</strong> إنما خُلق الإنسان ليكون - بعبادته وإطاعته الله تعالى - مستعداً وأهلاً للحصول على الرحمة التي يختص بها الأفراد المتكاملون، والإرادة الإلهية الحكيمة إنَّما تعلقت - أصالةً وبصورة مباشرة - بكمال الإنسان وسعادته، ولكن بما أن هذا الكمال والسعادة السامية لا يمكن الوصول إليها إلا عن طريق ممارسة الأفعال الاختيارية، لذلك جعل مسار الحياة البشرية على مفترق طريقين واتجاهين، لتتوفر بذلك أجواء الاختيار والانتخاب. وبالطبع، فان أحد الطريقين يؤدي نحو الشقاء والعذاب، لتتعلق به الإرادة الإلهية بالتبع وبصورة غير مباشرة لا بالأصالة. </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وقد اتضحت هذه المقدمة عند البحث في الحكمة والعدل الإلهي.</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>٢ -</strong> إن <strong>الاختيار الواعي والشعوري</strong> - إضافة الى احتياجه للقدرة على ممارسة العمل، وتوفر الظروف والأجواء الخارجية لممارسة الأعمال المختلفة، ووجود الميل والدافع الداخلي لها - <strong>يحتاج أيضاً الى المعرفة الصحيحة حول الأعمال الحسنة والأعمال القبيحة</strong> والطرق الصالحة وغير الصالحة، وإنما يتمكن الانسان من اختيار طريق تكامله - بكل حرية ووعي ـ فيما لو كان يعرف الهدف، وطريق الوصول إليه، وكان عارفاً بكل العقبات والعراقيل والانحرافات والمزالق. </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">اذن، فمقتضى الحكمة الإلهية أن توفّر للبشر الوسائل والمستلزمات الضرورية للحصول على مثل هذه المعارف والمدركات، وإلا فسيكون حاله كذلك الشخص الذي يدعو ضيفاً الى داره، ثم لا يدله على موضعه، ولا على الطريق المؤدي اليه، ومن البديهي أن مثل هذا العمل مخالف للحكمة، وموجب لنقض الغرض. </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وهذه المقدمة واضحة، لا تحتاج الى توضيح وتوسع أكثر.</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>٣ -</strong> إن <strong>معارف ومدركات البشر العادية والمتعارفة،</strong> التي يحصل عليها نتيجة التعاون بين الحس والعقل وان كان لها دورها الفاعل في توفير ما يحتاج اليه في حياته، ولكنها <strong>لا تكفي في التعرف على طريق الكمال والسعادة الحقيقية، </strong>في جميع المجالات الفردية والاجتماعية والمادية والمعنوية والدنيوية والأخروية، وإذا لم يوجد طريق آخر لسد النقائص فلن يتحقق الهدف الإلهي من خلق الإنسان.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وبملاحظة هذه المقدمات الثلاث نتوصل الى نتيجة مفادها: إن الحكمة الإلهية تقتضي وضع طريق آخر للبشر - غير الحس والعقل - من أجل التعرف على مسار الكمال في كل المجالات، حتى يستطيع البشر الاستفادة منه مباشرة أو بواسطة فرد أو أفراد آخرين.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وهذا الطريق هو الوحي الذي وضعه الله للأنبياء، ليستفيدوا هم منه بصورة مباشرة، وليستفيد منه الآخرون عن طريق الأنبياء، وليتعلموا منه كل ما يحتاجون اليه، من أجل الوصول الى السعادة والكمال النهائي.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ومن بين هذه المقدمات، ربما يحصل التردُّد والتشكيك في المقدمة الأخيرة، ومن هنا يلزم علينا توضيحها والتوسع فيها أكثر، ليتوضح لنا - تماماً ـ قصور المعرفة البشرية عن تحديد مسير التكامل الشامل للانسان، واحتياجه الطريق الوحي.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-قصور-المعرفة-البشرية" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">قصور المعرفة البشرية</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> من أجل معرفة الطريق الصحيح للحياة في كل أبعادها وجوانبها، لا بد من التعرف على مبدأ وجود الإنسان ومصيره، وعلاقاته بسائر الموجودات، والروابط التي يمكن له إقامتها وعقدها مع بني نوعه وسائر المخلوقات، وتأثير هذه الروابط والعلاقات المختلفة في سعادته وشقائه. وكذلك عليه أن يحدد نسب المنافع والمضار، ودرجات المصالح والمفاسد المختلفة ومقاديرها، والموازنة بينها، لتتحدد بذلك وظائف هذا العدد الكبير من البشر، والذي يتميز بخصائص بدنية ونفسية متفاوتة ومتغايرة، وكل منهم يعيش ظروفاً طبيعية واجتماعية مختلفة... لا يمكنهم اكتشاف مثل هذه الدساتير والقواعد وبيانها على شكل قوانين وأحكام دقيقة ومضبوطة ومحددة، لتكفل بذلك توفير كل المصالح الفردية والاجتماعية المادية والمعنوية، الدنيوية والأخروية، لكل البشر. وحينما يقع التزاحم والتضاد والتعارض بين أنواع المصالح والمفاسد - وكثيراً ما يحصل ذلك - يعين المصلحة الأهم بدقة، ويقدمها في المجال العملي.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إن ما يلاحظ من مسيرة التغيرات الحقوقية والقانونية عبر تاريخ البشر مؤشر على أنه لم يوجد حتى اليوم - بالرغم من كل البحوث والجهود التي بذلها الكثير من العلماء المتخصصين عبر آلاف السنين - نظام حقوقي صحيح وكامل وشامل. والملاحظ - أيضاً - أن المقننين والمؤسسات الحقوقية في العالم، تتوصل - دائماً - الى نقاط الضعف في القوانين الوضعية، ولذلك يحاولون إصلاحها أو تكميلها بإلغاء مادة أو نسخها، أو إضافة مادة لها أو إلحاق ملاحظة بها. ويجب علينا أن لا نغفل عن أنهم استفادوا كثيراً ـ في تقنين هذه القوانين وتدوينها - من الأنظمة الحقوقية الإلهية، والشرائع السماوية.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وكذلك ينبغي أن نعلم بأن كل جهود المقتنين والحقوقيين متوجهة لتوفير المصالح الدنيوية والاجتماعية، دون الاهتمام بتوفير المصالح الأخروية وملاحظة مدى علاقتها بالمصالح الدنيوية والمادية، وإذا ما أرادوا الاهتمام بهذا الجانب الذي يُعتبر أكثر الجوانب أهمية في هذا المجال - فإنهم لن يتمكنوا من الوصول الى نتائج يقينية قاطعة، وذلك لأن المصالح المادية والدنيوية يمكن التعرف عليها - الى حد ما - وتحديدها، من خلال التجارب العملية. أما المصالح المعنوية والأخروية فإنَّها لا تقبل التجربة الحسية، ولا يمكن تقويمها بدقة، وحين تتزاحم وتتعارض مع المصالح المادية والدنيوية فلا يمكن التعرف على معيار لقياس أهمية احداهما.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ومن خلال ملاحظة الحالة الراهنة التي تعيشها القوانين البشرية، يمكن لنا تقويم العلم البشري عبر آلاف أو مئات الآلاف من السنين، لنتوصل لهذه النتيجة اليقينية: إن الإنسان البدائي أكثر عجزاً من إنسان عصرنا في تحديد الطريق الصحيح للحياة، وعلى فرض وصول إنسان عصرنا الى نظام حقوقي صحيح، وكامل وشامل من خلال تجارب آلاف السنين، وعلى تقدير القول بأن هذا النظام يتكفل توفير السعادة الأبدية والأخروية، فإنَّ هذا السؤال يبقى ملحاً: كيف يتلاءم إهمال الأجيال الكثيرة التي عاشت عبر التاريخ الطويل في ظلام جهلها، مع الحكمة الإلهية والهدف من خلقهم؟</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والحاصل:</strong> إن الهدف من خلق الإنسان من البداية حتى النهاية، إنما يقبل التحقق في أرض الواقع، فيما لو وجد طريق آخر - غير الحس والعقل - لمعرفة حقائق الحياة، والوظائف الفردية والاجتماعية، وليس هذا الطريق إلا الوحي. وقد اتضح مما ذكرنا - أيضا - أن مقتضى هذا البرهان، أن يكون الانسان الأول نبياً، ليتعرف على الطريق الصحيح للحياة عن طريق الوحي، وليتحقق فيه الهدف من الخلق، وليهتدي به الآخرون.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-فوائد-بعثة-الأنبياء" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">فوائد بعثة الأنبياء</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> للأنبياء الالهيين - إضافة الى تعريف البشر وهدايتهم الى الطريق الصحيح للتكامل الحقيقي للإنسان، وتلقي الوحي وإبلاغه للناس - فوائد وتأثيرات مهمة أخرى في مجال تكامل البشر، وأهمها ما يلي:</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>١ - إن هناك الكثير من المعلومات التي يمكن للعقل الإنساني إدراكها، ولكن ربما يغفل عنها</strong>، إما لاحتياجها لزمان طويل، وتجارب كثيرة، وإما نتيجة اهتمام الأفراد وانهماكهم في الأمور المادية، وإما لسيطرة الميول الحيوانية عليهم، أو ربما تغيب عن الناس نتيجة للتربية المنحرفة، أو الإعلام السيء، إن مثل هذه المعلومات يبينها الانبياء للناس، ليحولوا دون نسيانها تماماً، من خلال تذكيرهم وتأكيدهم الدائم عليها، وليواجهوا المغالطات والتعليمات السيئة بتعليماتهم الصحيحة والمنطقية. ومن هنا يُعرف السبب في إطلاق صفتي (المذكر والنذير) على الأنبياء، وإطلاق أسماء الذكر، والذكرى والتذكرة على القرآن الكريم. يقول الإمام أمير المؤمنين (ع) حين يستعرض الفوائد والحكم من بعثة الأنبياء: «<strong>ليستأدوهم</strong><strong> ميثاق فطرته، ويذكروهم منسي نعمته، ويحتجوا عليهم بالتبليغ</strong>».</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>٢ - من أهم العوامل التي لها تأثيرها الفاعل في التربية،</strong> وفي رشد الإنسان وتكامله؛ وجود القدوة في العمل. وقد أثبتت أهمية ذلك في بحوث علم النفس، والأنبياء الإلهيون الذين يمثلون الإنسان الكامل، والذين نشأوا في ظلال التربية الإلهية، يقومون بذلك خير قيام، إنهم ـ بالإضافة الى التعليمات والمعلومات التي يزودون بها البشرية - يقومون بمهمة تربية الناس وتزكيتهم. ونحن نعلم أن القرآن الكريم قد قرن بين التعليم والتزكية في الذكر، وحتى أنه في بعض الآيات قدَّم (التزكية) على (التعليم).</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>٣ - ومن معطيات وفوائد وجود الأنبياء بين الناس؛</strong> ممارسة القيادة والتوجيه في المجالات الاجتماعية والسياسية والقضائية، حينما تتوفر الظروف اللازمة لذلك. وبديهي أن القائد المعصوم من أعظم النعم الإلهية للمجتمع، حيث تُحل بواسطته الكثير من المعضلات والاضطرابات الاجتماعية، ويتم إنقاذ الأمة من الاختلاف والتنازع والفوضى والانحراف، ليقودها باتجاه كمالها المنشود.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---ما-هو-الهدف-من-خلق-الإنسان" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - ما هو الهدف من خلق الإنسان؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">الهدف من خلق الإنسان هو السير في طريق تكامله من خلال ممارسة الأفعال الاختيارية من أجل التوصل الى كماله النهائي، هذا الكمال الذي لا يتوصل إليه إلا باختياره وانتخابه (ليكون بعبادته وإطاعته أهلاً للرحمة الإلهية).</p>
+							</div>
+						</div>
+						<div id="h3-٢---هل-تعلقت-الإرادة-الإلهية-ا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - هل تعلقت الإرادة الإلهية الحكيمة بشقاء الإنسان وعذابه كما تعلقت بسعادته ورحمته؟ أم هناك فرق بينهما؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">الإرادة الإلهية تعلقت أصالةً وبصورة مباشرة بكمال الإنسان وسعادته. أما الشقاء والعذاب فتعلقت بهما الإرادة الإلهية بالتبع وبصورة غير مباشرة (لا بالأصالة)؛ لأن الطريق إليهما هو نتيجة سوء الاختيار.</p>
+							</div>
+						</div>
+						<div id="h3-٣---ما-هي-الأمور-التي-يحتاج-إل" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - ما هي الأمور التي يحتاج إليها الانسان في ممارسة اختياره وانتخابه الواعي؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">يحتاج إلى: ١. القدرة على ممارسة العمل. ٢. توفر الظروف والأجواء الخارجية. ٣. وجود الميل والدافع الداخلي. ٤. المعرفة الصحيحة حول الأعمال الحسنة والقبيحة والطرق الصالحة وغير الصالحة (معرفة الهدف وطريق الوصول والعقبات).</p>
+							</div>
+						</div>
+						<div id="h3-٤---لماذا-لا-يكفي-العقل-البشري" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - لماذا لا يكفي العقل البشري في توفير كل المعارف اللازمة؟ بين الدليل على ضرورة بعثة الأنبياء.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لا يكفي لأن العقل والحس قاصران عن الإحاطة بكل المصالح والمفاسد الدنيوية والأخروية، الفردية والاجتماعية، بدقة ويقين. والدليل هو: بما أن الله حكيم وهادف، والإنسان يحتاج لهذه المعرفة لتكامله، والعقل قاصر عنها، فمقتضى الحكمة أن يزوده الله بطريق آخر وهو الوحي، وإلا لكان ذلك نقضاً للغرض.</p>
+							</div>
+						</div>
+						<div id="h3-٥---إذا-كان-يمكن-للانسان-التعر" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٥ - إذا كان يمكن للانسان التعرف على طريق سعادته الدنيوية والأخروية من خلال الاستفادة من تجاربه الطويلة، أفلا يحتاج للوحي بعد ذلك؟ لماذا؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">نعم يحتاج. السبب: ١. لأن ذلك يستلزم إهمال الأجيال السابقة التي عاشت في الجهل قبل الوصول لهذه المعرفة، وهو مناف للحكمة. ٢. لأن المصالح الأخروية والمعنوية لا تقبل التجربة الحسية أصلاً، فلا يمكن التعرف عليها بالتجربة مهما طال الزمن.</p>
+							</div>
+						</div>
+						<div id="h3-٦---هل-يمكن-إقامة-الدليل-العقل" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٦ - هل يمكن إقامة الدليل العقلي على نبوة الإنسان الأول؟ وكيف؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">نعم. مقتضى برهان ضرورة البعثة أن يكون الإنسان الأول نبياً ليتعرف على الطريق الصحيح للحياة عن طريق الوحي (لعدم وجود بشر قبله يعلمونه ولعجز عقله عن الاستقلال بالمعرفة)، ليتحقق فيه الهدف من الخلق، وليهتدي به الآخرون (ذريته).</p>
+							</div>
+						</div>
+						<div id="h3-٧---بين-سائر-الفوائد-من-وجود-ا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٧ - بين سائر الفوائد من وجود الأنبياء.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">١. تذكير البشر بالمعلومات العقلية والفطرية التي قد يغفلون عنها ومواجهة المغالطات. ٢. التربية والتزكية من خلال القدوة العملية (الإنسان الكامل). ٣. القيادة والتوجيه في المجالات الاجتماعية والسياسية والقضائية (حل المعضلات وقيادة الأمة).</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الثالث-والعشرون-شبهات-وح">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الثالث والعشرون: شبهات وحلول</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/23.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<p :style="{ 'fontSize': fontSize + 'px' }">من خلال البرهان الذي ذكرناه لضرورة بعثة الأنبياء (ع) تبرز عدة أسئلة وشبهات نستعرضها ونجيب عنها في ما يلي:</p>
+					<div class="qa" id="h2-الشبهة-الأولى" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الأولى</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إذا كانت الحكمة الإلهية تقتضي بعثة الانبياء لهداية الناس جميعاً، اذن لماذا بعث جميع الأنبياء في منطقة جغرافية معينة (الشرق الأوسط) بينما بقيت المناطق الأخرى من المعمورة محرومة من هذه النعمة، وخاصة مع الأخذ بنظر الاعتبار محدودية وسائل النقل والارتباط وتبادل المعلومات، في الأزمنة القديمة، بحيث كانت الأخبار تنتقل بصعوبة ومشقة من منطقة لأخرى، وربما وجدت شعوب كانت - آنذاك - محرومة تماماً من رسالات الأنبياء، ولم تطلع على دعوتهم أبداً؟</p>
+						<div id="h3-والجواب-عن-هذه-الشبهة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب عن هذه الشبهة:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-أولا" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									أولاً:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">إن ظهور الأنبياء (ع) لم يختص بمنطقة خاصة، والآيات القرآنية الكريمة تدل على أنه كان لكل قوم وأمة نبي، كما في الآية (٢٤) من سورة فاطر: ﴿وَإِنْ مِنْ أُمَّةٍ إِلَّا خَلَا فِيهَا نَذِيرٌ﴾. والآية (٣٦) من سورة النحل: ﴿وَلَقَد بَعَثْنَا فِي كُلِّ أُمَّةٍ رَسُولاً أَنِ اعْبُدُوا الله واجتنبوا الطاغوت﴾ وإذا ذكرت في القرآن المجيد أسماء بعض الأنبياء العظام (ع) دون أن يُذكر غيرهم، فلا يعني ذلك أن عددهم منحصر بهؤلاء المذكورين، بل إن القرآن نفسه يصرح بوجود أنبياء كثيرين لم تذكر أسماؤهم في هذا الكتاب الشريف، كما في الآية (١٦٤) من سورة النساء: ﴿وَرُسُلًا لَمْ نَقْصُصْهُمْ عَلَيْكَ﴾.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-ثانيا" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									ثانياً:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }"> إن البرهان المذكور لضرورة الوحي يفرض وجود طريق آخر - غير الحس والعقل - يمكن الاستفادة منه في هداية الناس، وأما حصول الهداية للأفراد فعلا فمشروط بشرطين: </p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>أحدهما: </strong><strong>إختيارهم</strong><strong> الاستفادة والتزود من هذه النعمة الإلهية. </strong></p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ثانيهما: أن لا يضع الآخرون موانع وعقبات في طريق هدايتهم.</strong></p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">والملاحظ أن حرمان الكثير من هداية الأنبياء، إنما نشأ من سوء اختيارهم، أو نتيجة للموانع التي وضعها الآخرون في طريق رسالة الأنبياء وانتشارها. ونحن نعلم أن الأنبياء قد بذلوا أقصى جهودهم في إزالة هذه الموانع والعقبات واندفعوا لمكافحة أعداء الله، وخاصة المستكبرين والجبابرة، وقد ضحى الكثير منهم بأرواحهم في سبيل إبلاغ الرسالة الإلهية وهداية الناس، وحين كانوا يجدون أنصاراً لهم وأتباعاً، كانوا يشنون الحرب ضد الجبابرة والطواغيت والجائرين، والذين كانوا من أكبر العقبات والحواجز في سبيل نشر الدين الإلهي.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">والملاحظة التي يجدر التأكيد عليها؛ إن هذه الخصوصية وهي (اختيارية المسيرة التكاملية للانسان) تفرض أن تتم كل هذه القضايا والمواقف، بالصورة التي تبقى معها الأجواء التي يلزم توفرها لحسن اختيار أحد الاتجاهين أو سوءه (الحق والباطل) إلا أن تصل سيطرة الجبابرة وأهل الباطل وتحكمهم الى مرحلة يُسد معها - تماماً - طريق الهداية أمام الآخرين، ويطفىء نور الحق والهداية في الأمة. وفي هذه الحالة فان الله سوف يمد يد المعونة لأنصار الحقِّ، ويوصل إليهم المدد من طرق غيبية وغير عادية. والحاصل: إنه لو لم توجد مثل هذه الموانع والعقبات في طريق الأنبياء، لوصلت دعوتهم الى أسماع البشر جميعاً في العالم، ولتزودوا قاطبة من نعم الهداية الإلهية عن طريق الوحي والنبوة. إذن فحرمان الكثير من الناس من هداية الانبياء، يقع على عاتق اولئك الذين حالوا دون انتشار رسالتهم، ووقفوا حجر عثرة في طريق دعوتهم.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الثانية" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الثانية</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إذا كانت بعثة الانبياء من أجل إكمال الشروط التي يلزم توفرها لتكامل الناس، اذن فلماذا وُجِدَ كلُّ هذا الفساد والانحطاط في العالم، بالرغم من وجودهم؟ </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولم كان أكثر الناس في أغلب العصور يعيشون الكفر والعصيان، وحتى أتباع الأديان السماوية يعادي ويحارب بعضهم بعضاً، حيث أشعلوا الكثير من الحروب الدامية والمدمرة؟ </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ألا تقتضي الحكمة الإلهية أن يوفر الله تعالى أسباباً أخرى تمنع من ظهور كل هذه المفاسد، وعلى الأقل لا يقوم أتباع الأنبياء بمحاربة بعضهم بعضاً؟</p>
+						<div id="h3-والجواب-عن-هذا-السؤال" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب عن هذا السؤال:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يتضح الأمر جلياً من خلال التأمل في الخصوصية التي ذكرناها ـ وهي اختيارية المسيرة التكاملية للانسان - وكما ذكرنا فان الحكمة الإلهية تقتضي توفير أسباب التكامل الاختياري (لا الجبري) وشروطه للبشر، حتى يتمكن اولئك الذين يريدون أن يسلكوا طريق الحق من التعرف على هذا الطريق، وليتوصلوا - من خلال سلوكه - الى كمالهم وسعادتهم. ولكن توفير هذه الأسباب والشروط لمثل هذا التكامل لا يعني أن كل البشر يحسنون الاستفادة منها، وسيختارون الطريق الصحيح حتماً، وكما يعبر القرآن الكريم، أن غاية خلق الله للناس إنما هي: ﴿لِنَبْلُوَهُم أَيُّهُم أحْسَنُ عَمَلًا﴾. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">كما جاء في عدة صيغ ضمن آيات القرآن المجيد. وكما أكد عليه مراراً في القرآن الكريم، إنه تعالى لو أراد لهدى الناس جميعاً الى طريقه المستقيم ولصانهم - تماماً - من الانحراف، وعلى هذا سوف لا يبقى مجال للاختيار، وسوف تفقد أفعال البشر قيمتها الانسانية، وسوف ينتقض الغرض الإلهي من خلق الإنسان المختار.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والحاصل:</strong> إن اتجاه الناس نحو الفساد والضلال والكفر والعصيان إنما يستند الى سوء اختيارهم، وقد لوحظت في كيان خلقهم هذه القدرة على أمثال هذه الاعمال، ولكن وصولهم للوازمها وآثارها، قد قصد بصورة غير مباشرة وبالتبع، لا بصورة مباشرة وبالأصالة، فإنَّ الإرادة الالهية - وإن تعلقت مباشرة وأصالة بتكامل الناس - ولكن بما أن ما تتعلق به هذه الإرادة مشروط بالاختيار، فلا ينفي السقوط والانحطاط الناشيء من سوء الاختيار وان الحكمة الالهية لا تقتضي تحرك الناس جميعاً في الطريق الصحيح جبرياً، وإن خالف رغبتهم وارادتهم.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الثالثة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الثالثة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">مع ملاحظة أن الحكمة الإلهية تقتضي وصول الناس - بصورة أكثر وأفضل - للكمال والسعادة أليس من الأفضل أن يكشف الله تعالى للناس أسرار الطبيعة من طريق الوحي، ليمكنهم - من خلال الاستفادة والتزود من أنواع النعم الإلهية - من دفع عجلة تكاملهم وتقدمهم الى الامام بصورة أسرع، كما هو الملاحظ اليوم بأن اكتشاف الكثير من القوى الطبيعية في القرون الأخيرة، واختراع وسائل الحياة وأسبابها كان له دوره الفاعل والمدهش في تقدم الحضارة وتطورها، وتحقيق الكثير من المنجزات في مجال حفظ الصحة والسلامة، ومكافحة الأمراض، وتبادل المعلومات، وأتساع الارتباطات والعلاقات وأمثالها. ومن الواضح أن الأنبياء لو كانوا يساعدون الناس ويعينونهم على توفير الصناعات المدهشة ووسائل الراحة، لكان لهذا العامل تأثيره الكبير في نفوذهم الاجتماعي، وشعبيتهم وقوتهم السياسية، ولأمكنهم الوصول - بشكل أفضل - لأهدافهم المنشودة؟</p>
+						<div id="h3-الجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">الجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن الحاجة الرئيسة لوجود الوحي والنبوة إنما تتمثل في الأمور والمجالات التي لا يمكن للبشر الوصول اليها بوسائل المعرفة العادية، حيث لا يمكنهم - في حالة الجهل بها - تحديد اتجاه حركتهم نحو الكمال الحقيقي والسير في مساره. وبتعبير آخر؛ إن مهمة الانبياء الرئيسة هي إعانة الناس على تحديد الاتجاه لحياتهم، ومسيرتهم التكاملية، حتى يمكنهم التعرف على وظائفهم في شتى الظروف، وليستخدموا قواهم وطاقاتهم في سبيل الوصول الى الهدف المنشود، سواء كانوا من اهل البوادي والخيام او من اهل المدن والحضارات والمنجزات التكنولوجية المتطورة، ليتعرفوا على القيم الانسانية الأصيلة، وعلى وظائفهم وتكاليفهم في مجال عبادة الله، وفي حياتهم الشخصية والفردية، أو تجاه بني نوعهم وسائر المخلوقات، حتى يمكنهم - من خلال ممارستها - الوصول الى كمالهم وسعادتهم الحقيقية الأبدية.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">أما اختلاف القابليات والاستعدادات والامكانات الطبيعية والصناعية سواء كانت في زمان واحد أو في أزمنة مختلفة، فأنما هو نتيجة أسباب وعوامل معينة، وليس لها تأثير فاعل ومصيري في التكامل الحقيقي والمصير الأبدي، كما هو الملاحظ اليوم بأن التطور العلمي والتكنولوجي الذي أدّى الى اتساع المنجزات والمعطيات المادية والدنيوية وتطورها، لم يؤثر في التكامل المعنوي والروحي للناس، بل يمكن القول بأن تأثيرها كان معكوساً. </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والحاصل:</strong> إن مقتضى الحكمة الإلهية أن يتمكن الناس - بالاستفادة من النعم الإلهية - من إدامة حياتهم الدنيوية والاستمرار بها، وان يمكنهم من خلال الاستفادة من العقل والوحي، تحديد اتجاه تحركهم نحو الكمال الحقيقي، والسعادة الأبدية. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">أما الاختلاف في القوى والطاقات البدنية والروحية، واختلاف الظروف الطبيعية والاجتماعية، وكذلك أختلاف الاستفادة من العلوم والصناعات، فإنها كلها خاضعة لأسباب وعوامل تكوينية معينة، وتوجد وفق نظام العلة والمعلول السائد في الكون، وليس لهذه الاختلافات أي تأثير فاعل في المصير الأبدي للناس.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> فربما كان هناك فرد أو جماعة تعيش أكثر انماط الحياة بساطة وحرماناً، ولم تتزود إلا بالأقل من النعم والثروات المادية والدنيوية، ولكنها بلغت الدرجات والمستويات العالية في مدارج الكمال والسعادة. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وفي المقابل، ربما كان هناك فرد أو جماعة، تستفيد من أكثر المنجزات والعلوم تطوراً، وتتمتع بأفضل وسائل المعيشة المريحة والمترفة، ولكنها ونتيجة لكفران النعمة والغرور والاستكبار والظلم للآخرين - وقد سقطت وانحدرت الى أسفل دركات الشقاء والانحطاط.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">والملاحظ أن الانبياء - إضافة لقيامهم بمهمتهم الرئيسة وهي هداية الناس نحو الكمال والسعادة الحقيقية والأبدية - قد قدموا للبشرية خدمات ومساعدات مثمرة وكبيرة، ليمكنهم - من خلالها - المعيشة بشكل أفضل في هذه الحياة الدنيوية وكلما اقتضت الحكمة الإلهية فإنهم كانوا يزيحون قليلا بعض الستائر والحُجب عن بعض الحقائق المجهولة، وأسرار الطبيعة وكنوزها، ليعينوا - بذلك - تقدم الحضارات البشرية، كما تلاحظ نماذج من هذه المساعدات في حياة داود وسليمان وذي القرنين (ع) وكذلك قد بذلوا الكثير من الجهود في سبيل ادارة المجتمع، وحسن التدبير في الأمور، كما هو الملاحظ في حياة يوسف (ع) في ارض مصر، ولكن هذه الخدمات والمساعدات تعتبر زائدة عن وظيفتهم ومهمتهم الأصلية.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وأما ما ذكر في السؤال:</strong> لماذا لم يعتمد الأنبياء على القوى الصناعية، والاقتصادية والعسكرية في سبيل الوصول الى أهدافهم؟ فنقول: إننا ذكرنا - مراراً أن هدف الأنبياء (ع) هو توفير الظروف والاجواء المناسبة للاختيار الواعي والحر، واذا ما أرادوا الاعتماد على القوى غير العادية في ذلك، فلا يتحقق مثل هذا الرشد المعنوي والتكامل الحر للبشر، بل إن الناس سوف يتبعونهم تحت ضغط القوة والقهر لا بدافع إلهي وعلى أساس الاختيار الحر. </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>يقول أمير المؤمنين (ع) في هذا المجال:</strong></p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> «ولو أراد الله سبحانه لأنبيائه - حيث بعثهم - أن يفتح لهم كنوز الذهبان ومعادن العقيان ومغارس الجنان، وان يحشر معهم طيور السماء و وحوش الأرضين لفعل، ولو فعل لسقط البلاء، وبطل الجزاء... ولو كانت الأنبياء أهل قوة لا تُرام، وعزة لا تضام، وملك تمد نحوه أعناق الرجال، وتشد إليه عقد الرحال، لكان ذلك أهون على الخلق في الاعتبار، وأبعد لهم في الاستكبار، ولآمنوا عن رهبة قاهرة لهم، أو رغبة مائلة بهم، فكانت النيات مشتركة والحسنات مقتسمة ولكن الله - سبحانه - أرادا أن يكون الاتباع لرسله، والتصديق بكتبه والخشوع لوجهه، والاستكانة لأمره، والاستسلام لطاعته؛ أموراً له خاصة لا تشوبها من غيرها شائبة. وكلما كانت البلوى والاختيار أعظم، كانت المثوبة والجزاء أجزل».</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> أجل... حينما يتجه الناس لدين الحق برغبتهم واختيارهم الحر، ويوفقوا لاقامة مجتمع إلهي قائم على اساس رضا الله تعالى؛ بعد ذلك تجدر الاستفادة من شتى القوى من أجل تحقيق الأهداف الإلهية، وخاصة القضاء على المعتدين، والدفاع عن حقوق المؤمنين، كما تلاحظ نماذج من ذلك في ظل حكومة سليمان (ع).</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---هل-بعث-جميع-الأنبياء-في-من" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - هل بعث جميع الأنبياء في منطقة جغرافية معينة؟ وما هو الدليل على ذلك؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لا، لم يختص ظهور الأنبياء بمنطقة خاصة. الدليل على ذلك قوله تعالى: ﴿وَإِنْ مِنْ أُمَّةٍ إِلَّا خَلَا فِيهَا نَذِيرٌ﴾ وقوله: ﴿وَلَقَد بَعَثْنَا فِي كُلِّ أُمَّةٍ رَسُولاً﴾، وعدم ذكر أسماء جميع الأنبياء في القرآن لا يعني عدم وجودهم، كما قال تعالى: ﴿وَرُسُلًا لَمْ نَقْصُصْهُمْ عَلَيْكَ﴾.</p>
+							</div>
+						</div>
+						<div id="h3-٢---لماذا-لم-تنتشر-دعوة-الأنبي" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - لماذا لم تنتشر دعوة الأنبياء في كل أنحاء العالم؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">بسبب شرطين لحصول الهداية: </p>
+							<div class="qa" id="h4-الأول-هو-اختيار-الناس-الاستفاد" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الأول: هو اختيار الناس الاستفادة منها (وقد أساءوا الاختيار).
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								</div>
+							</div>
+							<div class="qa" id="h4-الثاني-ألا-يضع-الآخرون-موانع-و" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الثاني: ألا يضع الآخرون موانع وعقبات (وقد وضع الجبابرة والمستكبرون موانع حالت دون وصول الدعوة). ولو لم توجد هذه الموانع لوصلت الدعوة لجميع البشر.
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-٣---لماذا-لم-يوفر-الله-تعالى-ظ" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - لماذا لم يوفر الله تعالى ظروفاً وأسباباً تمنع من المفاسد والحروب المدمرة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لأن الحكمة الإلهية تقتضي تكامل الإنسان اختيارياً لا جبرياً، ليتميز المحسن من المسيء، ولو منع الله الانحراف قسراً لبطل الاختيار وانتفى الغرض من الخلق وفقدت الأفعال قيمتها. فالفساد ناتج عن سوء اختيار البشر الذي سمح الله به تبعاً لا أصالة.</p>
+							</div>
+						</div>
+						<div id="h3-٤---لماذا-لم-يكشف-أنبياء-الله-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - لماذا لم يكشف أنبياء الله للناس أسرار الطبيعة، ليتمكن اتباعهم من الاستفادة من النعم المادية بصورة أكثر؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لأن المهمة الرئيسة للأنبياء هي الهداية في الأمور التي لا يدركها الحس والعقل (طريق الكمال الأبدي وتحديد القيم والوظائف الشرعية).</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> أما العلوم المادية فيمكن للبشر الوصول إليها بعقولهم، وهي لا تؤثر في المصير الأبدي (السعادة والشقاء الأخروي)، بل قد يكون تأثيرها عكسياً. ومع ذلك فقد قدم الأنبياء بعض المساعدات المادية (كما في قصة داود وسليمان ويوسف) ولكنها ليست وظيفتهم الأصلية.</p>
+							</div>
+						</div>
+						<div id="h3-٥---لماذا-لم-يستفد-الأنبياء-من" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٥ - لماذا لم يستفد الأنبياء من القوى الصناعية والاقتصادية، في سبيل تحقيق أهدافهم؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لأن الهدف هو توفير أجواء الاختيار الحر والواعي، ولو اعتمدوا على القوة القاهرة لآمن الناس رهبةً أو رغبةً في الدنيا، فتختلط النيات وتسقط قيمة الابتلاء والجزاء. (كما أوضح الإمام علي ع: لكان ذلك أهون على الخلق في الاعتبار... ولكن الله أراد أن يكون الاتباع لرسله... أموراً له خاصة).</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الرابع-والعشرون-عصمة-الأ">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الرابع والعشرون: عصمة الأنبياء</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/24.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-ضرورة-صيانة-الوحي" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">ضرورة صيانة الوحي</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-مقدمة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">مقدمة:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">بعد أن أثبتنا ضرورة الوحي كطريق يتوصل من خلاله الى مدركات ومعلومات لازمة تسد بها نقائص الحس والعقل الانساني، تبرز مسألة أخرى. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">فمع ملاحظة أن الأفراد العاديين لا يمكنهم الاستفادة من وسيلة المعرفة هذه، ولا يملكون الاستعداد لتلقي الوحي الإلهي، لذلك كان من الضروري ابلاغهم الرسالة الإلهية بوساطة أفراد معينين (الأنبياء)، ولكن ما هو الضامن لصحة هذه الرسالة؟ وكيف نطمئن الى أن النبي قد تلقى الوحي الإلهي بصورة صحيحة، وأنه أبلغه للناس بصورة صحيحة؟ </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وإذا كانت هناك واسطة بين الله والنبي، فكيف نطمئن الى أنها أبلغت الرسالة للنبي بصورة صحيحة؟ ذلك لأن الوحي أنما يكون مؤثراً في سد نقائص المعرفة البشرية فيما لو كان مصوناً من مرحلة الصدور الى مرحلة الوصول للناس - من أي تحريف أو تلاعب او تشويه، عمداً أو سهواً، وإلا فإنه مع احتمال السهو والنسيان في الواسطة أو الوسائط، أو تلاعبهم العمدي في محتواه، ستثار في اذهان الناس احتمالات الخطأ والتشويه في الرسالة الواصلة إليهم، وتؤدي هذه الحالة الى تزعزع الثقة بها، والاعتماد عليها. </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>إذن، فمن أي طريق يمكن الاطمئنان الى وصول الوحي الإلهي للناس بصورة صحيحة وسليمة؟</strong></p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ومن البديهي أنه عندما تكون حقيقة الوحي مجهولة للناس، ولا يتوفر فيهم الاستعداد لتلقيه ومعرفته، فلا يكون هناك اي طريق للمراقبة والاشراف على الوسائط ليتعرف على مدى صدقهم.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> أجل.. في صورة واحدة يمكن التعرف على وجود اختلال او خطأ في الوحي، وذلك فيما اذا كان محتوى الرسالة مخالفاً لأحكام العقل اليقينية، كما لو أدعى أحد بأنه اوحي له من الله بأن اجتماع النقيضين جائز، أو واجب او (والعياذ بالله) أن ذات الله معرضة للتركيب، أو الزوال، فيمكن في هذه الحالة أن نثبت كذب هذا الادعاء بالاستعانة بحكم العقل اليقيني.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> ولكن الحاجة الرئيسة للوحي، تتمثل في المسائل التي لا طريق للعقل في الوصول لإثباتها أو نفيها، والتي لا يمكنه من خلال تقويمه لمحتوى الرسالة - تحديد مدى صحتها وسقمها.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> اذن، فمن أي طريق يمكن ان نثبت - في مثل هذه المجالات - صحة محتوى الوحي، وصيانته من التشويه والتلاعب والتحريف العمدي أو </strong><strong>السهوي</strong><strong>؟</strong></p>
+							</div>
+						</div>
+						<div id="h3-الجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">الجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إنه كما أن العقل مع ملاحظته للحكمة الإلهية - وفق البرهان الذي ذكرناه في الدرس الثاني والعشرين - يدرك ضرورة وجود طريق آخر، لمعرفة الحقائق والوظائف العملية وإن لم يتعرف على كنه هذا الطريق وحقيقته، فانه يدرك - أيضاً - أن الحكمة الإلهية تقتضي وصول هذه الرسالة للناس بصورة سليمة وصحيحة، دون أن تتعرض لأي تلاعب وتشويه، وإلا لزم نقض الغرض. </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وبتعبير آخر</strong> بعد أن عُلم أن الرسالات الإلهية، لا بد أن تصل الى الناس من خلال واسطة أو وسائط، حتى تتوفر الظروف والاجواء الملائمة للتكامل الاختياري للناس، وليتحقق بذلك الهدف الإلهي من الخلق، فإنه وبملاحظة الصفات الكمالية الإلهية - يثبت أن هذه الرسالة يلزم أن تكون مصونة من التشويه والتلاعب العمدي والسهوي، ذلك: لأن الله تعالى لو لم يرد وصول الرسالات بصورة صحيحة الى العباد لكان هذا مخالفاً للحكمة، والإرادة الإلهية الحكيمة تنفي ذلك وإذا كان الله لا يعلم عن أي طريق أو أي شخص يبلغ رسالته، لتصل سليمة الى عباده فهذا ينافي علم الله اللامتناهي، وإذا لم يقدر على اختيار وسائط صالحة لحفظها وصونها من شرور الشياطين، فإن هذه الحالة لا تتلاءم وقدرته اللا محدودة.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إذن فمع ملاحظة أن الله عالم بكل شيء لا يمكن أن نحتمل عدم علمه بأخطاء الواسطة التي يختارها، ومع ملاحظة القدرة الإلهية غير المحدودة لا يمكن أن نحتمل عدم قدرته على صيانة وحيه من تلاعب الشياطين، وتأثير عوامل السهو والنسيان فيه، ومع ملاحظة الحكمة الإلهية، لا يمكن أن نتقبل أنه لا يريد حفظ رسالته من الخطأ، اذن فالعلم والقدرة والحكمة الإلهية كلها تقتضي وصول رسالته بصورة سليمة وصحيحة الى عباده. ومن هنا تثبت صيانة الوحي بالبرهان العقلي. وبذلك - أيضاً - تثبت صيانة ملك أو ملائكة الوحي والأنبياء في مجال تلقي الوحي، وكذلك تثبت عصمتهم من الخيانة العمدية، أو من السهو والنسيان، في مجال إبلاغ الرسالة الإلهية. ومن هنا يتضح لنا السبب في تأكيدات القرآن الكريم على أمانة ملك الوحي، وقدرته على حفظ الأمانة الإلهية، ودفع تأثيرات الشياطين وأمانة الأنبياء، وبصورة عامة يتضح مما ذكرناه تأكيده على صيانة الوحي والحفاظ عليه حتى وصوله للناس.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-سائر-مجالات-العصمة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">سائر مجالات العصمة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إن العصمة التي أثبتناها بالبرهان السابق للملائكة والانبياء (ع) مختصة بمجال تلقي الوحي وإبلاغه، وهناك مجالات أخرى للعصمة لا تثبت بهذا البرهان ويمكن تقسيمها الى ثلاثة أقسام:</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> أحدها: مرتبط بعصمة الملائكة. </strong></p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وثانيها: مرتبط بعصمة الانبياء. </strong></p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وثالثها: مرتبط بعصمة بعض الافراد أمثال الأئمة المعصومين (ع)، ومريم وفاطمة الزهراء (سلام الله عليهما).</strong></p>
+						<div id="h3-ففي-مجال-عصمة-الملائكة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">ففي مجال عصمة الملائكة:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>يمكن البحث في مسألتين غير تلقي الوحي وإبلاغه: </strong></p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>إحداهما:</strong> عصمة ملائكة الوحي فيما لا يتعلق بتلقي الوحي وإيصاله. </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وثانيتهما:</strong> عصمة سائر الملائكة الذين لا علاقة لهم بالوحي، وإنما هم مكلفون بالرزق وكتابة الأعمال أو قبض الأرواح وغيرها. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وكذلك حول عصمة الأنبياء فيما لا يتعلق برسالتهم، يمكن البحث في مسألتين: </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>إ</strong><strong>حداهما: عصمة الأنبياء من الذنب والمعصية. </strong></p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والأخرى: عصمتهم من السهو والنسيان. </strong></p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وهاتان المسألتان يمكن البحث فيهما بالنسبة لغير الأنبياء أيضاً.</p>
+							<div class="qa" id="h4-أما-المسائل-المتعلقة-بعصمة-الم" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									أما المسائل المتعلقة بعصمة الملائكة في غير مجال تلقي الوحي وابلاغه،
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }"> فيمكن معالجتها بالبرهان العقلي فيما لو تعرفنا على حقيقة الملائكة، ولكن البحث عن حقيقتها - كما أنه ليس يسيراً ـ فهو غير مناسب لبحوث هذا الفصل، ومن هنا نكتفي بذكر آيتين تدلان على عصمة الملائكة، وهما الآية (٢٧) من سورة الأنبياء: ﴿بَل عِبَادُ مُكْرَمُونَ لا يَسْبِقُونَهُ بِالقَولِ وُهُمْ بِأَمْرِهِ يَعْمَلُونَ﴾. والآية (٦) من سورة التحريم: ﴿لا يَعْصُونَ اللهُ ما أَمَرَهُم وَيَفْعَلُونَ مَا يُؤْمَرُونَ﴾. وهاتان الآيتان تدلان بصراحة على أن الملائكة عباد مكرمون، لا يعملون إلا بالأمر الإلهي، ولا يعصون أمره، وإن بقي التساؤل حول تعميم الآيات لجميع الملائكة.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-وأما-البحث-في-عصمة-بعض-الأفراد" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									وأما البحث في عصمة بعض الأفراد (غير الأنبياء)
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">فانه يناسب بحث الإمامة، ولذلك فنبحث هنا في خصوص المسائل المتعلقة بعصمة الأنبياء، وإن كانت بعض هذه المسائل لا يمكن معالجتها إلا بالأدلة النقلية والتعبدية، ولذلك لا بد من دراستها بعد اثبات حجية الكتاب والسنة، ولكن لأجل مراعاة التناسب بين موضوعات المسائل نبحثها في هذا الفصل، ونتقبل حجية الكتاب والسنة كأصل موضوعي نوكل مهمة البحث في اثباته الى موضعه.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-عصمة-الأنبياء" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">عصمة الأنبياء</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">هناك خلاف بين الفرق الاسلامية حول مدى تنزيه الأنبياء عن ارتكاب المعاصي والذنوب. فالشيعة الإمامية يعتقدون بأن الأنبياء معصومون من جميع المعاصي؛ صغيرها وكبيرها من حين الولادة حتى الوفاة، فلا تصدر منهم المعصية حتى سهواً ونسياناً، ولكن هناك فرقاً أخرى، تذهب الى عصمة الأنبياء من الكبائر فحسب، وبعضهم من حين البلوغ، وبعضهم من حين النبوة. ونقل عن بعض الفرق من أهل السنة وهم الحشوية وبعض أهل الحديث أنهم ينكرون عصمة الأنبياء تماماً، ويذهبون الى امكان صدور المعصية منهم عمداً حتى في فترة نبوتهم.</p>
+							<div class="qa" id="h4-وقبل-البحث-في-إثبات-عصمة-الأنب" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									وقبل البحث في إثبات عصمة الأنبياء (ع) تلزمنا الاشارة الى بعض الملاحظات:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<div class="qa" id="h5-الأولى-لا-نعني-بعصمة-الأنبياء-" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										الأولى: لا نعني بعصمة الأنبياء أو غيرهم؛ عدم ارتكاب المعصية،
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">اذ من الممكن أن لا يرتكب الفرد العادي معصية خلال عمره كله، وخاصة لو كان عمره قصيراً، بل نعني به توفره على ملكة نفسانية قوية، تمنعه من ارتكاب المعصية حتى في أشد الظروف، وهي ملكة تحصل من وعيه التام والدائم بقبح المعصية، وإرادة قوية على ضبط الميول النفسية، وبما أن هذه الملكة لا تتحقق إلا بعناية إلهية خاصة، لذلك تُنسب فاعليتها الى الله تعالى، وإلا فان الله لا يمنع الانسان المعصوم عن اقتراف المعصية جبراً، ولا يسلب منه الاختيار، وقد نسبت الله عصمة بعض الأفراد الذين يمتلكون مناصب إلهية كالنبوة والإمامة بمعنى آخر وهو ضمانه - عز وجل - صيانتهم.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-والثانية-إنه-يلزم-من-عصمة-الشخ" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										والثانية: إنه يلزم من عصمة الشخص ترك الأعمال المحرمة عليه،
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }">كالمعاصي المحرمة في كل الشرائع، والأعمال التي يحرم ارتكابها في الشريعة التي ينتمي إليها، إذن فلا تنافي عصمة نبي ممارسة العمل الجائز في شريعته لشخصه خاصة، وإن كان محرماً في الشريعة السابقة عليه، أو سيكون محرماً بعد ذلك.</p>
+									</div>
+								</div>
+								<div class="qa" id="h5-الثالثة-المراد-من-المعصية-التي" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										الثالثة: المراد من المعصية، التي يُنزّه المعصوم عن ارتكابها هي:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<p :style="{ 'fontSize': fontSize + 'px' }"> العمل الذي يُطلق عليه مصطلح (الحرام) في الفقه، أو ترك العمل الذي يُطلق عليه (الواجب) في الفقه وأما لفظة المعصية وما يرادفها أمثال الذنب، فإنها تستعمل فيما هو أوسع من ذلك بما يشمل (ترك الأولى) وممارسة مثل هذه الذنوب لا تنافي العصمة.</p>
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---كيف-يمكن-إثبات-صيانة-الوحي" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - كيف يمكن إثبات صيانة الوحي من أي خلل أو تشويه؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">يمكن إثبات ذلك بملاحظة صفات الله الكمالية (العلم، القدرة، الحكمة). فالله لو لم يرد وصول الرسالة سليمة لكان مخالفاً للحكمة (نقض الغرض من الخلق)، ولو لم يعلم بالخطأ لنافى علمه اللامتناهي، ولو لم يقدر على الحفظ لنافى قدرته اللامحدودة. إذن فالعلم والقدرة والحكمة تقتضي وصول الرسالة سليمة وصيانتها من التحريف العمدي والسهوي.</p>
+							</div>
+						</div>
+						<div id="h3-٢---ما-هي-مجالات-العصمة-الأخرى" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - ما هي مجالات العصمة الأخرى غير مجال صون النبي في تلقي الوحي وإبلاغه؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>المجالات هي:</strong></p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> ١. عصمة الملائكة (في غير الوحي).</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> ٢. عصمة الأنبياء (من الذنب والسهو). </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">٣. عصمة بعض الأفراد الآخرين كالأئمة المعصومين (ع) ومريم وفاطمة الزهراء (ع).</p>
+							</div>
+						</div>
+						<div id="h3-٣---من-أي-طريق-يمكن-إثبات-عصمة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - من أي طريق يمكن إثبات عصمة الملائكة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لا يمكن إثباتها بسهولة بالبرهان العقلي لجهلنا بحقيقة الملائكة، ولكن يمكن إثباتها بالدليل النقلي، كما في قوله تعالى: ﴿بَل عِبَادُ مُكْرَمُونَ لا يَسْبِقُونَهُ بِالقَولِ وُهُمْ بِأَمْرِهِ يَعْمَلُونَ﴾ وقوله: ﴿لا يَعْصُونَ اللهُ ما أَمَرَهُم وَيَفْعَلُونَ مَا يُؤْمَرُونَ﴾.</p>
+							</div>
+						</div>
+						<div id="h3-٤---ما-هي-الآراء-حول-عصمة-الأن" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - ما هي الآراء حول عصمة الأنبياء؟ وما هو رأي الشيعة الإمامية في هذا المجال؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الآراء هي:</strong></p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>١. الشيعة الإمامية:</strong> الأنبياء معصومون من جميع المعاصي (صغيرها وكبيرها) ومن السهو والنسيان من الولادة حتى الوفاة. </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>٢. فرق أخرى:</strong> معصومون من الكبائر فقط، أو من حين البلوغ، أو من حين النبوة.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>٣. </strong><strong>الحشوية</strong><strong> وبعض أهل الحديث:</strong> ينكرون العصمة تماماً ويجوزون صدور المعصية منهم عمداً حتى في فترة النبوة.</p>
+							</div>
+						</div>
+						<div id="h3-٥---عرف-العصمة-واذكر-لوازمها" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٥ - عرف العصمة، واذكر لوازمها.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-تعريف-العصمة" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									تعريف العصمة:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">هي ملكة نفسانية قوية تمنع صاحبها من ارتكاب المعصية حتى في أشد الظروف (بسبب الوعي التام بقبحها وقوة الإرادة) بتوفيق وعناية إلهية، دون أن تسلب الاختيار.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-لوازمها-وملاحظاتها" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									لوازمها وملاحظاتها:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">١. لا تعني مجرد عدم الارتكاب بل وجود الملكة.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">٢. تعني ترك المحرمات في شريعتهم الحالية، ولا ينافيها فعل ما كان جائزاً لهم وإن حُرّم في شريعة أخرى.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">٣. التنزيه يختص بالمعصية بالمصطلح الفقهي (الحرام وترك الواجب)، أما (ترك الأولى) فلا ينافي العصمة.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الخامس-والعشرون-الأدلة-ع">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الخامس والعشرون: الأدلة على عصمة الانبياء</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/25.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-المقدمة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">المقدمة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">الاعتقاد بعصمة الأنبياء من الذنوب والمعاصي العمدية والسهوية من المعتقدات القطعية والمعروفة عند الشيعة، علمها الائمة (ع) لشيعتهم، وناظروا بها مخالفيهم بأساليب مختلفة. ومن المناظرات والاحتجاجات المعروفة في هذا المجال؛ احتجاج الإمام الرضا (ع) المذكور في كتب الحديث والتاريخ. </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولكن هناك خلافاً حول نفي السهو والنسيان عن الأنبياء في الأمور المباحة والعادية، ولا تخلو ظواهر الروايات المنقولة عن أهل البيت (ع) من اختلاف وتعارض، والبحث فيها يحتاج الى مجال أوسع، وعلى كل حال لا يمكن اعتبارها من المعتقدات الضرورية. ويمكن تقسيم الادلة التي ذُكرت لعصمة الأنبياء (ع) الى مجموعتين: إحداهما: الأدلة العقلية، والثانية: الأدلة النقلية، وإن كان الاعتماد على الأدلة النقلية اكثر ونحن هنا نستعرض دليلين عقليين، ثم نذكر بعض الأدلة القرآنية.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأدلة-العقلية-على-عصمة-الأنبي" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأدلة العقلية على عصمة الأنبياء</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-الدليل-العقلي-الأول-على-لزوم-ع" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">الدليل العقلي الأول على لزوم عصمة الأنبياء (ع) من ارتكاب المعاصي:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن الهدف الاصلي من بعثتهم هو تعريف البشر بالحقائق والوظائف التي عينها الله للبشر، وفي الواقع أنهم سفراء من الله للبشر، يلزم عليهم هداية الآخرين للطريق المستقيم، فإذا كان هؤلاء السفراء أنفسهم غير ملتزمين بالتعاليم الإلهية، بل يعملون بما يخالف محتويات رسالتهم، فإن الناس سيرون في عملهم هذا بياناً مخالفاً لأقوالهم، وبذلك سوف لا يثقون بأقوالهم، ونتيجة لذلك سوف لا يتحقق الهدف من بعثتهم بصورة كاملة. اذن، فالحكمة واللطف الإلهيان يقتضيان أن يكون الأنبياء معصومين ومنزهين عن المعاصي، بل لا يصدر منهم العمل القبيح حتى سهواً ونسياناً، لئلا يحتمل الناس أنهم اتخذوا إدعاء السهو والنسيان مسوغاً لارتكابهم الذنب والمعصية.</p>
+							</div>
+						</div>
+						<div id="h3-الدليل-العقلي-الثاني-على-عصمة-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">الدليل العقلي الثاني على عصمة الانبياء:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إن الأنبياء كما أنهم مكلفون بإبلاغ محتوى الوحي والرسالة للناس وهدايتهم للطريق المستقيم؛ كذلك هم مكلفون بالقيام بتزكية الناس وتربيتهم وإصلاحهم، وإيصال الأفراد المؤهلين وذوي الاستعداد الى آخر مرحلة من مراحل الكمال الإنساني، وبتعبير آخر: إن على عاتقهم - اضافة الى تكفلهم مهمة التعليم والهداية - مهمة التربية والاصلاح والتوجيه تلك التربية الشاملة التي تشمل حتى أكثر الناس استعداداً وأسماهم درجة، ولا يستحق مثل هذا المقام الاصلاحي الرفيع إلا أولئك الذين بلغوا أسمى درجات الكمال الإنساني، ويمتلكون اكثر الملكات النفسية كمالاً، وهي ملكة العصمة. أضف الى ذلك أن دور سلوك المربي وأفعاله أكثر تأثيراً من أقواله في تربية الآخرين واصلاحهم، ومن وجدت نقائص وعثرات في أفعاله، فإن قوله سوف لا يملك التأثير المنشود، اذن فانّما يتحقق الهدف الإلهي من بعثة الأنبياء بصورة كاملة بما هم مربو المجتمع ومصلحوه، فيما لو كانوا معصومين ومنزهين عن كل انحراف في أقوالهم وأفعالهم.</p>
+							</div>
+						</div>
+						<div id="h3-الأدلة-النقلية-على-عصمة-الأنبي" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">الأدلة النقلية على عصمة الأنبياء</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-١---عبر-القرآن-الكريم-عن-بعض-ا" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									١ - عبر القرآن الكريم عن بعض الأفراد بـ (المخلص)،
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">حيث لا يطمع في اغوائهم حتى الشيطان، ومن هنا أقسم على إغواء بني آدم جميعهم واستثنى المخلصين، كما جاء في الآيتين ٨٢ - و ٨٣ من سورة ص: ﴿قَالَ فَبِعِزَّتِكَ لأغوِيَنَّهُم أَجْمَعِينَ * إِلَّا عبادَكَ مِنهُمُ المخلصين﴾. ولا شك في أن مبعث يأس الشيطان من إغوائهم انما هو؛ ما يملكونه من تنزيه وصيانة من الضلال والآثام، وإلا فإن عداءه شامل حتى لهؤلاء، ولو كان يمكنه اغواؤهم لما تخلى عن إغوائهم وأعرض عنهم. إذن فعنوان (المخلص) مساوٍ لـ (المعصوم)، وإنه - وإن لم يوجد دليل على اختصاص هذه الصفة بالأنبياء - إلا انه لا يمكن الشك في شمولها لهم. وقد اعتبر القرآن الكريم بعض الأنبياء من المخلصين كما جاء في الآيتين ٤٥ و ٤٦ من سورة ص: ﴿واذكر عِبَادَنَا إِبْرَاهِيمَ وَاسْحَقَ ويعقوب أولي الأيدي والأبصار * إِنَّا أَخَلَصْنَاهُمْ بِخَالِصَةٍ ذكرى الدار﴾. وفي الآية (٥١) من سورة مريم: ﴿واذكر فِي الكِتَابِ مُوسَى إِنَّهُ كَانَ مُخلَصاً وَكَانَ رَسُولاً نَبِيَّاً﴾. وكذلك اعتبر السبب في تنزه يوسف (ع) عن الانحراف في أشد الظروف هو أنه كان مخلصاً، كما في الآية (٢٤) من سورة يوسف: ﴿كَذلِكَ لِنَصْرِفَ عَنْهُ السُّوءَ وَالفَحْشَاءَ إِنَّهُ مِن عِبَادِنَا المُخْلَصِينَ﴾.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-٢---لقد-فرض-القرآن-الكريم-على-" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									٢ - لقد فرض القرآن الكريم على البشر إطاعة الأنبياء بصورة مطلقة
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }"> كما جاء في الآية (٦٤) من سورة النساء: ﴿وَمَا أرسلنا من رسول إلا لِيُطاعَ بإذن الله﴾. وإنما تصح اطاعتهم المطلقة فيما لو كانت في مسار إطاعة الله وبموازاتها، بحيث لا تكون إطاعتهم منافية لإطاعة الله، وإلا فإن الأمر بالاطاعة المطلقة الله تعالى، والأمر بالطاعة المطلقة لمن هم معرضون للخطأ والانحراف سيكونان على طرفي نقيض.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-٣---لقد-خصص-القرآن-الكريم-المن" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									٣ - لقد خصص القرآن الكريم المناصب الإلهية لأولئك الذين لم يتلوثوا بـ (الظلم).
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }"> يقول تعالى في جوابه لإبراهيم (ع) الذي طلب منصب الإمامة لأبنائه: ﴿لَا يَنَالُ عَهدِي الظَّالِمِينَ﴾. ونحن نعلم أن كل معصية هي ظلم للنفس على الأقل، وكل عاص ومذنب ظالم في عرف القرآن الكريم، اذن؛ فالأنبياء أصحاب المنصب الإلهي (النبوة والرسالة) لا بد وأن يكونوا منزهين عن كل ظلم ومعصية. ويمكن استفادة عصمة الأنبياء (ع) من آيات أخرى، وروايات كثيرة نعرض عن ذكرها.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-السر-في-عصمة-الأنبياء" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">السر في عصمة الأنبياء</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">في نهاية هذا الدرس تجدر بنا الاشارة الى السر في عصمة الانبياء، فأما السر في صيانتهم في مجال تلقي الوحي فهو: إن إدراك الوحي من قبيل المدركات التي لا تحتمل الخطأ، والشخص المؤهل لتلقيه، متوفر على حقيقة علمية يدركها حضورياً، ويشاهد ارتباطها بالموحي - سواء كانت هناك واسطة (ملك) أم لم تكن) - ولا يمكن لمتلقي الوحي أن يشك بأنه هل تلقى الوحي أم لا؟ أو من الذي أوحى إليه؟ أو ما هو محتواه ومفادها؟</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> واذا ما وردت بعض القصص والحكايات الموضوعة والمكذوبة التي تدعي أن النبي شك في نبوته! أو لم يدرك محتوى وحيه! أو لم يعرف الموحي اليه! فهذه أخبار كاذبة، وهذه الأباطيل تشبه أن يقال: إنه شك في وجوده، أو في مدركاته الحضورية والوجدانية.</p>
+						<div id="h3-اما-السر-في-عصمة-الأنبياء-في-م" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">اما السر في عصمة الأنبياء في مجال القيام بالوظائف الإلهية، ومنها إبلاغ رسالة للناس، فيحتاج لمقدمة هي:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن الأفعال البشرية إنما تتم بأن يحصل في أعماق الانسان ميل لأمر ينشده، يُثار هذا الميل نتيجة لعوامل ومثيرات مختلفة، ويحدد الانسان طريق الوصول لهدفه المنشود بمعونة العلوم والمدركات المختلفة، ثم يقدم على العمل المتناسب معه، واذا وجدت الميول والرغبات المتعارضة والمتزاحمة، فانه يسعى قدر جهده لتحديد أفضلها وأكثرها قيمة وأهمية، ويختاره عملياً. ولكنه أحياناً - ونتيجة لنقص في علمه وقصور في معرفته ـ يكون مخطئاً في تقويم الأفضل وتحديده، أو أنه لغفلته عن الأصلح، أو نتيجة لتعوده على الامر الأسوأ يسيء الاختيار، ولا يبقى لديه مجال للتفكير الصحيح واختيار الأصلح. اذن فكلما كان الانسان أكثر معرفة بالحقائق، وأكثر وعياً وتوجها، وثباتاً وحيوية، وأقوى رادة على ضبط الميول والانفعالات الداخلية؛ فانه سيكون أفضل في حسن اختياره، وسيكون اكثر مناعة من الانحرافات والأخطاء.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ومن هنا فان بعض الأفراد المؤهلين ومن ذوي الاستعدادات العالية الذين تلقوا الثقافة اللازمة والوعي الضروري ونعموا بالتربية الصحيحة، سوف يتوصلون الى مراحل مختلفة من الكمال والفضيلة، وربما يقتربون من حدود العصمة بل ولا يخطر في اذهانهم مجرد التفكير باقتراف الذنب والعمل السيء، كما لا يفكر أي عاقل يشرب السم والجرع والعقاقير المميتة أو تناول الأشياء القذرة والعفنة. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">اذن، فإذا افترضنا أن فرداً بلغ الغاية في استعداده لإدراك الحقائق، كل ذلك وارتفع صفاء روحه وقلبه إلى أسمى المستويات والدرجات وحصل له بشكل ذاتي محض ودون الحاجة الى دفع أو تحريك، كما يعبر القرآن ﴿يَكَادُ زَيْتُهَا يُضِيءُ وَلَو لَمْ تَمْسَسْهُ نَارٌ﴾ وبسبب هذا الاستعداد القوي والصفاء الذاتي، تتولاه التربية الإلهية، ويؤيد بروح القدس فإن هذا الفرد سوف يطوي مدارج الكمال بسرعة لا توصف، وربما اجتاز في ليلة واحدة طريقاً لا يجتاز إلا بمئة سنة، وربما تفوق على الآخرين حتى في مرحلة طفولته، بل حتى وهو جنين، وسوف يظهر لمثل هذا الفرد قبح المعاصي والذنوب، تماماً كظهور ضرر السم ووضوح وقبح الاشياء العفنة والقذرة للآخرين. وكما أن اجتناب الأفراد العاديين أمثال هذه الأفعال القاتلة او القذرة ليس جبرياً، فإنَّ اجتناب المعصوم المعاصي لا ينافي الاختيار أبداً.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---أذكر-الادلة-العقلية-على-عص" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - أذكر الادلة العقلية على عصمة الأنبياء</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الإجابة:</strong></p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> الدليل الأول:</strong> هدف البعثة (الهداية) لا يتحقق إذا خالف فعل النبي قوله، لأن الناس لن يثقوا به، لذا تقتضي الحكمة عصمته. </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الدليل الثاني:</strong> دور النبي كمربٍ ومزكٍ للنفوس يتطلب أن يكون قدوة كاملة، لأن الفعل أبلغ من القول في التربية.</p>
+							</div>
+						</div>
+						<div id="h3-٢---ما-هي-الآيات-القرآنية-التي" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - ما هي الآيات القرآنية التي تدل على عصمة الأنبياء؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">١. آيات (المخلصين) الذين لا يغويهم الشيطان.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">٢. آية الأمر بالطاعة المطلقة للرسول ص والتي تستلزم عدم خطئه.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">٣. آية نفي عهد الإمامة عن الظالمين وكل عاصٍ ظالم.</p>
+							</div>
+						</div>
+						<div id="h3-٣---ما-هو-السر-في-صيانة-الأنبي" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - ما هو السر في صيانة الأنبياء عن الخطأ في تلقي الوحي؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">السر هو أن إدراك الوحي نوع من العلم الحضوري الذي لا يحتمل الخطأ، حيث يشاهد النبي ارتباط الحقائق بالموحي مباشرة، فلا يمكنه الشك في المصدر أو المحتوى.</p>
+							</div>
+						</div>
+						<div id="h3-٤---كيف-تتلاءم-عصمة-الأنبياء-ع" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - كيف تتلاءم عصمة الأنبياء عن المعاصي مع اختياريتهم؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">تتلاءم من خلال شدة العلم والوعي بقبح المعاصي (كشرب السم) وقوة الإرادة وضبط النفس، إضافة للتأييد الإلهي (روح القدس). فالمعصوم يترك الذنب باختياره الكامل كما يترك العاقل شرب السم باختياره.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-السادس-والعشرون-شبهات-وح">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس السادس والعشرون: شبهات وحلول</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/26.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>طرحت بعض الشبهات حول عصمة الأنبياء عليهم السلام نستعرضها في ما يلي ونجيب عنها:</strong></p>
+					<div class="qa" id="h2-الشبهة-الأولى" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الأولى:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إذا كان الله تعالى قد عصم الأنبياء ونزههم عن المعاصي، فيلزم من ذلك أنه ضمن ممارستهم للوظائف والتكاليف، وتعهد بعدم انحرافهم أبداً، وبذلك سوف لا تثبت لهم أية ميزة اختيارية، ولا يستحقون أي ثواب لممارستهم الوظائف والتكاليف، والاجتناب عن المعاصي، لأن الله تعالى لو جعل أي شخص آخر معصوماً لكان مثلهم تماماً.</p>
+						<div id="h3-الجواب-عن-هذه-الشبهة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">الجواب عن هذه الشبهة:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> يتوضح الجواب مما ذكرناه سابقاً وخلاصته؛ أن العصمة لا تعني الجبر على القيام بالوظائف والتكاليف وترك المعاصي - كما مر في الدرس السابق - وحين نقول إن الله عاصم المعصومين وحافظهم، فلا نعني بذلك سلب الأفعال الاختيارية منهم، ذلك لأن كل الظواهر - وإن استندت في نهاية سلسلتها إلى الإرادة التكوينية الإلهية كما وضحناه في بحوث التوحيد - فإنه توجد في هذا المجال بالذات عناية وتوفيق خاص من قبل الله، لذلك يتأكد أكثر إسناد العمل لله في موضوع بحثنا، ولكن الإرادة الإلهية في طول إرادة الإنسان لا في عرضها، وليست بديلة عنها وقائمة مقامها.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ولكن هذه العناية الإلهية الخاصة بالنسبة للمعصومين هي كسائر الوسائل والظروف والإمكانات الخاصة التي توفر لبعض الأفراد، مما يؤدي إلى أن تكون مسؤوليتهم أكبر، وكما أن الثواب على عملهم أكثر فإن العقاب على المخالفة أشد، وبهذا الشكل يتم التوازن بين الثواب والعقاب، وإن كان المعصوم لحسن اختياره لا يكون مستحقاً للعقاب، ويلاحظ مثل هذا التوازن في حالة كل الذين يتمتعون بنعمة خاصة، كما هو الحال بالنسبة للعلماء والمنتسبين لأهل البيت عليهم السلام، فإن مسؤوليتهم أكبر وأكثر خطورة من غيرهم، وكما أن الثواب على أعمالهم الخيرة أكثر، فكذلك العقاب على ذنوبهم - على تقدير ارتكابها - أشد، ومن هنا فكل من كان مقامه المعنوي أرفع كان خطر سقوطه أكثر وخوفه من الانزلاق أشد.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الثانية" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الثانية:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إن الأنبياء وسائر المعصومين عليهم السلام يعتبرون أنفسهم من المذنبين، كما ينقل عن أدعيتهم ومناجاتهم، وينقل - أيضاً - استغفارهم من الذنوب، ومع صدور مثل هذا الاعتراف والإقرار منهم، فكيف نعدهم معصومين؟</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن المعصومين عليهم السلام قد ارتفعوا إلى أسمى درجات الكمال والقرب الإلهي - مع ملاحظة اختلاف مراتبهم - لذلك يشعرون بأنهم مكلفون بوظائف ومهام تفوق وظائف الآخرين، بل إنهم يعتبرون أي توجه والتفات منهم لغير معبودهم ومحبوبهم ذنباً كبيراً، ومن هنا يقفون موقف الاستغفار والاعتذار. وقد ذكرنا سابقاً أن عصمة الأنبياء لا تعني أن يكون المعصوم منزهاً عن كل عمل يُطلق عليه (معصية) بوجه ما، ولو بمفهومها الواسع، بل إنما نعني تنزيهه عن مخالفة التكاليف الإلزامية، وعن ارتكاب المحرمات الفقهية لا كل ما يُطلق عليه معصية.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الثالثة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الثالثة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> ذكرت بعض الآيات القرآنية الدالة على عصمة الأنبياء أنهم يُعتبرون من (المخلصين)، ولا يطمع الشيطان فيهم، مع أن القرآن الكريم نفسه يذكر بعض تصرفات وتأثيرات الشيطان في الأنبياء عليهم السلام، منها ما ورد في الآية (27) من سورة الأعراف: ﴿يَا بَنِي آدَمَ لَا يَفْتِنَنَّكُمُ الشَّيْطَانُ كَمَا أَخْرَجَ أَبَوَيْكُم مِّنَ الْجَنَّةِ﴾. حيث تنسب للشيطان خداعه لآدم وحواء، والذي أدى إلى خروجهما من الجنة، وفي الآية (41) من سورة (ص) على لسان أيوب عليه السلام: ﴿إِذْ نَادَى رَبَّهُ أَنِّي مَسَّنِيَ الشَّيْطَانُ بِنُصْبٍ وَعَذَابٍ﴾. وفي الآية (52) من سورة الحج: ﴿وَمَا أَرْسَلْنَا مِن قَبْلِكَ مِن رَّسُولٍ وَلَا نَبِيٍّ إِلَّا إِذَا تَمَنَّى أَلْقَى الشَّيْطَانُ فِي أُمْنِيَّتِهِ﴾ حيث نسبت نوعاً من الوساوس الشيطانية لجميع الأنبياء.</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لم يُلحظ في هذه الآيات أي تصرف أو تأثير شيطاني أدى إلى مخالفة الأنبياء عليهم السلام للتكاليف الإلزامية، أما الآية (27) من سورة الأعراف، فتشير إلى وسوسة الشيطان لآدم وحواء للأكل من (الشجرة المنهية) فإنه لم يتعلق نهي تكليفي بالأكل، بل الوارد فحسب هو تذكير آدم وحواء وتنبيههما على أن الأكل منها سيؤدي إلى الخروج من (الجنة) والهبوط إلى (الأرض)، وأن وسوسة الشيطان سببت مخالفتهما لهذا النهي الإرشادي، والملاحظ أن ذلك العالم ليس عالم التكليف، ولم تنزل شريعة بعد. وأما الآية (41) من سورة (ص) فإنها تشير إلى المتاعب والتحديات التي توجهت لأيوب عليه السلام من قبل الشيطان، وليس فيها أية دلالة على مخالفته للأوامر والنواهي الإلهية. وأما الآية (52) من سورة الحج فهي مرتبطة بالعراقيل التي يواجه بها الشيطان نشاطات الأنبياء عليهم السلام جميعاً وجهودهم، والعقبات التي يضعها في سبيل وصولهم إلى أهدافهم في مجال هداية الناس، وأخيراً فإن الله تعالى يبطل مكر الشيطان وحيله، ويثبت الدين الحق.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الرابعة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الرابعة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">في الآية (121) من سورة طه، نُسب العصيان لآدم عليه السلام، وفي الآية (115) من السورة نفسها نُسب النسيان له عليه السلام، فكيف تتلاءم مثل هذه النسب مع العصمة؟</p>
+						<div id="h3-والجواب-عن-هذه-الشبهة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب عن هذه الشبهة:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> قد اتضح من الحديث السابق، حيث عُلم أن المعصية والنسيان لم يكونا مرتبطين بالتكليف الإلزامي.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الخامسة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الخامسة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">نُسب الكذب في القرآن الكريم لبعض الأنبياء، ومن الآيات التي تدل على ذلك، الآية (89) من سورة الصافات نقلاً عن إبراهيم عليه السلام: ﴿فَقَالَ إِنِّي سَقِيمٌ﴾. مع أنه لم يكن مريضاً، والآية (63) من سورة الأنبياء نقلاً عنه أيضاً: ﴿قَالَ بَلْ فَعَلَهُ كَبِيرُهُمْ هَذَا﴾. مع أنه هو الذي حطم أصنامهم، والآية (70) من سورة يوسف عليه السلام: ﴿ثُمَّ أَذَّنَ مُؤَذِّنٌ أَيَّتُهَا الْعِيرُ إِنَّكُمْ لَسَارِقُونَ﴾. مع أن إخوة يوسف عليه السلام لم يرتكبوا السرقة.</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن هذه الأقوال إنما صدرت من باب التورية (إرادة معنى آخر) لأجل بعض المصالح الأكثر أهمية كما أشير إلى ذلك في بعض الروايات، ويمكن أن يُستظهر من بعض الآيات أن هذه الأقوال كانت بإلهام إلهي، كما في قصة يوسف عليه السلام حيث يقول تعالى: ﴿كَذَلِكَ كِدْنَا لِيُوسُفَ﴾، وعلى أي حال فلا يُعتبر مثل هذا الكذب معصية، ولا يخالف العصمة.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-السادسة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة السادسة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ورد في قصة موسى عليه السلام أن قبطياً تشاجر مع رجل من بني إسرائيل، فقتله موسى عليه السلام، ولأجل ذلك هرب من مصر. وحين بعثه الله تعالى لدعوة الفراعنة قال: ﴿وَلَهُمْ عَلَيَّ ذَنبٌ فَأَخَافُ أَن يَقْتُلُونِ﴾. وحينما ذكره فرعون بالقتل أجاب موسى: ﴿فَعَلْتُهَا إِذًا وَأَنَا مِنَ الضَّالِّينَ﴾. فمثل هذه الحكاية كيف تتلاءم وعصمة الأنبياء قبل بعثتهم؟</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>أولاً:</strong> إن قتل القبطي لم يكن عمدياً، بل كان نتيجة ضربة وجهت إليه فأصابت منه مقتلاً.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ثانياً:</strong> إن الآية ﴿وَلَهُمْ عَلَيَّ ذَنبٌ﴾، التي وردت على لسان موسى عليه السلام كانت وفق نظر الفراعنة، والمراد أنهم يعتبرونني قاتلاً ومذنباً، وأخاف أن يقتلوني قصاصاً.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ثالثاً:</strong> أما الجملة ﴿وَأَنَا مِنَ الضَّالِّينَ﴾ إما أنه قالها مجاراة للفراعنة، بأنني ربما كنت ضالاً آنذاك فهداني الله، وأرسلني بهذه البراهين القاطعة. أو المراد من (الضلال) عدم المعرفة بعواقب العمل، وعلى كل حال، فلا تدل على مخالفة موسى عليه السلام للتكليف الإلزامي الإلهي.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-السابعة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة السابعة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">في الآية (94) من سورة يونس قال تعالى مخاطباً النبي صلى الله عليه وآله وسلم: ﴿فَإِن كُنتَ فِي شَكٍّ مِّمَّا أَنزَلْنَا إِلَيْكَ فَاسْأَلِ الَّذِينَ يَقْرَءُونَ الْكِتَابَ مِن قَبْلِكَ لَقَدْ جَاءَكَ الْحَقُّ مِن رَّبِّكَ فَلَا تَكُونَنَّ مِنَ الْمُمْتَرِينَ﴾. وفي الآيات (147) من سورة البقرة، و (60) من آل عمران، و (114) من الأنعام و (17) من هود و (23) من سورة السجدة، ينهى فيها الله تعالى نبيه صلى الله عليه وآله وسلم عن الشك والترديد، فكيف يمكن القول بأن إدراك الوحي لا يقبل الشك والتردد؟</p>
+						<div id="h3-والجواب-عن-هذه-الشبهة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب عن هذه الشبهة:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إن هذه الآيات لا تدل على وقوع الشك والترديد فعلاً للنبي صلى الله عليه وآله وسلم، بل إنها في صدد التأكيد على هذه الملاحظة بأنه لا مجال للشك والترديد في رسالته، وإن محتويات القرآن الكريم على حق، وفي الواقع أن مثل هذا الخطاب من باب (إياك أعني واسمعي يا جارة).</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الثامنة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الثامنة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">نُسبت في القرآن الكريم بعض الذنوب للنبي صلى الله عليه وآله وسلم وقد غفرها الله له، يقول القرآن الكريم: ﴿لِيَغْفِرَ لَكَ اللَّهُ مَا تَقَدَّمَ مِن ذَنبِكَ وَمَا تَأَخَّرَ﴾.</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إن المراد من الذنب في هذه الآية الشريفة؛ الذنب الذي وجهه المشركون للنبي صلى الله عليه وآله وسلم قبل الهجرة وبعدها، وهو إهانته لأصنامهم وآلهتهم، والمراد من المغفرة، مواجهة الآثار التي يمكن ترتبها على ذلك وإزالتها، والشاهد على هذا التفسير، إنه اعتبر فتح مكة سبباً لمغفرته حيث يقول: ﴿إِنَّا فَتَحْنَا لَكَ فَتْحًا مُّبِينًا * لِّيَغْفِرَ لَكَ اللَّهُ مَا تَقَدَّمَ مِن ذَنبِكَ وَمَا تَأَخَّرَ﴾. وإذا كان المراد من الذنب المعنى المصطلح فلا وجه لتعليل المغفرة بفتح مكة.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-التاسعة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة التاسعة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">يقول القرآن الكريم حول زواج النبي صلى الله عليه وآله وسلم بزوجة زيد بن حارثة (متبنى النبي) المطلقة: ﴿وَتَخْشَى النَّاسَ وَاللَّهُ أَحَقُّ أَن تَخْشَاهُ﴾. فكيف يتلاءم مثل هذا القول مع العصمة.</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إن مثل هذا العمل الذي صدر بأمر الله، ومن أجل القضاء على تقليد من التقاليد الجاهلية المنحرفة (حيث كان يعتبر المتبنى كالابن من النسب) كان يخشى النبي صلى الله عليه وآله وسلم أن يحمله الناس - لضعف إيمانهم - على ميوله ورغباته الشخصية، وأن يؤدي ذلك إلى ارتدادهم عن الدين، وقد أطلعه الله تعالى في هذه الآية الشريفة على أن المصلحة في مكافحة هذا التقليد المنحرف أكثر أهمية، والأجدر به أن يكون أكثر خشية وخوفاً من مخالفة الإرادة الإلهية القائمة على مكافحة نبيه عملياً لهذا التقليد الخاطئ، إذن فهذه الآية ليست في مجال تأنيب النبي صلى الله عليه وآله وسلم وذمه.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-العاشرة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة العاشرة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إن القرآن الكريم يعاتب النبي صلى الله عليه وآله وسلم في مواضع عديدة، منها: حين أذن النبي صلى الله عليه وآله وسلم لبعض الأفراد بترك القتال حيث يقول تعالى: ﴿عَفَا اللَّهُ عَنكَ لِمَ أَذِنتَ لَهُمْ﴾. ومنها: تحريم بعض الأمور المحللة إرضاء لبعض زوجاته: ﴿يَا أَيُّهَا النَّبِيُّ لِمَ تُحَرِّمُ مَا أَحَلَّ اللَّهُ لَكَ تَبْتَغِي مَرْضَاتَ أَزْوَاجِكَ﴾. فكيف ينسجم هذا العتاب مع عصمته؟</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن مثل هذا الخطاب في واقعه (مدح بأسلوب العتاب) حيث يدل على مدى ما كان يملكه النبي صلى الله عليه وآله وسلم من شفقة وحنان حتى على المنافقين ومرضى القلوب، حيث لم يبعث اليأس فيهم، ولم يكشف عن أسرارهم، وأيضاً حين يقدم مرضاة زوجاته على رغباته وميوله، ويحرم باليمين عملاً مباحاً في حقه، وهذا لا يعني، (والعياذ بالله) أنه يحاول تغيير حكم الله، وتحريم الحلال على الناس.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وفي الواقع أن هذه الآيات من ناحية ما نظير الآيات التي تشير إلى جهود النبي صلى الله عليه وآله وسلم الكبيرة واهتمامه البالغ وحرصه وتحرقه الشديد لهداية الكفار، أمثال قوله تعالى: ﴿لَعَلَّكَ بَاخِعٌ نَّفْسَكَ أَلَّا يَكُونُوا مُؤْمِنِينَ﴾. أو الآيات التي تدل على ما يبذله من جهد ومشقة في سبيل عبادة الله مثل: ﴿طه * مَا أَنزَلْنَا عَلَيْكَ الْقُرْآنَ لِتَشْقَى﴾. وعلى كل حال، فلا تنافي هذه الآيات عصمته صلى الله عليه وآله وسلم.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---ما-هي-الميزة-الاختيارية-لل" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - ما هي الميزة الاختيارية للمعصوم على الآخرين؟ وأي ثواب يستحقه العمل المستند للعصمة الإلهية؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">الميزة هي أنهم يختارون الحق والخير دائماً بإرادتهم الحرة النابعة من علمهم اليقيني ووعيهم، دون جبر. ويستحقون أعظم الثواب لأنهم يملكون القدرة على المعصية ودواعيها (الشهوات) وتتوفر لهم وسائلها، ومع ذلك يضبطون أنفسهم ويكبحون جماحها ويتحملون المشاق في طاعة الله.</p>
+							</div>
+						</div>
+						<div id="h3-٢---لماذا-كان-الأنبياء-وأولياء" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - لماذا كان الأنبياء وأولياء الله يعتبرون أنفسهم مذنبين، ويمارسون التضرع والاستغفار؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">١. لأنهم يعتبرون الانشغال بالمباحات والغفلة الآنية عن ذكر الله (بسبب ضرورات الحياة) ذنباً بالنسبة لمقامهم العالي (حسنات الأبرار سيئات المقربين). </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">٢. ليكونوا قدوة للناس في التضرع والعبادة والافتقار إلى الله.</p>
+							</div>
+						</div>
+						<div id="h3-٣---كيف-تتلاءم-تأثيرات-الشيطان" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - كيف تتلاءم تأثيرات الشيطان في الأنبياء مع عصمتهم؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">تأثيرات الشيطان تكون بمحاولة الإغواء والوسوسة (والعصمة هي عدم الاستجابة له)، أو بإلقاء العراقيل والمشاكل في طريق دعوتهم، أو بإيذائهم جسدياً ومادياً (كما في أيوب)، وهذا لا ينافي عصمة قلوبهم وعقولهم وإيمانهم عن الانحراف.</p>
+							</div>
+						</div>
+						<div id="h3-٤---كيف-تفسر-نسبة-العصيان-والن" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - كيف تفسر نسبة العصيان والنسيان لآدم (ع)؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>العصيان:</strong> هو مخالفة أمر إرشادي (نصيحة) لا مولوي تحريمي، فلا يستحق العقاب بل فوات المصلحة (الخروج من الجنة). </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>النسيان:</strong> هو ترك العهد وعدم المحافظة عليه، لا زوال الصورة من الذاكرة (الذي هو غير اختياري).</p>
+							</div>
+						</div>
+						<div id="h3-٥---بماذا-تؤول-نسبة-الكذب-لبعض" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٥ - بماذا تؤول نسبة الكذب لبعض الأنبياء (كإبراهيم ويوسف)؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">تؤول بأنها (تورية) ومعاريض، حيث يقصدون معنى صحيحاً ويفهم السامع معنى آخر، وذلك لمصلحة راجحة (حفظ النفس، هداية الناس) دون الكذب الحقيقي (قصد خلاف الواقع).</p>
+							</div>
+						</div>
+						<div id="h3-٦---هل-كان-قتل-موسى-للقبطي-منا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٦ - هل كان قتل موسى للقبطي منافياً للعصمة؟ ولماذا نسبه للشيطان؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لا، لأنه كان دفاعاً عن مظلوم ضد كافر حربي، ولم يقصد القتل (كان وكزة)، فهو جائز. نسبه للشيطان بمعنى أن النزاع والاقتتال كان من نزغ الشيطان، أو أن النتيجة (الموت) حصلت بتسبب الشيطان في تلك الظروف، لا أن الدفاع كان معصية.</p>
+							</div>
+						</div>
+						<div id="h3-٧---بماذا-تفسر-نسبة-الذنب-للنب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٧ - بماذا تفسر نسبة الذنب للنبي (ص) في آية الفتح، والعفو عنه في آية التوبة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">آية الفتح: الذنب هو (التهمة والجرم) الذي نسبه له المشركون بسبب دعوته، والفتح غفر (ستر وأزال) هذه التهم بتثبيت سلطانه. آية التوبة: (عفا الله عنك) تكريم ودعاء وافتتاح للكلام، وليس مغفرة عن ذنب، والإذن للمنافقين كان كشفاً لنفاقهم.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-السابع-والعشرون-المعجزة">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس السابع والعشرون: المعجزة</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/27.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-طرق-اثبات-النبوة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">طرق اثبات النبوة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>المسألة الأساس الثالثة في فصل النبوة هي كيفية ثبوت صدق دعوى الأنبياء الحقيقيين - لدى الناس - وكذب المدعين الكاذبين.</strong></p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">لا شك في أن الشخص الضال والمرتكب للمعاصي التي يدرك العقل قبحها لا يمكن الاعتماد عليه، والثقة به وتصديقه، ويمكن بذلك إثبات كذبه في ادعائه النبوة، فيما لو اشترطنا العصمة في الأنبياء وخاصة اذا كان يدعو إلى امور مخالفة للعقل والفطرة الانسانية، او وجد تناقض في اقواله وأحاديثه، هذا من ناحية.</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ومن ناحية أخرى،</strong> ربما تكون الحياة السابقة النظيفة للنبي صلى الله عليه وآله وسلم، وسيرته الحسنة، باعثة على حصول الاطمئنان بصدقه عند الأفراد المنصفين، وخاصة اذا شهد العقل بصحة محتويات دعوته، وكذلك من الممكن أن تثبت نبوة شخص بتبشير نبي آخر، وإخباره عنه، وتعريفه به بحيث لا يبقى أي شك أو ترديد للباحثين عن الحقيقة بأنه نبي.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولكن لو لم تتوفر بين الناس الدلائل والمؤشرات المؤدية الى الاطمئنان، ولم تصل إليهم بشارة نبي آخر، فهنا تفرض الحاجة وجود طريق آخر لإثبات النبوة، وقد جعل الله تعالى لحكمته البالغة هذا الطريق، وجهز الأنبياء بمعاجز هي علامات وآيات على صدق دعواهم، ومن هنا سميت بـ (الآيات).</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-والحاصل-انه-يمكن-إثبات-صدق-الأ" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">والحاصل انه يمكن إثبات صدق الأنبياء الحقيقيين في دعواهم، من خلال ثلاث طرق :</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-1--من-طريق-الدلائل-والمؤشرات-ا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">1.  من طريق الدلائل والمؤشرات المؤدية الى الاطمئنان،</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> أمثال الصدق والأمانة والاستقامة وعدم الانحراف عن مسير الحق والعدالة طوال حياتهم. وهذا الطريق لا يتحقق إلا في الأنبياء الذين عاشوا سنوات طويلة بين الناس، وكانت سيرتهم معروفة عندهم. أما النبي الذي بُعِثَ بالرسالة في بدايات شبابه، وقبل أن يتعرَّف الناس على شخصيته وسيرته، فلا يمكن التعرف على صحة دعواه وصدقه من طريق هذه المؤشرات والدلائل.</p>
+							</div>
+						</div>
+						<div id="h3-2--أن-يعرفه-ويبشر-به-نبي-سابق-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">2.  أن يعرفه ويبشر به نبي سابق أو معاصر،</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ويختص هذا الطريق في الناس الذين عرفوا نبياً آخر، واطلعوا على بشارته ودعمه وتأييده، وبطبيعة الحال لا مجال لمثل هذا الطريق في النبي الأول.</p>
+							</div>
+						</div>
+						<div id="h3-3--عن-طريق-إظهار-المعجزة-التي-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">3.  عن طريق إظهار المعجزة التي يمكن ان يكون أثرها أكثر اتساعاً وشمولية، ومن هنا نحاول البحث حول هذا الطريق.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-تعريف-المعجزة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">تعريف المعجزة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div class="qa" id="h4-المعجزة-عبارة-عن-الأمر-الخارق-" x-data="accordionItem(true)">
+							<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+								المعجزة عبارة عن الأمر الخارق للعادة، يأتي بها مدعي النبوة بإرادة الله، وتكون دليلاً على صدق دعواه.
+								<span class="icon-toggle" x-text="iconText"></span>
+							</h4>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						<div id="h3-والملاحظ-في-هذا-التعريف-أنه-يش" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والملاحظ في هذا التعريف أنه يشتمل على عناصر ثلاثة :</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>أ ـ وجود بعض الظواهر الخارقة للعادة،</strong> والتي لا يمكن أن توجد من خلال الأسباب والعلل العادية.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ب ـ ظهور بعض هذه الأمور الخارقة للعادة،</strong> من الأنبياء بالإرادة الالهية، وبإذن خاص من الله تعالى.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>جـ ـ إن مثل هذا الأمر الخارق للعادة، يمكن أن يكون دليلاً على صدق دعوى النبي</strong> صلى الله عليه وآله وسلم، وفي هذه الحالة يُصطلح عليه بـ (المعجزة).</p>
+							</div>
+						</div>
+						<div id="h3-والآن-نحاول-توضيح-هذه-العناصر-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والآن نحاول توضيح هذه العناصر الثلاثة التي تضمنها التعريف:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأمور-الخارقة-للعادة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأمور الخارقة للعادة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إنَّ الظواهر الكونية إنَّما توجد - غالباً - نتيجة أسباب وعلل يمكن التعرف عليها من خلال التجارب المختلفة، أمثال أكثر الظواهر الفيزيائية والكيميائية والبيولوجية والنفسية. ولكن هناك حالات نادرة تتحقق فيها هذه الظواهر بصورة أخرى، حيث لا يمكن التعرف على أسبابها وعللها من خلال التجارب الحسية. وهناك بعض الشواهد تدلُّ على وجود عوامل من نوع آخر أثرت في تكوين هذه الظواهر، كالأعمال الغريبة والمدهشة التي يقوم بها المرتاضون، ويشهد المتخصصون في مختلف العلوم بأن مثل هذه الأعمال لا تتم وفق قوانين العلوم التجريبية، ويُطلق على مثل هذه الأعمال بـ (الأعمال الخارقة للعادة).</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-خوارق-العادة-الإلهية" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">خوارق العادة الإلهية</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-يمكن-تقسيم-الاعمال-الخارقة-للع" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">يمكن تقسيم الاعمال الخارقة للعادة الى قسمين :</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-الأول" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الأول:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">الاعمال التي لا تكون أسبابها وعللها عادية، ولكن اسبابها غير العادية في مقدور البشر وتحت اختيارهم، ويمكن التوصل إليها من خلال بعض التدريبات والتعليمات الخاصة، أمثال المرتاضين.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-الثاني" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الثاني:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">الأعمال الخارقة للعادة والتي لا تتم إلا بإذن إلهي خاص، ولا تكون في متناول أولئك الأفراد الذين لا علاقة لهم بالله تعالى، ومن هنا فلها ميزتان:</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>احداهما:</strong> أنها غير قابلة للتعليم والتعلم.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والأخرى:</strong> أنها لا يمكن أن تتسنى لقوة أخرى أرقى منها، ولا يمكن لأي عامل آخر أن يقهرها.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">ومثل هذه الخوارق مختصة بعباد الله المصطفين والمنتجبين، ولا يمكن أن تكون في متناول أيدي الضالين والعاصين، ولكنها لا تختص بالأنبياء، بل ربما زود بها بعض أولياء الله، ولذلك لا يُصطلح عليها كلها في علم الكلام بـ (المعجزة)، والمعروف أن يُطلق على مثل هذه الأعمال في حالة صدورها من غير الأنبياء (الكرامة)، كما ان العلوم الالهية غير العادية لا تختص بوحي النبوة، وحين يزود بعضهم بمثل هذه العلوم ؛ يُطلق عليها (الالهام) أو (التحديث).</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">ومن خلال ذلك تعرفنا على الطريق لمعرفة هذين النوعين من خوارق العادات الإلهية، وغير الإلهية، فاذا كان الاتيان بالخارق للعادة قابلاً للتعليم أو التعلم، أو يمكن لعامل آخر منع حدوثه أو استمراره، أو ابطال تأثيره، فلا يكون هذا العمل من قبيل خارق العادة الإلهي، ويمكن أن يُعتبر ضلال فرد وفساد معتقداته وأخلاقه مؤشراً آخر على عدم ارتباطه بالله تعالى، وعلى كون أعماله شيطانية أو نفسانية.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>وتجدر الاشارة هنا الى ملاحظة أخرى وهي </strong><strong>أنه:</strong><strong> </strong></p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">نعتبر الله هو الفاعل لهذه الاعمال الخارقة للعادة بالإضافة لفاعليته بالنسبة لكل المخلوقات ومنها الظواهر العادية)، وذلك بملاحظة إناطتها بإذن خاص منه تعالى ويمكن أيضاً أن ننسبها الى الوسائط - أمثال الملائكة والأنبياء - بملاحظة دورهم فيها كوسطاء أو فاعلين قريبين، كما نسب القرآن الكريم لعيسى عليه السلام إحياء الموتى، وشفاء المرضى، وخلق الطير). ولا تعارض بين هاتين النسبتين، لأن الفاعلية الالهية في طول فاعلية العباد.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-ميزة-معجزات-الأنبياء" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">ميزة معجزات الأنبياء</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>العنصر الثالث في تعريف المعجزة؛ أنَّ معجزات الأنبياء آية ودليل على صدق دعواهم،</strong> ومن هنا إنَّما يُطلق في علم الكلام مصطلح (المعجزة) على الأمر الخارق للعادة حين يصدر دليلا على نبوة النبي صلى الله عليه وآله وسلم، اضافة الى استناده الى الإذن الإلهي الخاص، وبقليل من التعميم والتوسع في مفهومه يصبح شاملاً الأمور الخارقة للعادة - أيضاً - والتي تصدر دليلاً على صدق دعوى الإمامة.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولذلك يختص مصطلح (الكرامة) بسائر الخوارق الإلهية للعادة، والتي تصدر من أولياء الله، مقابل خوارق العادات التي تستند الى القوى الشيطانية والنفسانية، أمثال : السحر والكهانة، وأعمال المرتاضين. ومثل هذه الأعمال كما أنها قابلة للتعليم والتعلم، كذلك يمكن قهرها بقوة أرقى منها، والغالب أنه يمكن أن نثبت عدم انتسابها الى الله من طريق سوء أخلاق أصحابها وفساد معتقداتهم.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">والملاحظة التي يلزم التوجه إليها هنا هي أن معجزات الأنبياء إنَّما تُثبت - بصورة مباشرة - صدقهم في دعوى النبوة، أما صحة محتوى الرسالة ولزوم الاطاعة للتعاليم والأوامر التي يبلغونها ، فإنها تثبت بصورة غير مباشرة، وبتعبير آخر : تثبت نبوة الأنبياء عليهم السلام بالدليل العقلي، أما محتويات رسالاتهم فتثبت بالدليل التعبدي .</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-1--ما-هي-الطرق-التي-يمكن-التعر" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">1.  ما هي الطرق التي يمكن التعرف من خلالها على الأنبياء الحقيقيين؟ وما هو الفرق بين هذه الطرق؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>يمكن التعرف على صدق دعوى الأنبياء الحقيقيين من خلال ثلاث طرق:</strong></p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }">1.  <strong>طريق الدلائل والمؤشرات المؤدية إلى الاطمئنان:</strong> (أمثال الصدق والأمانة والاستقامة وعدم الانحراف). يختص هذا الطريق بالأنبياء الذين عاشوا سنوات طويلة بين الناس وكانت سيرتهم معروفة.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>2.  طريق التبشير من نبي سابق أو معاصر:</strong> يختص هذا الطريق بالناس الذين عرفوا نبياً آخر واطلعوا على بشارته وتأييده، ولا يصلح في حق النبي الأول.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>3.  طريق إظهار المعجزة:</strong> يتميز هذا الطريق بكون أثره أكثر اتساعاً وشمولية.</p>
+							</div>
+						</div>
+						<div id="h3-2--ما-هي-الأدلة-على-كذب-المدعي" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">2.  ما هي الأدلة على كذب المدعين الكاذبين؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الأدلة على كذب المدعين الكاذبين تكمن في:</strong></p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">*   كونه شخصاً ضالاً ومرتكباً للمعاصي التي يدرك العقل قبحها، وبالتالي لا يمكن الاعتماد عليه أو الثقة به.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">*   دعاؤه إلى أمور مخالفة للعقل والفطرة الإنسانية.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">*   وجود تناقض في أقواله وأحاديثه.</p>
+							</div>
+						</div>
+						<div id="h3-3--عرف-المعجزة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">3.  عرّف المعجزة.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">المعجزة عبارة عن الأمر الخارق للعادة، يأتي بها مدعي النبوة بإرادة الله، وتكون دليلاً على صدق دعواه.</p>
+							</div>
+						</div>
+						<div id="h3-4--ما-هي-الأمور-الخارقة-للعادة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">4.  ما هي الأمور الخارقة للعادة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">الأمور الخارقة للعادة هي الأعمال الغريبة والمدهشة التي لا تتم وفق قوانين العلوم التجريبية، ولا يمكن التعرف على أسبابها وعللها من خلال التجارب الحسية، كالأعمال التي يقوم بها المرتاضون.</p>
+							</div>
+						</div>
+						<div id="h3-5--ما-هو-الفرق-بين-الخارق-الإل" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">5.  ما هو الفرق بين الخارق الإلهي للعادة، والخارق غير الإلهي؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الفرق بين الخارق الإلهي وغير الإلهي هو:</strong></p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الأعمال غير الإلهية (القسم الأول):</strong> أسبابها غير العادية في مقدور البشر وتحت اختيارهم، ويمكن التوصل إليها من خلال بعض التدريبات والتعليمات الخاصة (مثل أعمال المرتاضين).</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">الأعمال الإلهية (القسم الثاني): هي التي لا تتم إلا بإذن إلهي خاص، ولا تكون في متناول أولئك الأفراد الذين لا علاقة لهم بالله تعالى.</p>
+							</div>
+						</div>
+						<div id="h3-6--ما-هي-الطرق-للتعرف-على-الخا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">6.  ما هي الطرق للتعرف على الخارق الإلهي للعادة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>يتم التعرف على الخارق الإلهي للعادة بوجود ميزتين:</strong></p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">1.  أنه غير قابل للتعليم والتعلم.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">2.  أنه لا يمكن أن تتسنى لقوة أخرى أرقى منه، ولا يمكن لأي عامل آخر أن يقهرها.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">(وإذا كان قابلاً للتعليم أو المنع أو الإبطال، فهو ليس إلهياً وقد يكون شيطانياً أو نفسانياً).</p>
+							</div>
+						</div>
+						<div id="h3-7--ما-هي-الميزة-التي-تتميز-بها" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">7.  ما هي الميزة التي تتميز بها معجزات الأنبياء عن سائر الخوارق الإلهية للعادة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">الميزة التي تتميز بها معجزات الأنبياء عن سائر الخوارق الإلهية (الكرامات) هي أن المعجزة آية ودليل على صدق دعوى النبوة (أو الإمامة)، بالإضافة إلى استنادها إلى الإذن الإلهي الخاص.</p>
+							</div>
+						</div>
+						<div id="h3-8--وضح-مصطلحي-المعجزة-والكرامة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">8.  وضح مصطلحي المعجزة والكرامة.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>المعجزة:</strong> الأمر الخارق للعادة الذي يصدر دليلاً على نبوة النبي صلى الله عليه وآله وسلم (أو الإمامة)، ويستند إلى الإذن الإلهي الخاص.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الكرامة:</strong> هي سائر الخوارق الإلهية للعادة، والتي تصدر من أولياء الله غير الأنبياء.</p>
+							</div>
+						</div>
+						<div id="h3-9--هل-إن-المعجزة-عمل-مستند-الى" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">9.  هل إن المعجزة عمل مستند الى الله أم الى النبي؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">نعتبر الله هو الفاعل لهذه الأعمال الخارقة للعادة، وذلك بملاحظة إناطتها بإذن خاص منه تعالى. ويمكن أيضاً أن تُنسب إلى الوسائط - أمثال الأنبياء - بملاحظة دورهم فيها كوسطاء أو فاعلين قريبين، ولا تعارض بين النسبتين لأن الفاعلية الإلهية في طول فاعلية العباد.</p>
+							</div>
+						</div>
+						<div id="h3-10-هل-إن-المعجزة-دليل-على-صدق-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">10. هل إن المعجزة دليل على صدق النبي، أم على صحة محتوى الرسالة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">المعجزة تُثبت - بصورة مباشرة - صدق النبي صلى الله عليه وآله وسلم في دعوى النبوة (تثبت النبوة بالدليل العقلي). أما صحة محتوى الرسالة ولزوم الطاعة، فإنها تثبت بصورة غير مباشرة، وتثبت محتويات رسالاتهم بالدليل التعبدي.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-٢٨-شبهات-وحلول">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس ٢٨: شبهات وحلول</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/28.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>حل عدة شبهات</strong></p>
+					<p :style="{ 'fontSize': fontSize + 'px' }">طرحت بعض الشبهات حول مسألة الاعجاز، وفيما يلي نستعرضها ونجيب عنها:</p>
+					<div class="qa" id="h2-الشبهة-الأولى" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الأولى:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إنَّ لكل ظاهرة علة خاصة، يمكن التعرف عليها من خلال التجارب العلمية، وعدم التعرف على علة ظاهرة نتيجة لنقص أدوات التجربة ووسائلها، لا يمكن أن يعتبر دليلاً على عدم وجود العلة العادية لتلك الظاهرة من هنا فيمكن القبول والاقرار بالظواهر الخارقة للعادة لسبب واحد وهو أنها وجدت نتيجة علل وعوامل مجهولة، وكحد أقصى يمكن أن نعتبر التعرف على عللها في الزمان الذي ما زالت لم تُعرف ولم تكتشف فيه بعد عملاً معجزاً، أما أن ننكر وجود العلل التي يمكن اكتشافها ومعرفتها من خلال التجارب العلمية، فإنَّ هذا يعني نفياً لمبدأ العلية وهو باطل.</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إن مبدأ العلية لا يقتضي اكثر من ان تكون لكل موجود مرتبط ومعلول علة ما، ولكن هذا المبدأ لا يفرض أن تكون كل علة قابلة للمعرفة والاكتشاف من خلال التجارب العلمية، ولا يوجد أي دليل على ذلك، لان ميدان التجارب العلمية ومجالها محدد بالأمور الطبيعية، ولا يمكن أن يثبت من خلال ادوات المختبرات وأجهزتها وجود أمور ما وراء الطبيعة أو نفيها، أو عدم تأثيرها. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">أما تفسير الاعجاز بالتعرف على العلل المجهولة فغير صحيح، ذلك لأن هذه المعرفة إن امكن التوصل إليها من طريق العلل والعوامل العادية، فلا يكون هناك فرق بينها وبين سائر الظواهر العادية، ولا يمكن اعتبارها - بأي وجه كان - أمراً خارقاً للعادة. أما لو حصلت المعرفة المذكورة بصورة غير عادية، فإنها - وإن كانت أمراً خارقاً للعادة وفيما لو كانت مستندة الى اذن خاص من الله تعالى، وصدرت كدليل على صدق النبوة - ستعتبر من أقسام المعجزة (المعجزة العلمية)، كما في معرفة عيسى (ع) ما يأكل الناس وما يلبسون، حيث اعتبرت من معجزاته. ولكن لا يمكن حصر المعجزة بهذا القسم، ونفي سائر اقسامها، وأخيراً يبقى التساؤل عن الفرق بين هذه الظاهرة وسائر الظواهر الخارقة للعادة في علاقتها بمبدأ العلية.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الثانية" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الثانية:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">جرت السنة الإلهية على أن توجد كل ظاهرة من طريق علة خاصة، والآيات القرآنية تصرح بأنه ((ولن تَجِدَ لِسُنَّةِ اللهِ تَبْدِيلًا وَلَن تَجِدَ لِسُنَّةِ الله تحويلا))، وخرق العادة بمثابة التغيير والتبديل للسنة الإلهية، تنفيه هذه الآيات. </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وهذه الشبهة كالسابقة، مع الفرق في أن الشبهة السابقة قد استدل عليها بالعقل فحسب، وهذه الشبهة استند فيها للآيات القرآنية.</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إنَّ هذا الرأي الذي يعتبر حصر اسباب الظواهر وعللها في الاسباب والعلل العادية من السنن الالهية التي لا تقبل التغيير ... مثل هذا الرأي لا دليل عليه، ونظيره أن يُدعى بأن حصر علة الحرارة بالنار من السنن الإلهية التي لا تقبل التغيير. ويمكن القول تجاه هذه الادعاءات بأن تعدد انواع العلل المختلفة لأنواع المعلولات، وقيام الاسباب غير العادية مقام الأسباب العادية هو مما يحدث في العالم دائماً، ومن هنا يلزم اعتبار ذلك من السنن الالهية، وحصر الأسباب بالأسباب العادية يُعتبر تغييراً لها، تنفيه الآيات القرآنية الكريمة. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وعلى كل حال فتفسير الآيات الدالة على نفي التغيير والتحويل في السنن الالهية بأن لا يقوم مقام الاسباب العادية شيء وأنها من السنن التي لا تقبل التغيير يعد تفسيراً بلا دليل بل هناك آيات كثيرة تدل على وقوع المعجزات وخوارق العادات تقف كدليل قوي على عدم صحة هذا التفسير، ولا بد من البحث عن تفسيرها الصحيح في كتب التفسير. ونشير له هنا بإيجاز، فنقول: بأن هذه المجموعة من الآيات الشريفة تستهدف نفي تخلف المعلول عن العلة، لا أنها تنفي تعدد العلة وقيام العلة غير العادية مقام العلة العادية، بل يمكن القول بأن القدر المتيقن من مورد هذه الآيات، هو تأثير الأسباب والعلل غير العادية.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الثالثة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الثالثة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">جاء في القرآن الكريم أن الناس طالبوا نبي الاسلام (ص) مراراً ببعض المعجزات وخوارق العادات، وامتنع النبي (ص) عن الاستجابة لطلبهم فإذا كان الاتيان بالمعجزات طريقاً لإثبات النبوة، إذن فلماذا لم يستفد النبي (ص) من هذا الطريق لإثبات نبوته؟</p>
+						<div id="h3-الجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">الجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن هذه الآيات مرتبطة بالطلب الذي صدر منهم عناداً، أو لأهداف أخرى غير طلب الحقيقة، بعد إقامة الحجة عليهم، وإثبات نبوته (ص) بالطرق الثلاث دلائل الصدق وبشارات الأنبياء السابقين، وإظهار المعجزة ولكن الحكمة الالهية اقتضت عدم الاستجابة لهم.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong> وتوضيحه:</strong> إنَّ الهدف من إظهار المعجزة - وهي أمر استثنائي في النظام الحاكم في الكون وتصدر أحياناً استجابة لمطالبة الناس (أمثال ناقة صالح (ع))، وأخرى ابتداءً ومن دون مطالبتهم (كمعجزات عيسى (ع)) - إنَّما هو التعريف بأنبياء الله، وإقامة الحجة على الناس، لا إلزامهم وقهرهم على قبول دعوة الأنبياء ولا اجبارهم على التسليم والانقياد الجبري، ولا توفير مشاهد اللهو والتسلية لهم، والتلاعب بنظام الأسباب والمسببات العادية. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ومثل هذا الهدف لا يقتضي الاستجابة لكل رغبة وطلب، بل إن الاستجابة - احياناً - مخالفة للحكمة ونقض للغرض، أمثال المطالبة ببعض الأعمال التي تسد طريق الاختيار، وتقهر الناس على تقبل دعوة الأنبياء (ع)، أو الطلب الصادر عن دافع العناد او لأهداف أخرى غير البحث عن الحقيقة، وذلك لأنها - من ناحية - ستؤدي بالمعاجز للابتذال، وسيتجه الناس لمشاهدتها من أجل قضاء وقتهم في اللهو والتسلية، أو أنهم يلتفون حول الأنبياء مستهدفين تحقيق بعض المنافع الشخصية، ومن ناحية أخرى، ستزول أجواء الامتحان والاختيار الحر، وسيتبع الناس الأنبياء عن اكراه، خاضعين لتأثير عوامل الضغط والقهر وكلا النائيتين مخالف للحكمة والهدف من اظهار المعجزات.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> وأما في غير هذه المجالات، وحين تقتضي الحكمة الالهية فان الأنبياء سيستجيبون لطلب الناس كالمعاجز الكثيرة التي أتى بها نبي الاسلام (ص)، وقد ثبت نقل بعضها بالتواتر، وفي مقدمتها معجزته الخالدة أي القرآن الكريم.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الشبهة-الرابعة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الشبهة الرابعة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }"> إن المعجزة من جهة اناطتها بالاذن الالهي الخاص تكون دليلا وآية على وجود الارتباط الخاص بين الله وحامل المعجزة، بدليل منحه هذا الاذن الخاص لهذا النبي خاصة، وبعبارة أخرى قد تحقق عمله بيده، وعن طريق إرادته، ولكن لا يلزم عقلاً من هذا الارتباط ان يكون هناك ارتباط آخر بين الله تعالى وحامل المعجزة، وأنه رسول وقد تلقى الوحي منه، اذن فالمعجزة لا يمكن أن تُعتبر دليلاً عقلياً على صحة دعوى النبوة، وأكثر ما تدل عليه في هذا المجال أن تكون دليلاً ظنياً واقناعياً عليها فحسب.</p>
+						<div id="h3-والجواب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والجواب:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن العمل الخارق للعادة، وان كان من نوع الخارق الالهي للعادة، لا يدل بنفسه على وجود علاقة الوحي، ومن هنا لا يمكن أن تعتبر كرامات اولياء الله دليلاً على نبوتهم، ولكن الحديث هنا هو حول ذلك الشخص الذي ادعى النبوة، واظهر المعجزة دليلاً وآية على صدق دعواه، واذا افترضنا أن أحداً ادعى النبوة كذباً، فهذا يعني أنه قد ارتكب أعظم المعاصي وأبشعها، ويترتب على عمله أسوأ المفاسد في الدنيا والآخرة. </p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ومثل هذا الشخص لا يصلح - أبداً - لمثل هذا الارتباط بالله تعالى، ولا تقتضي الحكمة الالهية تزويده بالقدرة على إظهار المعجزة، ليكون سبباً في ضلال العباد وانحرافهم. </p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والحاصل:</strong> إنَّ العقل يدرك - بوضوح - أن الشخص الذي يصلح لهذا الارتباط الخاص مع الله تعالى، والتزود بالقدرة على إظهار المعجزات؛ أنما هو الشخص الذي لا يخون مولاه، ولا يكون سبباً في ضلال العباد وشقائهم الأبدي. إذن فإظهار المعجزة دليل عقلي قاطع على صحة دعوى النبوة.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---ما-هو-مضمون-مبدأ-العلية-وم" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - ما هو مضمون مبدأ العلية؟ وماذا يلزم منه؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">مبدأ العلية يقتضي أن تكون لكل موجود مرتبط ومعلول علة ما، ويلزم منه أن الظواهر لا توجد من دون سبب، ولكن لا يلزم منه أن تكون كل علة قابلة للمعرفة والاكتشاف من خلال التجارب العلمية المحدودة بالأمور الطبيعية.</p>
+							</div>
+						</div>
+						<div id="h3-٢---لماذا-كان-الاعتراف-بمبدأ-ا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - لماذا كان الاعتراف بمبدأ العلية لا ينافي الاعتراف بالاعجاز؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لأن المعجزة لا تنفي وجود العلة، بل هي معلول لعلة غير عادية (ما وراء الطبيعة) لا تصل إليها التجارب العلمية، ومبدأ العلية لا يحصر العلل بالأسباب الطبيعية فقط.</p>
+							</div>
+						</div>
+						<div id="h3-٣---لماذا-لا-يصح-تفسير-الاعجاز" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - لماذا لا يصح تفسير الاعجاز بمعرفة العلل المجهولة؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لأنه إذا أمكن التوصل إلى هذه المعرفة بطريق العلل والعوامل العادية، فلن يكون هناك فرق بينها وبين سائر الظواهر العادية، ولا يمكن اعتبارها أمراً خارقاً للعادة.</p>
+							</div>
+						</div>
+						<div id="h3-٤---هل-إن-الاعتراف-بالاعجاز-ين" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - هل إن الاعتراف بالاعجاز ينافي عدم خضوع السنن الإلهية للتغير؟ ولماذا؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لا ينافي، لأن حصر الأسباب بالأسباب العادية ليس سنة إلهية ثابتة، بل إن تعدد العلل وقيام الأسباب غير العادية مقام العادية هو مما يحدث دائماً في العالم، والآيات التي تنفي التبديل تقصد نفي تخلف المعلول عن علته، لا نفي تعدد العلل.</p>
+							</div>
+						</div>
+						<div id="h3-٥---هل-إن-الأنبياء-كانوا-يأتون" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٥ - هل إن الأنبياء كانوا يأتون بالمعجزة ابتداءً؟ أم أنهم كانوا يأتون بها استجابة لمطالبة الناس؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> كانوا يأتون بها تارة استجابة لمطالبة الناس (مثل ناقة صالح) وتارة أخرى ابتداءً ومن دون مطالبة (كمعجزات عيسى عليه السلام).</p>
+							</div>
+						</div>
+						<div id="h3-٦---لماذا-لم-يستجب-الأنبياء-لك" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٦ - لماذا لم يستجب الأنبياء لكلِّ ما يطلبه الناس من معاجز؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> لأن بعض الطلبات تصدر عن عناد أو للّهو والتسلية أو لطلب منافع شخصية، والاستجابة لها تؤدي لابتذال المعجزة، كما أن بعضها قد يسد طريق الاختيار الحر ويقهر الناس على الإيمان، وهو ما يخالف الحكمة الإلهية والغرض من الامتحان.</p>
+							</div>
+						</div>
+						<div id="h3-٧---وضح-هذه-الفكرة-إن-المعجزة-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٧ - وضح هذه الفكرة: إن المعجزة ليست دليلاً ظنياً إقناعياً فحسب، بل إنها دليل عقلي على صدق مدعي النبوة.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">الفكرة هي أن العقل يدرك أن الله تعالى بحكمته لا يمنح القدرة على خرق العادة وإظهار المعجزات لشخص يدعي النبوة كذباً، لأن ذلك سيؤدي إلى ضلال العباد وشقائهم، فإقدار الله للمدعي على المعجزة هو تصديق عقلي قاطع لدعواه.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-التاسع-والعشرون-خصائص-ال">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس التاسع والعشرون: خصائص الأنبياء</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/29.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-تعدد-الأنبياء" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">تعدد الأنبياء</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">لقد بحثنا حتى الآن في ثلاث مسائل أساس من مسائل النبوة، ووصلنا لهذه النتيجة، مع ملاحظة قصور المعرفة البشرية من الوصول لكل المعلومات والمعارف المؤثرة في السعادة الدنيوية والأخروية، فإن الحكمة الإلهية تقتضي تعيين نبي أو أنبياء يتم تعليمهم ببعض الحقائق الضرورية ليبلغها أولئك لسائر البشر بصورة سليمة، دون أن تتعرض لأي تشويه وتلاعب. ومن ناحية أخرى، على الرسل إبلاغها للآخرين بصورة تقيم الحجة عليهم، وأفضل الطرق وأكثرها شمولية في هذا المجال هو إظهار المعجزة.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وقد أثبتنا هذه المفاهيم بالبراهين العقلية، ولكن هذه البراهين لا تدلُّ على ضرورة تعدد الانبياء والكتب والشرائع السماوية. فإذا افترضنا أن ظروف الحياة البشرية بالصورة التي يمكن فيها لنبي ما أن يبني كل ما يحتاج إليه البشر، حتى نهاية العالم، بحيث يتمكن كل فرد أو جماعة ـ عبر التاريخ ـ من التعرف على وظيفته من خلال رسالة هذا النبي، فإن ذلك لا يكون مخالفاً لهذه البراهين.</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ولكننا نعلم:</strong></p>
+						<div id="h3-أولا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">أولاً:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إنَّ عمر الانسان - أي انسان كان ومنهم الأنبياء - محدود وقصير، ولا تقتضي حكمة الخلق بقاء النبي الأول حياً حتى نهاية العالم، ليهدي جميع البشر بشخصه.</p>
+							</div>
+						</div>
+						<div id="h3-ثانيا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">ثانياً:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> الملاحظ عدم اتحاد وتشابه ظروف الحياة البشرية في مختلف الأزمنة والأمكنة، وهذا الاختلاف في الظروف، وخاصة مع ملاحظة التعقيد التدريجي الذي تتعرض له العلاقات الاجتماعية، يمكن أن يكون له تأثيره في كيفية الأحكام والقوانين الاجتماعية وكميتها، وربما فُرض - أحياناً - تشريع قوانين جديدة، وإذا فرض بيان مثل هذه القوانين وإبلاغها بوساطة نبي مبعوث قبل آلاف السنين، لكان مثل هذا البيان والإبلاغ عبثاً ولغواً، كما يشق الحفاظ عليها، ويعسر تنفيذها في مجالاتها الخاصة .</p>
+							</div>
+						</div>
+						<div id="h3-ثالثا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">ثالثاً:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">في الكثير من الأزمنة والعصور السابقة، لم تكن وسائل الإعلام وإمكانات النشر متوفرة لدعوة الأنبياء بالصورة التي يمكن للنبي إيصال رسالته لجميع البشر في العالم.</p>
+							</div>
+						</div>
+						<div id="h3-رابعا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">رابعاً:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">إن تعاليم النبي قد تتعرض - في وسط الأمة التي تلقت هذه التعاليم منه وبمرور الزمن، ونتيجة لشتى العوامل - إلى التحريف وإلى تفسيرات منحرفة خاطئة لها، وبعد فترة من الزمن ربما تتحول الى دين مشوه ومنحرف، كما هو الملاحظ في دين عيسى التوحيدي حيث تحول لدين التثليث.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">ومن خلال هذه الملاحظات تضح الحكمة في تعدد الأنبياء عليهم السلام واختلاف الشرائع السماوية حول بعض الأحكام العبادية والقوانين الاجتماعية بالرغم من اتحادها في أصول العقائد والأسس الأخلاقية، واشتراكها في أصول الأحكام الفردية والاجتماعية، فالصلاة - مثلاً - مشرعة في جميع الأديان السماوية، وإن اختلفت الأمم في طريقة أدائها أو في قبلتها، وكذلك الزكاة والإنفاق، فهي مشرعة في كل الشرائع، وإن اختلفت في مقدارها ومواردها.</p>
+							<p :style="{ 'fontSize': fontSize + 'px' }">وعلى كل حال، يجب على كل إنسان الإيمان بجميع الأنبياء، وعدم التفريق بينهم في مجال الاعتقاد والتصديق بالنبوة، وكذلك التصديق بكل الرسالات والتعاليم النازلة عليهم، وعدم التفريق بينها، ولا يحق تكذيب أي نبي منهم، أو تكذيب أي حكم من أحكامهم، بل إن تكذيب واحد منهم، بمثابة تكذيب لجميعهم، وإنكار حكم إلهي واحد يعتبر إنكاراً لجميع أحكام الله، وبطبيعة الحال فإنَّ الوظيفة العملية لكلِّ أُمَّة، في أي زمان: اتباع التعاليم العملية، لنبي تلك الأمة وذلك الزمان.</p>
+							</div>
+						</div>
+						<div id="h3-والملاحظة-التي-يلزم-التأكيد-عل" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">والملاحظة التي يلزم التأكيد عليها هنا:</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }"> إنَّ العقل الانساني وإن أمكنه التوصل من خلال الملاحظات السابقة الى ادراك الحكمة في تعدد الأنبياء والكتب السماوية، والاختلاف بين الشرائع السماوية، ولكنه لا يمكنه التوصل لمعيار دقيق، لتعدد الأنبياء والشرائع السماوية، بحيث يمكنه الحكم وفقه في أي زمان أو مكان يلزم بعثة نبي جديد، أو شريعة جديدة، وكل ما يمكنه فهمه عدم الضرورة لبعثة نبي آخر، فيما لو كانت الظروف التي يعيشها البشر بالصورة التي تصل معها دعوة الأنبياء لجميع البشر، وتبقى معها الرسالة سليمة ومصونة للمستقبل، وعدم حدوث تغير كبير في الظروف الاجتماعية يفرض تشريعات أساس جديدة، وتغيراً في الأحكام والقوانين الموجودة .</p>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-عدد-الأنبياء" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">عدد الأنبياء</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">أشرنا سابقاً الى أن العقل لا يملك طريقاً يثبت من خلاله عدد الأنبياء والكتب السماوية، ولا يتيسر إثبات أمثال ذلك إلا من طريق الدليل النقلي . والقرآن الكريم وإن أكد أنَّ الله تعالى بعث لكل أمة نبياً، ولكنه لم يحدد عدد الأمم وأنبيائهم، وإنما اقتصر على ذكر أسماء عشرين أو أكثر بقليل، من الأنبياء وأشار لقصص وحكايات بعض منهم دون أن يصرح بأسمائهم.</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }">ولكن ورد في بعض الروايات عن أهل بيت العصمة والطهارة عليهم السلام، أن الله بعث <strong>مئة وأربعة وعشرين ألفاً من الأنبياء</strong>، وأن سلسلة الأنبياء تبدأ من آدم أبي البشر عليه السلام وتختم بمحمد بن عبدالله صلى الله عليه وآله وسلم.</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }">وبالإضافة لاطلاق تسمية (النبي) على أنبياء الله، وهو يدلُّ على هذا المنصب الإلهي الخاص، فإنهم يمتلكون صفات أخرى أمثال (النذير) و (المنذر) و (البشير) و (المبشِّر)، واعتبروا من (الصالحين) و (المخلصين) وقد بلغ بعضهم مقام (الرسالة) وورد في بعض الروايات أن <strong>عدد الرسل الإلهيين ثلاثمئة وثلاثة عشر.</strong></p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولذلك نبحث هنا عن مفهوم النبوة والرسالة، والفرق بين النبي والرسول.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-النبوة-والرسالة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">النبوة والرسالة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إن لفظة (الرسول) بمعنى (حامل الرسالة)، ولفظة النبي إذا كانت مشتقة من مادة (نبأ) فالنبي بمعنى (صاحب الخبر المهم)، وإذا كانت مشتقة من مادة (نبو) فهو بمعنى: (صاحب المقام الرفيع والشريف).</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ويعتقد بعض الناس أن مفهوم النبي أعم من مفهوم الرسول وذلك لأنّ النبي هو الذي نزل عليه الوحي من الله، سواء كان مأموراً بالإبلاغ أم لم يكن بينما الرسول هو المأمور بإبلاغ الوحي أيضاً.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولكن هذا التفسير غير صحيح، وذلك لأنه ذكرت في بعض الآيات الكريمة صفة (النبي) بعد صفة (الرسول)، مع أنه وفق التفسير المذكور، يلزم تذكر الصفة التي تتضمن المفهوم العام وهي (النبي) قبل ذكر الصفة الخاصة (الرسول) إضافة الى عدم وجود دليل على اختصاص الأمر بإبلاغ الوحي بالرسل.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وورد في بعض الروايات أن مقتضى مقام النبوة أن يرى صاحبها ملك الوحي في النوم، وأن يسمع صوته في اليقظة، بينما صاحب مقام الرسالة يشاهد ملك الوحي في اليقظة أيضاً.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولكن هذا الفرق لا يمكن حمله على مفهوم اللفظ، وعلى كل حال فالذي يمكن تقبله أنَّ النبيَّ من حيث المصداق (لا المفهوم) أعم من الرسول، أي أن الأنبياء جميعاً كانوا يملكون مقام النبوة، وأما مقام الرسالة فهو مختص بجماعة منهم، وعدد الرسل وفق الرواية السابقة (ثلاثمئة وثلاثة عشر) وبطبيعة الحال يكون مقامهم أسمى من مقام سائر الأنبياء كما أن الرسل لم يكونوا متساوين من حيث الدرجة والفضيلة، وقد نال بعضهم مقام (الإمامة) أيضاً.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأنبياء-أولو-العزم" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأنبياء أولو العزم</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }">عبر القرآن الكريم عن جماعة من الأنبياء بأنهم (أولو العزم) ولكن لم يحدد خصائصهم. ويُستفاد من روايات أهل البيت عليهم السلام أن <strong>عدد الأنبياء أولي العزم خمسة، </strong>وهم بحسب الترتيب الزمني: </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">نوح عليه السلام وإبراهيم عليه السلام وموسى عليه السلام وعيسى عليه السلام ومحمد بن عبد الله صلى الله عليه وآله وسلم.</p>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>والميزة التي تميزهم عن سائر الأنبياء</strong>، إضافة للصبر والاستقامة المتميزة التي تمتعوا بها، وأشير إليها في القرآن الكريم هي : إنَّ لكل واحد منهم كتاباً وشريعة مستقلة، وقد اتبع شريعته الانبياء المعاصرون له، أو المتأخرون عنه، حتى يُبعث نبي آخر من أولي العزم بالرسالة، ويأتي بكتاب وشريعة جديدة.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ومن خلال ذلك اتضح أن من الممكن اجتماع نبيين في زمان واحد، كما عاصر لوط عليه السلام إبراهيم عليه السلام، وهارون عليه السلام موسى عليه السلام، ويحيى عليه السلام عيسى عليه السلام، في زمان واحد.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-ملاحظات" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">ملاحظات:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>في نهاية هذا الدرس نشير - بإيجاز - الى بعض الملاحظات ونقتصر على ذكر عناوينها، دون إطالة البحث عنها:</strong></p>
+						<div id="h3-أ---إن-أنبياء-الله-يصدق-بعضهم-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">أ - إن أنبياء الله يصدق بعضهم بعضاً، ويبشر السابق منهم ببعثة النبي اللاحق، ومن هنا، فإنَّ الذي يكذبه الأنبياء السابقون أو المعاصرون له يُعتبر كاذباً.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						<div id="h3-ب---إن-أنبياء-الله-لم-يطلبوا-ا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">ب - إن أنبياء الله لم يطلبوا الأجر على ممارسة وظائف النبوة ومهامها من الناس، ونبي الإسلام صلى الله عليه وآله وسلم لم يطلب من أمته أجراً لرسالته إلا إيصاءهم بالمودة لأهل بيته عليهم السلام، ليؤكد أكثر على اتباعهم والتمسك بهم، وفي الواقع إن فوائد ومعطيات هذه الوصية تعود للأمة نفسها.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						<div id="h3-ج---كان-لبعض-أنبياء-الله-مناصب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">ج - كان لبعض أنبياء الله مناصب إلهيّة أخرى أمثال القضاء والحكم، ويمكن أن نذكر من جملة هؤلاء الأنبياء السابقين داود عليه السلام وسليمان عليه السلام، ويمكن أن يستفاد من الآية (٦٤) من سورة النساء - التي فرضت الإطاعة لكل رسول بصورة مطلقة - أنَّ الرسل جميعاً كانوا يتمتعون بأمثال هذه المناصب.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						<div id="h3-د---إن-بعض-الجن---وهم-نوع-من-ا" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">د - إن بعض الجن - وهم نوع من المخلوقات المختارة والمكلفة، ولا يمكن للبشر رؤيتهم في الظروف العادية - اطلعوا على دعوة بعض الأنبياء الإلهيين وقد آمن بهم بعض صلحائهم وأتقيائهم، وكان من بينهم أتباع لموسى عليه السلام ومحمد صلى الله عليه وآله وسلم، كما أنَّ بعضهم كفروا بأنبياء الله اتباعاً للشيطان.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---بين-الحكم-والاسباب-من-تعدد" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - بين الحكم والاسباب من تعدد الأنبياء.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الحكم (الغاية):</strong> إبلاغ الحقائق الضرورية للبشر بصورة سليمة، وإقامة الحجة عليهم.</p>
+							<div class="qa" id="h4-الأسباب" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الأسباب:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>أولاً:</strong> عمر الأنبياء محدود وقصير، ولا تقتضي حكمة الخلق بقاء النبي الأول حياً حتى نهاية العالم ليهدي جميع البشر بشخصه.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ثانياً:</strong> عدم اتحاد وتشابه ظروف الحياة البشرية في مختلف الأزمنة والأمكنة، وهذا الاختلاف قد يؤدي إلى فرض تشريع قوانين جديدة. كما أن إبلاغ القوانين الجديدة في وقت مبكر جداً (قبل آلاف السنين) سيكون عبثاً ويشق الحفاظ عليه ويعسر تنفيذه.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>ثالثاً:</strong> عدم توفر وسائل الإعلام وإمكانات النشر في الكثير من الأزمنة والعصور السابقة لإيصال الرسالة لجميع البشر.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">رابعاً: تعرض تعاليم النبي للتحريف والتفسيرات المنحرفة الخاطئة بمرور الزمن ونتيجة لشتى العوامل، مما يحولها إلى دين مشوه ومنحرف.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-٢---ما-هي-وظيفة-الناس-تجاه-دعو" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - ما هي وظيفة الناس تجاه دعوة الأنبياء جميعاً وتعاليمهم؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">يجب على كل إنسان الإيمان بجميع الأنبياء، وعدم التفريق بينهم في مجال الاعتقاد والتصديق بالنبوة، والتصديق بكل الرسالات والتعاليم النازلة عليهم، وعدم التفريق بينها. ولا يحق تكذيب أي نبي منهم، أو تكذيب أي حكم من أحكامهم. والوظيفة العملية لكل أمة في أي زمان هي اتباع التعاليم العملية لنبي تلك الأمة وذلك الزمان.</p>
+							</div>
+						</div>
+						<div id="h3-٣---ما-هي-الحالة-التي-لا-يلزم-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - ما هي الحالة التي لا يلزم معها إرسال النبي الجديد؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لا تلزم بعثة نبي آخر (جديد) إذا كانت الظروف التي يعيشها البشر بالصورة التي تصل معها دعوة الأنبياء لجميع البشر، وتبقى معها الرسالة سليمة ومصونة للمستقبل، مع عدم حدوث تغير كبير في الظروف الاجتماعية يفرض تشريعات أساس جديدة، وتغيراً في الأحكام والقوانين الموجودة.</p>
+							</div>
+						</div>
+						<div id="h3-٤---اذكر-عدد-الأنبياء-والرسل" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - اذكر عدد الأنبياء والرسل.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>عدد الأنبياء:</strong> مئة وأربعة وعشرون ألفاً (حسب الروايات عن أهل بيت العصمة والطهارة عليهم السلام).</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>عدد الرسل الإلهيين:</strong> ثلاثمئة وثلاثة عشر (حسب الروايات).</p>
+							</div>
+						</div>
+						<div id="h3-٥---ما-الفرق-بين-النبي-والرسول" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٥ - ما الفرق بين النبي والرسول؟ وما هي النسبة بينهما من حيث المفهوم، ومن حيث المصداق؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-الفرق-من-حيث-المفهوم-اللغة" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الفرق من حيث المفهوم (اللغة):
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>   الرسول:</strong> بمعنى حامل الرسالة.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>   النبي:</strong> إذا اشتق من (نبأ) فمعناه (صاحب الخبر المهم)، وإذا اشتق من (نبو) فمعناه (صاحب المقام الرفيع والشريف).</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-النسبة-من-حيث-المصداق" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									النسبة من حيث المصداق:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">النبي من حيث المصداق (لا المفهوم) أعم من الرسول. الأنبياء جميعاً يملكون مقام النبوة، بينما مقام الرسالة مختص بجماعة منهم (وعددهم ثلاثمئة وثلاثة عشر).</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-٦---بأي-المناصب-الإلهية-يفضل-ب" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٦ - بأي المناصب الإلهية يفضل بعض الأنبياء على بعضهم الآخر؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">يفضل بعض الأنبياء على بعضهم الآخر بمقام الرسالة، وهو مقام أسمى من مقام سائر الأنبياء. كما أن الرسل أنفسهم لم يكونوا متساوين من حيث الدرجة والفضيلة. وقد نال بعضهم مقام (الإمامة) أيضاً، وبعضهم نال مناصب إلهية أخرى مثل القضاء والحكم (كداود وسليمان عليهما السلام).</p>
+							</div>
+						</div>
+						<div id="h3-٧---من-هم-الأنبياء-أولو-العزم-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٧ - من هم الأنبياء أولو العزم؟ وما هي خصائصهم؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">هم خمسة أنبياء بحسب الترتيب الزمني: نوح عليه السلام، وإبراهيم عليه السلام، وموسى عليه السلام، وعيسى عليه السلام، ومحمد بن عبد الله صلى الله عليه وآله وسلم.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>خصائصهم:</strong></p>
+							</div>
+						</div>
+						<div id="h3-أ---الصبر-والاستقامة-المتميزة-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">أ - الصبر والاستقامة المتميزة التي تمتعوا بها.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						<div id="h3-ب---إن-لكل-واحد-منهم-كتابا-وشر" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">ب - إن لكل واحد منهم كتاباً وشريعة مستقلة.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							</div>
+						</div>
+						<div id="h3-٨---هل-يمكن-تعدد-الأنبياء-في-ز" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٨ - هل يمكن تعدد الأنبياء في زمان واحد؟ وإذا كان ذلك ممكناً فاذكر بعض النماذج والأمثلة .</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">نعم، من الممكن اجتماع نبيين في زمان واحد.</p>
+							<div class="qa" id="h4-الأمثلة-والنماذج" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									الأمثلة والنماذج:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">   لوط عليه السلام عاصر إبراهيم عليه السلام.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">   هارون عليه السلام عاصر موسى عليه السلام.</p>
+								<p :style="{ 'fontSize': fontSize + 'px' }">   يحيى عليه السلام عاصر عيسى عليه السلام.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-٩---ما-هي-الصفات-الأخرى-للأنبي" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٩ - ما هي الصفات الأخرى للأنبياء الإلهيين؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">بالإضافة إلى إطلاق تسمية (النبي)، فإنهم يمتلكون صفات أخرى أمثال: النذير، والمنذر، والبشير، والمبشِّر، واعتبروا من الصالحين والمخلصين.</p>
+							</div>
+						</div>
+						<div id="h3-١٠---ما-هو-موقف-الجن-من-الأنبي" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١٠ - ما هو موقف الجنّ من الأنبياء من حيث الكفر والإيمان؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">بعض الجن (وهو نوع من المخلوقات المختارة والمكلفة) آمنوا بدعوة بعض الأنبياء الإلهيين، وكان من بينهم أتباع لموسى عليه السلام ومحمد صلى الله عليه وآله وسلم. بينما كفر بعضهم الآخر بأنبياء الله اتباعاً للشيطان.</p>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+
+<div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-٣٠-الناس-والأنبياء">
+	<button @click="toggle()" class="accordion-button">
+		<div class="accordion-title-group">
+			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس ٣٠: الناس والأنبياء</h2>
+			<span class="icon-toggle" x-text="iconText"></span>
+		</div>
+		<audio controls src="audio/30.mp3" onclick="event.stopPropagation()">
+			<p class="muted">متصفحك لا يدعم الصوت.</p>
+		</audio>
+	</button>
+	<div x-show="open" x-transition class="accordion-panel">
+		<section>
+					<div class="qa" id="h2-المقدمة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">المقدمة</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">حين يذكر القرآن الكريم الأنبياء السابقين، ويستعرض قصص حياتهم النيرة والمباركة، ويزيل غبار التحريف والتشويه العمدي وغير العمدي من صفحات تاريخهم المشرقة؛ يهتم اهتماماً كبيراً بمواقف الأمم تجاه الأنبياء (ع). </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">فمن ناحية، يتعرض لمواقف الناس تجاه أنبياء الله، والعوامل التي دفعتهم لمعارضتهم، ومن ناحية أخرى؛ يشير الى طرق الهداية والتربية التي استخدمها الأنبياء، وأساليب مكافحتهم ومواجهتهم لعوامل الكفر والشرك والانحراف، وينبه على السنن الالهية في إدارة الشعوب والمجتمعات، وخاصة العلاقات والمواقف المتبادلة بين الناس والأنبياء، حيث تشتمل على ملاحظات مثمرة وتربوية رائدة.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وأمثال هذه البحوث - وإن لم ترتبط بصورة مباشرة بالمسائل العقائدية والكلامية - ولكن بما أنها تسلّط بعض الأضواء على مسائل النبوة، وتزيل الكثير من الغموض والتعقيد عنها، ومن أجل تأثيراتها الفاعلة والمثمرة في إصلاح الناس وتربيتهم، وأقتباس العبرة والموعظة من الحوادث التاريخية المهمة؛ فإنها تملك أهمية بالغة، ومن هنا نشير في هذا الدرس الى أهم هذه البحوث.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-موقف-الناس-تجاه-الأنبياء" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">موقف الناس تجاه الأنبياء</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">حين ينهض الأنبياء الإلهيون لدعوة الناس لعبادة الله وحده، وإطاعة تعاليمه، والإعراض عن أصنامهم وآلهتهم الباطلة، ورفض الشياطين والطواغيت، والابتعاد عن الظلم والفساد والمعاصي والأعمال القبيحة؛ فأنهم سيواجهون بمعارضة الناس لهم ومخالفتهم، وخاصة من أمثال حكام المجتمع، وأثريائهم ومترفيهم المنتشين والغارقين بحياتهم العابثة اللاهية، والمغرورين بأموالهم ومناصبهم، أو بعلمهم وثقافتهم. إن هؤلاء سيبذلون كل جهودهم وقواهم لمحاربة الأنبياء والوقوف بوجههم، ويجرون الكثير من الجماعات والفئات الأخرى لاتباعهم، ويصدونهم عن اتباع الحق، ولكن - وبصورة تدريجية - ستؤمن بالأنبياء الالهيين جماعة قليلة اكثرها من محرومي المجتمع.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ومن النادر إقامة مجتمع على اساس العقائد الصحيحة، وموازين العدل والقسط وإطاعة أمر الله والأنبياء، كما هو الملاحظ في زمان سليمان (ع) حيث وجد مثل ذلك المجتمع، وان كانت بعض تعاليم الأنبياء ستشق طريقها الحضارات الشعوب وتنفذ الى جوهر ثقافتهم وتأخذ بالانتقال من أمة لأخرى، وسيقتبس منها الكثير، وأحياناً ستطرح كأعمال وأطروحات مبتكرة لزعماء الكفر، كما هو الملاحظ في الكثير من الانظمة الحقوقية والقانونية في العالم، حيث إنها مقتبسة من الشرائع السماوية ويطرحها اصحابها كآراء ونظريات مبتكرة لهم دون أن يُذكر مصدرها ومنبعها الأصلي.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-عوامل-معارضة-الأنبياء-ودوافعها" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">عوامل معارضة الأنبياء ودوافعها</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إن المعارضة الأنبياء - إضافة للعامل العام، وهو الرغبة بالتحلل وأتباع الأهواء النفسية - عوامل ودوافع أخرى، منها: الغُرور، والعزة بالإثم، والاستكبار التي تبرز كثيراً في أوساط الأشراف والأثرياء والمترفين والطبقات العليا في المجتمع، ومنها العصبيات والالتزام المتشدد بتقاليد السابقين والآباء والأجداد، والعادات الخاطئة المتفشية بين الشعوب المختلفة، وكذلك يعتبر الحفاظ على المصالح والامتيازات الاقتصادية والمراكز الاجتماعية، دافعاً قوياً للأثرياء والحكام والعلماء لاتخاذهم ذلك الموقف من الأنبياء.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ومن جانب آخر فإنَّ للجهل وعدم الوعي المنتشر في عامة الناس دوره الكبير في سقوطهم في شراك الطواغيت وجبابرة الكفر، وقد أدى تقليد الكبار والأغلبية الى ركون الناس لأوهامهم ومعتقداتهم، والإعراض عن الدين الذي لم يؤمن به إلا القليل، وخاصة ما يُرى في المتدينين انهم من الأفراد الذين لا يتمتعون بمراكز اجتماعية مهمة، والمنبوذين من زعماء القوم وأغلبية المجتمع، بالإضافة لذلك كله ضغط القوة الحاكمة والمستكبرين.</p>
+						<div id="h3-الاساليب-التي-استخدمت-لمواجهة-" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">الاساليب التي استخدمت لمواجهة الأنبياء</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">لقد أستخدم الأعداء أساليب مختلفة في مواجهتهم لنشاطات الأنبياء وجهودهم:</p>
+							<div class="qa" id="h4-أ---الاستهانة-والاستهزاء" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									أ - الاستهانة والاستهزاء:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">ففي البداية كانوا يحاولون القضاء على شخصية الرسل الالهيين ونفوذهم من خلال الاستهانة والاستهزاء بهم، ليقف عامة الناس منهم موقف اللامبالاة وعدم الاكتراث.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-ب---الافتراء-والتهم" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									ب - الافتراء والتهم:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">وبعد ذلك يستخدمون أسلوب الكذب والتهمة والافتراء ليلصقوا بهم تهماً بشعة، أمثال إن الرسول (سفيه) أو (مجنون)، وحين يأتي بالمعجزة فإنهم يتهمونه بالسحر كما يطلقون على الرسالات تسمية (الاساطير).</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-ج---المجادلة-والمغالطة" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									ج - المجادلة والمغالطة:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">وحين يتحدث رسل الله مع الناس بلغة الحكمة والاستدلال، ويأخذون بالحوار معهم بأسلوب المجادلة بالأحسن، أو وعظهم ونصيحتهم وتحذيرهم من مغبة الكفر والشرك والطغيان، وتعريفهم على المعطيات الزاخرة للإيمان بالله وبشارة المؤمنين والصالحين بسعادة الدنيا والآخرة ... في مثل هذه الحالات، كان زعماء الكفر يمنعون الناس من الإصغاء لأحاديثهم، ثم يحاولون الجواب عنهم بمنطق غبي وضعيف، ويحاولون خداع الجماهير بأحاديث منمقة ظاهراً، ومنعهم من اتباع الأنبياء (ع)، وعلى الغالب يتشبثون في أحاديثهم بأساليب القدماء والأجداد وتقاليدهم وعاداتهم، ويواجهونهم بثرواتهم وتفوقهم المادي، ويعتبرون تخلف أتباع الأنبياء مادياً وضعفهم؛ دليلاً على عدم صحة معتقداتهم، ثم يتمسكون ببعض الذرائع والمسوغات لتقاعسهم وممارساتهم أمثال: لماذا لم يجعل الله انبياءه وسفراءه من الملائكة؟ أو لماذا لم يتمتع هؤلاء بامتيازات اقتصادية ومعيشية بارزة؟ وربما بلغ عنادهم الى هذه الدرجة من الانحطاط بأن يقولوا: لا نؤمن حتى ينزل الوحي علينا أنفسنا، أو نرى الله جهرة، ونسمع کلامه بدون واسطة.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-د---الترهيب-والترغيب" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									د - الترهيب والترغيب:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }">الأسلوب الآخر الذي ينقله القرآن الكريم عن الكثير من الأمم؛ تهديدهم أنبياء الله وأنصارهم بأنواع العذاب والتنكيل، وبإخراجهم من مدنهم وبلادهم، ورجمهم بالحجارة، أو بقتلهم. ومن جانب آخر، استخدام وسيلة الاغراء والترغيب وخاصة بذل الأموال الطائلة لمنع اناس من اتباع الأنبياء.</p>
+								</div>
+							</div>
+							<div class="qa" id="h4-هـ---استخدام-العنف-والقتل" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									هـ - استخدام العنف والقتل:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p :style="{ 'fontSize': fontSize + 'px' }"> وأخيراً حين يرون مدى صبر الانبياء واستقامتهم وثباتهم، ومدى ثبات أنصارهم وأتباعهم الحقيقيين واصرارهم، ومع يأسهم من تأثير وسائل الاعلام وسائر الأساليب المستخدمة في هذا السبيل. بعد ذلك كله يقومون بتنفيذ تهديدهم عملياً، وأستخدام العنف والقوة ضدهم، فقد قتلوا الكثير من الأنبياء لتحرم الانسانية والشعوب من أعظم النعم والمعطيات الالهية، وأفضل المصلحين والقادة الاجتماعيين.</p>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="qa" id="h2-بعض-السنن-الالهية-في-ادارة-الأ" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">بعض السنن الالهية في ادارة الأمم</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<p :style="{ 'fontSize': fontSize + 'px' }">إن الهدف الرئيس للأنبياء (ع) وإن كان هو تمكين الناس من الوصول الى المعارف والمعلومات التي يلزم توفرها من أجل الوصول الى سعادتهم الدنيوية والأخروية، وسد النقص والقصور الناشيء من عقولهم وتجاربهم بواسطة الوحي، وبعبارة أخرى إقامة الحجة عليهم ولكن حين يُبعث الأنبياء فان الله تعالى لشدة رحمته ورأفته على العباد، ومن خلال تدابيره الحكيمة يوفر الأجواء النفسية لتقبل دعوتهم، ليعين الناس على مسيرتهم التكاملية.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وبما أن أكبر عامل للكفر والانحراف والإعراض عن الله والأنبياء هو الشعور بعدم الحاجة، والغفلة عن حاجات الخلق الوسيعة والشاملة، لذلك وفر الله الحكيم أجواء وأسباباً تدفع الناس للالتفات والتوجه لحاجاتهم وضروراتهم، وإنقاذهم من عقد الغفلة والغرور والعصبية، ومن هنا ربما يبتليهم ببعض المحن والابتلاءات والمصاعب ليدفعهم ذلك لاحساس بضعفهم وليتوجهوا الى الله. </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">ولكن هذا العامل لم يكن تأثيره عاماً وشاملاً، فإن هناك الكثير من الناس وخاصة أولئك كانوا يتمتعون أكثر من غيرهم بامتيازات وامكانات مادية، وقد عاشوا سنوات طويلة حياة الترف واللهو، على حساب الظلم والجور الذي ينزلونه بالآخرين، وكما يعبر القرآن الكريم أنهم كالحجارة، بل أشد قسوة ... إن هؤلاء لم يستيقظوا من غفلتهم، بل ظلوا سادرين غافلين، واستمروا على السير في طريق ضلالهم، كما لو لم تؤثر فيهم مواعظ الأنبياء ونصائحهم وتحذيراتهم.</p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وحين يرفع الله تعالى عنهم العذاب، ويُنهي حالة الابتلاء ويفيض نعمه على الناس مرة أخرى، كانوا يقولون (قَد مَسَّ آباءنا الضراء والسراء) ويعودون من جديد الى ظلمهم، وجمعهم للثروات، وتنمية قواهم، غافلين عن أن مثل هذا التوسع والتكاثر في ثرواتهم وقواهم شرك وامتحان الهي يؤدي بهم الى الشقاء في الدنيا والآخرة. </p>
+						<p :style="{ 'fontSize': fontSize + 'px' }">وعلى كل حال.. حين يبلغ عدد أتباع الأنبياء وأنصارهم الى درجة يمكنهم من خلالها إقامة مجتمع مستقل، ويمكنهم الدفاع عن أنفسهم، ومحاربة أعداء الله، فإنَّهم يؤمرون بالجهاد، وسوف يُصب بأيديهم عذاب الله على رؤوس الكافرين، وفي غير هذه الحالة، وحينما لا يكونوا قد بلغوا هذه المرحلة من القوة، فإنَّ المؤمنين وبأمر من الأنبياء يُعرضون عن الكفار ويتجنبونهم، وسوف ينزل العذاب الإلهي من قنوات أخرى على رؤوس الأمة الجاحدة التي لا يؤمل فيها أي خير وعودة لظلال الله، وهذه هي السنة الإلهية التي لا تقبل التغيير في إدارة الأمم وتدبيرها.</p>
+						</div>
+					</div>
+					<div class="qa" id="h2-الأسئلة" x-data="accordionItem(true)">
+						<div class="q-title flex justify-between items-center" @click="toggle()">
+							<span :style="{ 'fontSize': fontSize + 'px' }">الأسئلة:</span>
+							<span class="icon-toggle" x-text="iconText"></span>
+						</div>
+						<div class="a" x-show="open" x-transition>
+						<div id="h3-١---ما-هو-موقف-الناس-تجاه-دعوة" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">١ - ما هو موقف الناس تجاه دعوة الأنبياء عليهم السلام؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p :style="{ 'fontSize': fontSize + 'px' }">حين ينهض الأنبياء لدعوة الناس لعبادة الله وحده وإطاعة تعاليمه، والإعراض عن أصنامهم وآلهتهم الباطلة، ورفض الشياطين والطواغيت، والابتعاد عن الظلم والفساد؛ فإنهم سيواجهون بمعارضة الناس ومخالفتهم، وخاصة من أمثال حكام المجتمع وأثريائهم ومترفيهم والمغرورين، الذين سيبذلون كل جهودهم لمحاربة الأنبياء وصد الناس عن اتباع الحق. ولكن بصورة تدريجية ستؤمن بالأنبياء جماعة قليلة أكثرها من محرومي المجتمع.</p>
+							</div>
+						</div>
+						<div id="h3-٢---اذكر-عوامل-معارضة-الأنبياء" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٢ - اذكر عوامل معارضة الأنبياء ودوافعها.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-عوامل-ودوافع-معارضة-الأنبياء-ه" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									عوامل ودوافع معارضة الأنبياء هي:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>1.  العامل العام:</strong> الرغبة بالتحلل واتباع الأهواء النفسية.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>2.  الغرور والعزة بالإثم والاستكبار:</strong> والتي تبرز في أوساط الأشراف والأثرياء والطبقات العليا في المجتمع.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>3.  العصبيات والالتزام المتشدد:</strong> بتقاليد السابقين والآباء والأجداد والعادات الخاطئة المتفشية بين الشعوب.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>4.  الحفاظ على المصالح والامتيازات الاقتصادية والمراكز الاجتماعية:</strong> وهو دافع قوي للأثرياء والحكام والعلماء.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>5.  الجهل وعدم الوعي المنتشر:</strong> الذي أدى إلى تقليد الكبار والأغلبية وركون الناس لأوهامهم ومعتقداتهم.</p>
+								<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>6.  ضغط القوة الحاكمة والمستكبرين.</strong></p>
+								</div>
+							</div>
+							</div>
+						</div>
+						<div id="h3-٣---ما-هي-الأساليب-التي-استخدم" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٣ - ما هي الأساليب التي استخدمها معارضو الأنبياء؟</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>الأساليب التي استخدمها معارضو الأنبياء هي:</strong></p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>1.  الاستهانة والاستهزاء:</strong> محاولة القضاء على شخصية الرسل ونفوذهم من خلال الاستهزاء بهم، ليتخذ عامة الناس موقف اللامبالاة وعدم الاكتراث.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>2.  الافتراء والتهم:</strong> استخدام أسلوب الكذب والتهمة وإلصاق تهم بشعة (كسفيه أو مجنون)، واتهامهم بالسحر عند الإتيان بالمعجزة، وتسمية الرسالات بـ (الأساطير).</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>3.  المجادلة والمغالطة:</strong> منع الناس من الإصغاء لأحاديثهم، والجواب بمنطق غبي وضعيف، وخداع الجماهير بأحاديث منمقة، والتشبث بأساليب القدماء والأجداد وتقاليدهم، ومواجهتهم بالتفوق المادي، والتمسك بذرائع مثل التساؤل عن سبب عدم إرسال الملائكة أو عدم تمتع الأنبياء بامتيازات اقتصادية.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>4.  الترهيب والترغيب:</strong> تهديد أنصارهم بالعذاب والتنكيل، والإخراج من مدنهم ورجمهم وقتلهم، واستخدام الإغراء والترغيب (خاصة بذل الأموال) لمنع الناس من اتباعهم.</p>
+							<p class="p-content" :style="{ 'fontSize': fontSize + 'px' }"><strong>5.  استخدام العنف والقتل:</strong> تنفيذ التهديدات عملياً ضد الأنبياء وأتباعهم، وقتل الكثير منهم.</p>
+							</div>
+						</div>
+						<div id="h3-٤---اذكر-السنن-الإلهية-في-مجال" x-data="accordionItem(true)">
+							<div class="h3-content-title flex justify-between items-center" @click="toggle()">
+								<span :style="{ 'fontSize': fontSize + 'px' }">٤ - اذكر السنن الإلهية في مجال بعثة الأنبياء، وموقف الناس منهم.</span>
+								<span class="icon-toggle" x-text="iconText"></span>
+							</div>
+							<div class="a" x-show="open" x-transition>
+							<div class="qa" id="h4-بعض-السنن-الإلهية-في-إدارة-الأ" x-data="accordionItem(true)">
+								<h4 class="h4-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+									بعض السنن الإلهية في إدارة الأمم المتعلقة بالأنبياء وموقف الناس منهم:
+									<span class="icon-toggle" x-text="iconText"></span>
+								</h4>
+								<div class="a" x-show="open" x-transition>
+								<div class="qa" id="h5-إقامة-الحجة-وتوفير-الأجواء-الن" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										إقامة الحجة وتوفير الأجواء النفسية:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<ul>
+										<li class="li-content" :style="{ 'fontSize': fontSize + 'px' }">الهدف الرئيس للأنبياء هو إقامة الحجة على الناس، وسد النقص في عقولهم بواسطة الوحي. والله يوفر الأجواء النفسية لتقبل دعوتهم ليعين الناس على مسيرتهم التكاملية.</li>
+									</ul>
+									</div>
+								</div>
+								<div class="qa" id="h5-الابتلاء-لإزالة-الغفلة" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										الابتلاء لإزالة الغفلة:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<ul>
+										<li class="li-content" :style="{ 'fontSize': fontSize + 'px' }">بما أن الشعور بعدم الحاجة والغفلة هو أكبر عوامل الكفر، فإن الله يوفر أجواء وأسباباً تدفع الناس للالتفات، وقد يبتليهم بالمحن والمصاعب ليشعروا بضعفهم ويتوجهوا إلى الله.</li>
+									</ul>
+									</div>
+								</div>
+								<div class="qa" id="h5-سنة-استمرار-الغفلة-للمترفين" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										سنة استمرار الغفلة للمترفين:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<ul>
+										<li class="li-content" :style="{ 'fontSize': fontSize + 'px' }">هذا العامل (الابتلاء) لا يكون عاماً وشاملاً؛ فكثير من المتمتعين بالامتيازات المادية يستمرون في غفلتهم وظلمهم، ويعودون لجمع الثروات وتنمية القوى فور رفع العذاب عنهم، باعتبار أن ذلك التوسع والتكاثر امتحان إلهي يؤدي بهم إلى الشقاء.</li>
+									</ul>
+									</div>
+								</div>
+								<div class="qa" id="h5-سنة-الجهاد-والإذن-به" x-data="accordionItem(true)">
+									<h5 class="h5-content-title flex justify-between items-center" @click="toggle()" :style="{ 'fontSize': fontSize + 'px' }">
+										سنة الجهاد والإذن به:
+										<span class="icon-toggle" x-text="iconText"></span>
+									</h5>
+									<div class="a" x-show="open" x-transition>
+									<ul>
+										<li class="li-content" :style="{ 'fontSize': fontSize + 'px' }">حين يبلغ عدد أتباع الأنبياء درجة تمكنهم من إقامة مجتمع مستقل والدفاع عن أنفسهم، يؤمرون بالجهاد وينزل عذاب الله بأيديهم على الكافرين. وفي حالة عدم بلوغ هذه القوة، يُعرض المؤمنون عن الكفار ويتجنبونهم، وينزل العذاب الإلهي من قنوات أخرى على الأمة الجاحدة، وهذه سنة إلهية لا تقبل التغيير.</li>
+									</ul>
+									</div>
+								</div>
+								</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</div>
+		</section>
+	</div>
+</div>
+      </article>
+    </div>
+ </div> 
+
+<script src="js/script_source-text.js"></script>
+<script src="js/nav-loader.js"></script>
+<script src="js/page-init.js"></script> 
+<script>
+    // Initialize the Navbar
+    document.addEventListener('DOMContentLoaded', function() {
+        loadNavbar({ 
+            pageType: 'root', 
+            showTools: true 
+        });
+    });
+</script>
+  </body>
+</html>
