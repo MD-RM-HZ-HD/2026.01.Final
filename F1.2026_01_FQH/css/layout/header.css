@@ -1,0 +1,201 @@
+/* =========================================
+   HEADER & NAVBAR - FINAL FIX (Overlap & Zoom)
+   ========================================= */
+
+/* --- 1. Global Variables & Font Protection --- */
+:root {
+    --header-grad: linear-gradient(135deg, #16a34a 0%, #047857 100%);
+    --nav-bottom-grad: linear-gradient(to top, #064e3b, #065f46);
+    --text-white: #ffffff;
+    --active-circle-bg: #ffffff;
+    --active-icon-color: #047857; 
+}
+
+/* === تحصين النافبار من التكبير === */
+/* تثبيت الخط بوحدة px واجبارية !important */
+#mobile-bottom-nav, 
+.main-nav-container, 
+.mobile-popup-sheet, 
+.desktop-dropdown-menu,
+.nav-btn-main, 
+.nav-dropdown-item,
+.mobile-nav-item, 
+.mobile-popup-link,
+.tools-row, 
+.tool-btn-circle, 
+.tool-btn-rect,
+.mobile-nav-item span,
+.theme-switch-container {
+    font-size: 16px !important; 
+    line-height: normal !important;
+}
+
+/* استثناء للنصوص الصغيرة في الموبايل */
+.mobile-nav-item span { font-size: 11px !important; }
+
+/* Utilities */
+.hidden { display: none !important; }
+
+/* --- 2. Dark Mode Global --- */
+html.dark body, body.dark { background-color: #1a1a1a; color: #e5e5e5; }
+html.dark .sun-icon, body.dark .sun-icon { display: none; }
+html.dark .moon-icon, body.dark .moon-icon { display: block; }
+.sun-icon { display: block; } .moon-icon { display: none; }
+
+/* =========================================
+   A. DESKTOP STYLES (PC Only)
+   ========================================= */
+@media (min-width: 768px) {
+    #mobile-bottom-nav, .mobile-popup-sheet { display: none !important; }
+
+    .main-nav-container {
+        display: flex; justify-content: space-between; align-items: center;
+        border-radius: 12px; padding: 0.5rem 1rem; width: 100%;
+        background: var(--header-grad);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        position: relative; z-index: 1000;
+    }
+
+    .nav-btn-main {
+        padding: 0.6rem 1rem; font-weight: 700; color: white !important;
+        border-radius: 8px; display: flex; align-items: center; gap: 6px;
+        background: transparent; border: none; cursor: pointer; text-decoration: none;
+        transition: 0.2s;
+    }
+    .nav-btn-main:hover { background-color: rgba(255,255,255,0.1); }
+    .nav-btn-main svg { width: 18px; height: 18px; }
+
+    .nav-btn-icon {
+        padding: 0.6rem; color: white !important; border-radius: 8px;
+        transition: background-color 0.2s; background: transparent;
+        border: 1px solid rgba(255,255,255,0.2); cursor: pointer;
+        display: flex; align-items: center; justify-content: center;
+    }
+    .nav-btn-icon:hover { background-color: rgba(255,255,255,0.1); }
+    .nav-btn-icon svg { width: 22px; height: 22px; }
+
+    .desktop-dropdown-menu {
+        position: absolute; top: 120%; right: 0; width: 220px;
+        background: var(--header-grad); border-radius: 12px; padding: 6px;
+        box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        opacity: 0; transform: translateY(10px); pointer-events: none;
+        transition: all 0.2s; display: block;
+    }
+    .desktop-dropdown-menu.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+    .desktop-dropdown-menu.tools-menu { width: 300px !important; left: 0; right: auto; }
+
+    .nav-dropdown-item {
+        display: block; width: 100%; padding: 10px; color: white !important; text-align: right;
+        border-radius: 8px; text-decoration: none; font-weight: 600;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+    .nav-dropdown-item:hover { background-color: rgba(255,255,255,0.1); }
+    
+    .tools-row { display: flex; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
+    .tool-btn-circle { width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.2); color: white; border: 1px solid rgba(255,255,255,0.2); cursor: pointer; }
+    .tool-btn-rect { flex: 1; padding: 8px; background: rgba(0,0,0,0.2); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; cursor: pointer; }
+    .theme-switch-container { width: 50px; height: 28px; background: rgba(0,0,0,0.3); border-radius: 20px; position: relative; cursor: pointer; border: 1px solid rgba(255,255,255,0.3); }
+    .theme-switch-slider { width: 22px; height: 22px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 3px; transition: 0.3s; display: flex; align-items: center; justify-content: center; color: #f59e0b; }
+    html.dark .theme-switch-slider { transform: translateX(20px); }
+}
+
+/* =========================================
+   B. MOBILE STYLES (Fixed & Centered)
+   ========================================= */
+@media (max-width: 767px) {
+    .main-nav-container, .desktop-only { display: none !important; }
+
+    #mobile-bottom-nav {
+        position: fixed; bottom: 0; left: 0; width: 100%;
+        /* زيادة الارتفاع قليلاً لمنع التداخل */
+        height: 80px; 
+        background: var(--nav-bottom-grad);
+        box-shadow: 0 -5px 25px rgba(0,0,0,0.15);
+        display: flex; justify-content: space-around; align-items: center;
+        z-index: 10001;
+        padding-bottom: env(safe-area-inset-bottom, 5px);
+    }
+
+    .mobile-nav-item {
+        background: none; border: none; 
+        color: rgba(255,255,255,0.6);
+        display: flex; flex-direction: column; align-items: center; justify-content: center;
+        gap: 4px; 
+        cursor: pointer; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        width: 70px; height: 100%; 
+        position: relative;
+    }
+    
+    .mobile-nav-item svg { width: 24px; height: 24px; transition: 0.3s; z-index: 2; position: relative; }
+    .mobile-nav-item span { transition: 0.3s; z-index: 2; }
+
+    /* --- ACTIVE CIRCLE LOGIC --- */
+    /* 1. White Circle Background */
+    .mobile-nav-item.active-tab::before {
+        content: '';
+        position: absolute;
+        /* رفع الدائرة للأعلى أكثر */
+        top: -35px; 
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px; height: 60px; /* زيادة حجم الدائرة قليلاً */
+        background: var(--active-circle-bg);
+        border-radius: 50%;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        z-index: 1;
+        border: none;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* 2. Absolute Centered Icon */
+    .mobile-nav-item.active-tab svg {
+        position: absolute;
+        /* رفع الأيقونة لتلحق بالدائرة */
+        top: -5px; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--active-icon-color);
+        width: 30px; height: 30px;
+        z-index: 3;
+    }
+
+    /* 3. Text Offset (دفع النص للأسفل لمنع التداخل) */
+    .mobile-nav-item.active-tab span {
+        opacity: 1;
+        /* دفع النص للأسفل بمسافة كافية عن الدائرة */
+        margin-top: 35px; 
+        font-weight: 800;
+        color: white;
+    }
+
+    /* Mobile Popups */
+    .mobile-popup-sheet {
+        position: fixed; bottom: 90px; left: 50%; 
+        transform: translateX(-50%) translateY(20px);
+        width: 90%; max-width: 350px;
+        background: var(--header-grad);
+        border-radius: 16px; padding: 16px; 
+        z-index: 10000;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+        border: 1px solid rgba(255,255,255,0.2);
+        opacity: 0; visibility: hidden; pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex; flex-direction: column; gap: 8px;
+    }
+    .mobile-popup-sheet.active {
+        opacity: 1; visibility: visible; pointer-events: auto;
+        transform: translateX(-50%) translateY(0);
+    }
+    .mobile-popup-link {
+        display: block; padding: 12px; background: rgba(255,255,255,0.1);
+        color: white; text-decoration: none; border-radius: 8px;
+        text-align: center; font-weight: bold;
+    }
+    
+    .tools-row { display: flex; justify-content: center; gap: 15px; margin-bottom: 10px; width: 100%; }
+    .tool-btn-circle { width: 45px; height: 45px; border-radius: 50%; background: rgba(0,0,0,0.2); color: white; border: 1px solid rgba(255,255,255,0.2); display: flex; align-items: center; justify-content: center; font-weight: bold; }
+    .tool-btn-rect { flex: 1; padding: 10px; background: rgba(0,0,0,0.2); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; text-align: center; font-weight: bold; }
+    .theme-switch-container { width: 60px; height: 32px; background: rgba(0,0,0,0.3); border-radius: 20px; position: relative; border: 1px solid rgba(255,255,255,0.3); margin: 0 auto; }
+    .theme-switch-slider { width: 26px; height: 26px; background: white; border-radius: 50%; position: absolute; top: 2px; left: 3px; display: flex; align-items: center; justify-content: center; color: #f59e0b; transition: 0.3s; }
+    html.dark .theme-switch-slider { transform: translateX(28px); }
+}
