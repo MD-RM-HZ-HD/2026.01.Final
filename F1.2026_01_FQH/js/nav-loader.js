@@ -1,5 +1,6 @@
 /**
- * Advanced Nav Loader - All Fixes Included
+ * Advanced Nav Loader - Context-Aware Fix
+ * Solves: Local pages navigation inside F1 folders
  */
 
 (function () {
@@ -7,9 +8,9 @@
     const NAV_CONFIG = {
         subjectLinks: [
             { href: 'index.html', label: 'الرئيسية (القائمة)' },
-            { href: 'F1.2026_01_AKD/index.html', label: 'العقيدة' },
-            { href: 'F1.2026_01_FQH/index.html', label: 'الفقه' },
-            { href: 'F1.2026_01_QRN/index.html', label: 'القرآن' }
+            { href: 'F1.2026_01_AKD/index_akd.html', label: 'العقيدة' },
+            { href: 'F1.2026_01_FQH/index_fqh.html', label: 'الفقه' },
+            { href: 'F1.2026_01_QRN/index_qrn.html', label: 'القرآن' }
         ],
         extraLinks: [
             { href: 'pages/mindmap.html', label: 'خريطة ذهنية' },
@@ -24,45 +25,78 @@
         ]
     };
 
-    // === 2. Path Utilities ===
-    function detectPageDepth() {
+    // === 2. Path Utilities (New 4-State Logic) ===
+    function detectPageLocation() {
         const path = window.location.pathname;
-        const filename = path.split('/').pop();
-        if (filename === 'index.html' || path.endsWith('/')) return 'root';
-        if (path.includes('/pages/')) return 'deep-page';
-        if (path.includes('/F1.') && !path.includes('/pages/')) return 'subject-root';
-        return 'root';
+        const isPages = path.includes('/pages/');
+        const isSubject = path.includes('/F1.'); // يفترض أن مجلدات المواد تبدأ بـ F1.
+
+        if (isSubject && isPages) return 'subject-page'; // داخل صفحة فرعية للمادة (عمق 2)
+        if (isSubject) return 'subject-root';            // داخل رئيسية المادة (عمق 1)
+        if (isPages) return 'root-page';                 // داخل صفحة فرعية للجذر (عمق 1)
+        return 'root';                                   // الصفحة الرئيسية (عمق 0)
     }
 
-    function buildPath(targetHref, depth) {
+    function buildPath(targetHref) {
+        const location = detectPageLocation();
         let cleanHref = targetHref;
-        if (cleanHref === 'index.html') {
-            if (depth === 'root') return './index.html';
-            if (depth === 'subject-root') return '../index.html';
-            if (depth === 'deep-page') return '../../index.html';
-        }
-        if (cleanHref.startsWith('F1')) {
-            if (depth === 'root') return `./${cleanHref}`;
-            if (depth === 'subject-root') return `../${cleanHref}`;
-            if (depth === 'deep-page') return `../../${cleanHref}`;
-        }
+
+        // --- 1. التعامل مع رابط "الصفحات" (pages/...) ---
+        // هذا هو الجزء الذي يحل مشكلتك
         if (cleanHref.startsWith('pages/')) {
-            if (depth === 'root') return '#';
-            if (depth === 'subject-root') return `./${cleanHref}`;
-            if (depth === 'deep-page') return `./${cleanHref.replace('pages/', '')}`;
+            switch (location) {
+                case 'root':
+                    return `./${cleanHref}`; // ادخل المجلد من الجذر
+                case 'subject-root':
+                    return `./${cleanHref}`; // ادخل المجلد المحلي للمادة (بدون خروج)
+                case 'subject-page':
+                case 'root-page':
+                    // نحن داخل المجلد بالفعل، نحذف البادئة ونربط بالملف المجاور
+                    return `./${cleanHref.replace('pages/', '')}`;
+            }
         }
+
+        // --- 2. التعامل مع رابط "المواد" (F1...) ---
+        if (cleanHref.startsWith('F1')) {
+            switch (location) {
+                case 'root':
+                    return `./${cleanHref}`;
+                case 'subject-root':
+                case 'root-page':
+                    return `../${cleanHref}`; // عد خطوة للخلف ثم ادخل المادة
+                case 'subject-page':
+                    return `../../${cleanHref}`; // عد خطوتين للخلف (من pages ثم من F1)
+            }
+        }
+
+        // --- 3. التعامل مع رابط "الرئيسية" (index.html) ---
+        if (cleanHref === 'index.html') {
+            switch (location) {
+                case 'root':
+                    return `./index.html`;
+                case 'subject-root':
+                case 'root-page':
+                    return `../index.html`;
+                case 'subject-page':
+                    return `../../index.html`;
+            }
+        }
+
         return cleanHref;
     }
 
-    // === 3. Load CSS ===
+    // === 3. Load CSS (Updated for new logic) ===
     function loadExternalCSS() {
-        const depth = detectPageDepth();
-        let cssPath = '';
-        if (depth === 'root') cssPath = './css/layout/header.css';
-        else if (depth === 'subject-root') cssPath = '../css/layout/header.css';
-        else if (depth === 'deep-page') cssPath = '../../css/layout/header.css';
+        const location = detectPageLocation();
+        let prefix = '';
 
-        if (!document.querySelector(`link[href^="${cssPath}"]`)) {
+        if (location === 'root') prefix = './';
+        else if (location === 'subject-root' || location === 'root-page') prefix = '../';
+        else if (location === 'subject-page') prefix = '../../';
+
+        const cssPath = prefix + 'css/layout/header.css';
+
+        if (!document.querySelector(`link[href*="header.css"]`)) {
             const link = document.createElement('link');
             link.rel = 'stylesheet';
             link.href = cssPath + '?v=' + new Date().getTime(); 
@@ -93,30 +127,18 @@
         });
     }
 
-    // --- تعديل جوهري: استهداف عناصر النصوص فقط للتكبير ---
     function initToolsListeners() {
-        // هذه الدالة تبحث عن العناصر القابلة للتكبير فقط وتتجاهل النافبار
         const getTargetElements = () => {
-            // نحاول استهداف المحتوى بدقة
             const mainContainers = document.querySelectorAll('.content-area, main, #content, article, .container');
-            
-            if (mainContainers.length > 0) {
-                return mainContainers;
-            } else {
-                // إذا لم توجد حاوية، نستهدف الفقرات والعناوين والقوائم مباشرة
-                // هذا يضمن عدم تكبير النافبار لأنه ليس p ولا h1
-                return document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, td, th, span:not(.mobile-nav-item span)');
-            }
+            if (mainContainers.length > 0) return mainContainers;
+            return document.querySelectorAll('p, h1, h2, h3, h4, h5, h6, li, td, th, span:not(.mobile-nav-item span)');
         };
 
         window.addEventListener('font-change', (e) => {
             const delta = e.detail;
             const targets = getTargetElements();
-
             targets.forEach(target => {
-                // فحص إضافي للتأكد أن العنصر ليس داخل النافبار
                 if (target.closest('#mobile-bottom-nav') || target.closest('.main-nav-container')) return;
-
                 const currentSize = parseFloat(window.getComputedStyle(target).fontSize);
                 const newSize = Math.max(14, Math.min(32, currentSize + delta));
                 target.style.fontSize = newSize + 'px';
@@ -125,9 +147,7 @@
 
         window.addEventListener('font-reset', () => {
             const targets = getTargetElements();
-            targets.forEach(target => {
-                target.style.fontSize = ''; 
-            });
+            targets.forEach(target => { target.style.fontSize = ''; });
         });
     }
 
@@ -145,10 +165,9 @@
         const placeholder = document.getElementById('navbar-placeholder');
         if (!placeholder) return;
 
-        const depth = detectPageDepth();
         const isMobile = window.innerWidth < 768;
+        const location = detectPageLocation();
         
-        // Icons
         const icons = {
             home: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>`,
             exam: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>`,
@@ -159,22 +178,21 @@
         if (isMobile) {
             // === LOGIC ===
             const currentPath = window.location.pathname;
-            const isHomeActive = currentPath.endsWith('/') || currentPath.endsWith('index.html') || currentPath.includes('/F1.');
             const isMapActive = currentPath.includes('mindmap');
             const isQuizActive = currentPath.includes('qz-') || currentPath.includes('card-flip');
-            
-            // --- تم حذف شرط showPageTools، سيتم عرض الأزرار دائماً ---
-            
+            // Home active only if NOT map AND NOT quiz AND (in root OR in subject root)
+            const isHomeActive = !isMapActive && !isQuizActive; 
+
             const popupsHtml = `
-                <div id="popup-subjects" class="mobile-popup-sheet">${NAV_CONFIG.subjectLinks.map(l => `<a href="${buildPath(l.href, depth)}" class="mobile-popup-link">${l.label}</a>`).join('')}</div>
-                <div id="popup-exams" class="mobile-popup-sheet">${NAV_CONFIG.examLinks.map(l => `<a href="${buildPath(l.href, depth)}" class="mobile-popup-link">${l.label}</a>`).join('')}</div>
-                <div id="popup-maps" class="mobile-popup-sheet">${NAV_CONFIG.extraLinks.map(l => `<a href="${buildPath(l.href, depth)}" class="mobile-popup-link">${l.label}</a>`).join('')}</div>
+                <div id="popup-subjects" class="mobile-popup-sheet">${NAV_CONFIG.subjectLinks.map(l => `<a href="${buildPath(l.href)}" class="mobile-popup-link">${l.label}</a>`).join('')}</div>
+                <div id="popup-exams" class="mobile-popup-sheet">${NAV_CONFIG.examLinks.map(l => `<a href="${buildPath(l.href)}" class="mobile-popup-link">${l.label}</a>`).join('')}</div>
+                <div id="popup-maps" class="mobile-popup-sheet">${NAV_CONFIG.extraLinks.map(l => `<a href="${buildPath(l.href)}" class="mobile-popup-link">${l.label}</a>`).join('')}</div>
                 <div id="popup-tools" class="mobile-popup-sheet">${getToolsContent()}</div>
             `;
             
             const navHtml = `
                 <nav id="mobile-bottom-nav">
-                    <button class="mobile-nav-item ${isHomeActive && !isMapActive && !isQuizActive ? 'active-tab' : ''}" data-target="popup-subjects">${icons.home}<span>الرئيسية</span></button>
+                    <button class="mobile-nav-item ${isHomeActive ? 'active-tab' : ''}" data-target="popup-subjects">${icons.home}<span>الرئيسية</span></button>
                     <button class="mobile-nav-item ${isQuizActive ? 'active-tab' : ''}" data-target="popup-exams">${icons.exam}<span>اختبارات</span></button>
                     <button class="mobile-nav-item ${isMapActive ? 'active-tab' : ''}" data-target="popup-maps">${icons.map}<span>خرائط</span></button>
                     <button class="mobile-nav-item" data-target="popup-tools">${icons.settings}<span>إعدادات</span></button>
@@ -186,11 +204,10 @@
         } else {
             // Desktop Logic
             const createDropdown = (id, title, links) => {
-                if (depth === 'root' && id !== 'subj-d') return '';
-                const items = links.map(l => `<a href="${buildPath(l.href, depth)}" class="nav-dropdown-item">${l.label}</a>`).join('');
+                const items = links.map(l => `<a href="${buildPath(l.href)}" class="nav-dropdown-item">${l.label}</a>`).join('');
                 return `<div class="relative group"><button id="btn-${id}" class="nav-btn-main">${title}<svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></button><div id="menu-${id}" class="desktop-dropdown-menu hidden">${items}</div></div>`;
             };
-            const desktopExtra = (depth !== 'root') ? NAV_CONFIG.extraLinks.map(l => `<a href="${buildPath(l.href, depth)}" class="nav-btn-main">${l.label}</a>`).join('') : '';
+            const desktopExtra = NAV_CONFIG.extraLinks.map(l => `<a href="${buildPath(l.href)}" class="nav-btn-main">${l.label}</a>`).join('');
             
             placeholder.innerHTML = `
             <nav class="fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[900px] z-50 p-2">
@@ -253,12 +270,15 @@
     }
 
     function injectPageInit() {
-        const depth = detectPageDepth();
-        let scriptPath;
-        if (depth === 'root') scriptPath = './js/page-init.js';
-        else if (depth === 'subject-root') scriptPath = '../js/page-init.js';
-        else if (depth === 'deep-page') scriptPath = '../../js/page-init.js';
-        if (scriptPath && !document.querySelector(`script[src="${scriptPath}"]`)) {
+        const location = detectPageLocation();
+        let prefix = '';
+        if (location === 'root') prefix = './';
+        else if (location === 'subject-root' || location === 'root-page') prefix = '../';
+        else if (location === 'subject-page') prefix = '../../';
+
+        const scriptPath = prefix + 'js/page-init.js';
+        
+        if (!document.querySelector(`script[src*="page-init.js"]`)) {
             const script = document.createElement('script');
             script.src = scriptPath;
             script.defer = true;
@@ -280,6 +300,5 @@
     }
 
     if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', init); } else { init(); }
-
 
 })();
