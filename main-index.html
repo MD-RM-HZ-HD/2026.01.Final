@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>الامتحان النهائي</title>
+    
+    <!-- Alpine.js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* ألوان من ملف style.css */
+            --bg-dark: #283b2f;
+            --bg-light: #4b6856;
+            --card-bg: #aabba5; /* الأخضر الفاتح للوسط */
+            --accent: #074344;  /* الزيتي الغامق للنصوص */
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: radial-gradient(circle at center, var(--bg-light), var(--bg-dark));
+            background-attachment: fixed;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            color: var(--accent);
+        }
+        
+        /* حاوية الهاتف */
+        .mobile-container {
+            width: 100%;
+            max-width: 480px;
+            background-color: var(--card-bg); /* لون الخلفية المطلوب للوسط */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            padding: 1.5rem;
+            position: relative;
+            box-shadow: 0 0 50px rgba(0,0,0,0.5);
+        }
+
+        @media (min-width: 481px) {
+            .mobile-container {
+                min-height: 90vh;
+                height: auto;
+                border-radius: 24px;
+                margin: 2vh 0;
+                border: 6px solid rgba(255, 255, 255, 0.1);
+            }
+        }
+
+        .page-title-card {
+            text-align: center;
+            margin-bottom: 2.5rem;
+            margin-top: 2rem;
+        }
+        
+        .page-title-card h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--accent);
+            line-height: 1.2;
+        }
+
+        .subtitle {
+            font-family: 'Amiri', serif;
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+        
+        /* تنسيق الأزرار الجديد - أبيض ونظيف */
+        .btn-quiz {
+            background-color: #ffffff;
+            color: var(--accent);
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(7, 67, 68, 0.1); /* حدود خفيفة بلون الأكسنت */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        
+        .btn-quiz:active {
+            transform: scale(0.98);
+            background-color: #f3f4f6;
+        }
+        
+        .btn-quiz:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* أيقونات */
+        .icon-box {
+            background-color: rgba(7, 67, 68, 0.08); /* خلفية باهتة للأيقونة */
+            color: var(--accent);
+            border-radius: 12px;
+            padding: 10px;
+            transition: background-color 0.2s;
+        }
+        
+        .btn-quiz:hover .icon-box {
+            background-color: rgba(7, 67, 68, 0.15);
+        }
+    </style>
+</head>
+<body x-data> 
+
+<div class="mobile-container">
+    
+    <!-- العنوان -->
+    <div class="page-title-card">
+        <h1>الامتحان النهائي</h1>
+        <p class="mt-2 subtitle">اللهم صل على محمد وآل محمد</p>
+    </div>
+
+    <!-- قائمة الأزرار -->
+    <div class="flex flex-col gap-5 flex-grow pb-12">
+
+        <!-- زر 1: عقيدة -->
+        <a href="./F1.2026_01_AKD/index.html" class="btn-quiz block w-full p-5 rounded-2xl flex flex-row items-center justify-between h-28 group">
+            <div class="flex flex-col items-start px-2">
+                <p class="text-2xl font-bold mb-1">عقيدة</p>
+                <p class="text-sm opacity-80 font-medium">دروس في العقيدة الإسلامية</p>
+            </div>
+            
+            <div class="icon-box mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+            </div>
+        </a>
+
+        <!-- زر 2: فقه -->
+        <a href="./F1.2026_01_FQH/index.html" class="btn-quiz block w-full p-5 rounded-2xl flex flex-row items-center justify-between h-28 group">
+            <div class="flex flex-col items-start px-2">
+                <p class="text-2xl font-bold mb-1">فقه</p>
+                <p class="text-sm opacity-80 font-medium">المسائل المنتخبة</p>
+            </div>
+
+            <div class="icon-box mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9l-6-2m0-2v2m0 16V5m0 16H9m3 0h3" />
+                </svg>
+            </div>
+        </a>
+        
+        <!-- زر 3: علوم قرآن -->
+        <a href="./F1.2026_01_QRN/index.html" class="btn-quiz block w-full p-5 rounded-2xl flex flex-row items-center justify-between h-28 group">
+            <div class="flex flex-col items-start px-2">
+                <p class="text-2xl font-bold mb-1">علوم القرآن</p>
+                <p class="text-sm opacity-80 font-medium">دروس من القرآن الكريم</p>
+            </div>
+
+            <div class="icon-box mx-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+            </div>
+        </a>
+
+    </div>
+    
+    <div class="mt-4 text-center text-xs opacity-50" style="color: var(--accent);">
+        <!-- مساحة سفلية فارغة للجمالية -->
+    </div>
+
+</div>
+
+</body>
+</html>
