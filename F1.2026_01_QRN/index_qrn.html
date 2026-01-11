@@ -22,14 +22,24 @@
         <article class="content" 
                  :style="{ 'fontSize': fontSize + 'px' }">
 <div x-data="accordionItem(true)" class="content-container" id="h1-دروس-من-علوم-القرآن---نهائي">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">دروس من علوم القرآن - نهائي</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="https://www.dropbox.com/scl/fi/010kwzk6fqb8vcx2sewe6/source-text_akd.mp3?rlkey=kta7muntqwtr2s1wr12trfzkk&st=wdttcmyn&raw=1" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="https://www.dropbox.com/scl/fi/010kwzk6fqb8vcx2sewe6/source-text_akd.mp3?rlkey=kta7muntqwtr2s1wr12trfzkk&st=wdttcmyn&raw=1" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/source-text.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/12-22.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -38,14 +48,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الثاني-عشر-قراءات-القرآن">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الثاني عشر: قراءات القرآن (1)</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/12.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/12.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/12.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -460,14 +476,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الثالث-عشر-رسم-المصحف">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الثالث عشر: رسم المصحف</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/13.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/13.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/13.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -649,14 +671,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الرابع-عشر-إعجاز-القرآن-">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الرابع عشر: إعجاز القرآن (1)</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/14.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/14.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/14.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -877,14 +905,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الخامس-عشر-إعجاز-القرآن-">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الخامس عشر: إعجاز القرآن (2)</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/15.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/15.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/15.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -1224,14 +1258,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-السادس-عشر-صيانة-القرآن-">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس السادس عشر: صيانة القرآن عن التحريف (1)</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/16.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/16.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/16.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -1466,14 +1506,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-السابع-عشر-صيانة-القرآن-">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس السابع عشر: صيانة القرآن عن التحريف (2)</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/17.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/17.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/17.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -1810,14 +1856,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الثامن-عشر-صيانة-القرآن-">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الثامن عشر: صيانة القرآن عن التحريف (3)</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/18.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/18.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/18.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -2093,14 +2145,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-التاسع-عشر-الناسخ-والمنس">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس التاسع عشر: الناسخ والمنسوخ (1)</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/19.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/19.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/19.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -2367,14 +2425,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-العشرون-الناسخ-والمنسوخ-">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس العشرون: الناسخ والمنسوخ (2)</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/20.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/20.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/20.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -2703,14 +2767,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الواحد-و-العشرون-المحكم-">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الواحد و العشرون: المحكم والمتشابه</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/21.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/21.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/21.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -2997,14 +3067,20 @@
 </div>
 
 <div x-data="accordionItem(true)" class="content-container" id="h1-الدرس-الثاني-و-العشرون-التأويل">
-	<button @click="toggle()" class="accordion-button">
+	<button @click="toggle()" class="accordion-button" style="width: 100%; display: block;">
 		<div class="accordion-title-group">
 			<h2 class="section" :style="{ 'fontSize': fontSize + 'px' }">الدرس الثاني و العشرون: التأويل</h2>
 			<span class="icon-toggle" x-text="iconText"></span>
 		</div>
-		<audio controls src="audio/22.mp3" onclick="event.stopPropagation()">
-			<p class="muted">متصفحك لا يدعم الصوت.</p>
-		</audio>
+		<div class="audio-pdf-wrapper" style="display: flex; flex-direction: column; width: 100%;">
+			<audio controls src="audio/22.mp3" onclick="event.stopPropagation()">
+				<p class="muted">متصفحك لا يدعم الصوت.</p>
+			</audio>
+			<details style="width: 100%; display: block; margin-top: 10px;">
+				<summary>📄 View PDF</summary>
+				<iframe src="pdf/22.pdf" width="100%" height="600px" style="border: 1px solid #ccc;"></iframe>
+			</details>
+		</div>
 	</button>
 	<div x-show="open" x-transition class="accordion-panel">
 		<section>
@@ -3278,4 +3354,3 @@
 </script>
   </body>
 </html>
-
